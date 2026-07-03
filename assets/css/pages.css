@@ -1,0 +1,18 @@
+#hero,
+#brand-statement,
+#sustainability,
+#connect {
+    text-align: center;
+}
+
+.collection-grid {
+    display: grid;
+    gap: var(--space-md);
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .collection-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
