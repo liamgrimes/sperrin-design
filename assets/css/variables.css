@@ -1,0 +1,19 @@
+:root {
+    /* spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 8rem;
+
+    /* sizing */
+    --max-width: 1200px;
+
+    /* placeholder colours */
+    --color-background: #ffffff;
+    --color-text: #222222;
+    --color-accent: #555555;
+
+    /* typography */
+    --font-body: Arial, sans-serif;
+}

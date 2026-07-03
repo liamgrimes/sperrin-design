@@ -1,0 +1,45 @@
+header,
+main,
+footer {
+    width: min(var(--max-width), 90%);
+    margin: 0 auto;
+}
+
+header,
+footer {
+    padding: var(--space-md);
+}
+
+main {
+    padding: var(--space-lg) var(--space-md);
+}
+
+section {
+    margin-bottom: var(--space-xl);
+}
+
+/* Mobile first */
+header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+/* Tablet and desktop */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+}
