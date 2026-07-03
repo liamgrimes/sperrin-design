@@ -5,6 +5,7 @@ footer {
     margin: 0 auto;
 }
 
+/* Shared spacing */
 header,
 footer {
     padding: var(--space-md);
@@ -16,15 +17,32 @@ main {
 
 section {
     margin-bottom: var(--space-xl);
+    padding: var(--space-md) 0;
 }
 
-/* Mobile first */
+/* -------------------------- */
+/* Header */
+/* -------------------------- */
+
 header {
     display: flex;
     flex-direction: column;
     gap: var(--space-md);
     align-items: center;
+
+    border-bottom: var(--border-light);
 }
+
+/* Logo */
+
+.logo a {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: -0.05em;
+}
+
+/* Navigation */
 
 nav ul {
     display: flex;
@@ -32,8 +50,35 @@ nav ul {
     gap: var(--space-sm);
 }
 
+nav a {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    transition: var(--transition-fast);
+}
+
+nav a:hover {
+    color: var(--color-muted);
+}
+
+/* -------------------------- */
+/* Footer */
+/* -------------------------- */
+
+footer {
+    border-top: var(--border-light);
+    text-align: center;
+    color: var(--color-muted);
+    font-size: 0.9rem;
+}
+
+/* -------------------------- */
 /* Tablet and desktop */
+/* -------------------------- */
+
 @media (min-width: 768px) {
+
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -41,5 +86,7 @@ nav ul {
 
     nav ul {
         flex-direction: row;
+        gap: var(--space-md);
     }
+
 }
