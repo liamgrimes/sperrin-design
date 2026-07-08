@@ -1,0 +1,13 @@
+.image-placeholder {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    background-color: var(--color-linen);
+    border: 2px dashed var(--color-soft-grey);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--color-muted);
+    font-family: var(--font-body);
+}
