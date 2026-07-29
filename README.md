@@ -1,29 +1,19 @@
-# Sperrin Design
-Sperrin Design Website
+Sperrin Design
 
-Official website for Sperrin Design — a contemporary Irish fashion brand inspired by heritage, sustainability, craftsmanship, and slow fashion principles.
+Official website for Sperrin Design — a contemporary Irish fashion brand focused on heritage, sustainability, craftsmanship, and slow fashion.
 
-Project Goals
+About
 
-Version 1 of the website focuses on establishing a strong online presence for the brand rather than ecommerce.
+This project is a static website created to establish an online presence for Sperrin Design.
 
-Current scope:
+The current version focuses on presenting the brand, showcasing collections, and providing contact information. Ecommerce functionality is not included at this stage.
 
-Homepage
-About page
-Collections / Gallery page
-Contact and Brand Hub page
-
-
-The project intentionally uses a lightweight stack:
-
+Tech Stack
 HTML5
 CSS3
 Vanilla JavaScript
-Git and GitHub for collaboration
+Git & GitHub
 GoDaddy hosting
-
-The site is designed as a static website.
 
 Project Structure
 sperrin-design/
@@ -45,61 +35,64 @@ sperrin-design/
 │   ├── js/
 │   │   └── main.js
 │   │
+│   ├── components/
+│   │   └── navbar.html
+│   │
 │   └── images/
 │
 └── README.md
-CSS Architecture
+
+CSS Structure
+
+CSS is split into separate files to keep styling organised.
+
 variables.css
-
-Contains reusable design tokens:
-
-colours
-spacing values
-typography settings
-layout dimensions
+Stores design variables such as colours, spacing, fonts, and reusable values.
 base.css
-
-Contains global styles:
-
-CSS reset
-typography defaults
-image behaviour
-anchor styles
-list styles
+Contains global styling including resets, typography, and default element styles.
 layout.css
-
-Contains layout rules:
-
-header layout
-footer layout
-responsive navigation
-spacing between sections
+Handles page structure, spacing, header, footer, and responsive layouts.
 components.css
-
-Contains reusable UI components:
-
-Examples:
-
-buttons
-cards
-forms
-image containers
+Contains reusable UI elements.
 pages.css
+Contains styles specific to individual pages.
+Components
 
-Contains styling specific to individual pages.
+Shared site elements are stored separately and loaded using JavaScript.
 
-Current Status
+Current components:
+
+Navbar
+
+Components are stored in:
+
+assets/components/
+Current Progress
 
 Completed:
 
-Repository setup
-GitHub integration
-Project structure
-Page skeletons
+Project setup
 Responsive layout foundation
+Shared navigation component
+Initial page structures
+CSS organisation
 
 In Progress:
 
-Homepage layout
-Component system
-Gallery structure
+Homepage design
+Collection/gallery structure
+Additional page styling
+
+Future Plans
+
+Planned improvements for the website include:
+
+Develop the Collections page into a shop experience
+Add collection-specific gallery pages
+Create expanded image views with product and design details
+Add photographer and model credits
+Display shop availability for individual pieces
+Shopify integration
+Add Ogham designs to the website
+Set up domain-based email
+Expand the contact form
