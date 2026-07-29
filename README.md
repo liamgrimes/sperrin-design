@@ -6,7 +6,7 @@ About
 
 This project is a static website created to establish an online presence for Sperrin Design.
 
-The current version focuses on presenting the brand, showcasing collections, and providing contact information. Ecommerce functionality is not included at this stage.
+The current version focuses on presenting the brand, showcasing collections, and providing contact information.
 
 Tech Stack
 HTML5
