@@ -1,0 +1,900 @@
+<!--
+  SETUP — do these steps once the Shopify store exists:
+  1. Create a Shopify store (any plan that includes "Buy Button" works — ideally Lite plan for £9 monthly).
+  2. In Shopify Admin, go to Sales channels → add the "Buy Button" channel.
+  3. In Settings → Apps and sales channels → Buy Button → Manage,
+     generate a Storefront API access token if one isn't shown to you
+     automatically when you create your first buy button.
+     (This token is a PUBLIC, unauthenticated Storefront API token — it is
+     designed to be embedded in client-side JS like this. It cannot access
+     orders, customers, or your admin — it only reads product data and
+     creates checkouts. It is not a secret key.)
+  4. Find your store domain — it looks like: your-store.myshopify.com
+  5. For each product, grab its numeric Product ID:
+     Admin → Products → open a product → the ID is in the URL
+     (.../products/1234567890).
+  6. Fill in SHOPIFY_CONFIG and the PRODUCTS array below with your real
+     domain, token, product IDs, names, prices, descriptions and photos.
+  ============================================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Storefront | Sperrin Design</title>
+<link rel="stylesheet" href="assets/css/style.css" />
+
+<style>
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce){
+    *{ animation: none !important; transition: none !important; }
+  }
+
+  .storefront-main{ padding-top: var(--space-md); }
+  .store-wrap{ width: 100%; }
+
+  /* ---------------- Hero ---------------- */
+  .store-hero{
+    padding: var(--space-md) 0;
+    border-bottom: var(--border-light);
+  }
+  .store-hero .eyebrow{
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+    display: inline-block;
+    margin-bottom: var(--space-xs);
+  }
+  .store-hero h1{
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    line-height: 1.1;
+    margin: 0 0 var(--space-sm);
+    max-width: 20ch;
+  }
+  .store-hero p{
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-muted);
+    max-width: 52ch;
+    margin: 0;
+  }
+  .store-hero .accent-underline{
+    display:inline-block;
+    position: relative;
+  }
+  .store-hero .accent-underline::after{
+    content:"";
+    position:absolute;
+    left:0; right:0; bottom:2px;
+    height: 8px;
+    background: var(--color-linen);
+    opacity: 0.7;
+    z-index:-1;
+  }
+
+  /* ---------------- Filter chips ---------------- */
+  .store-filters{
+    display:flex;
+    gap: var(--space-xs);
+    flex-wrap: wrap;
+    padding: var(--space-md) 0;
+  }
+  .chip{
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border-radius: 100px;
+    border: var(--border-light);
+    background: var(--color-warm-white);
+    color: var(--color-muted);
+    cursor: pointer;
+    transition: var(--transition-fast);
+  }
+  .chip:hover{ border-color: var(--color-charcoal); color: var(--color-charcoal); }
+  .chip[aria-pressed="true"]{
+    background: var(--color-charcoal);
+    border-color: var(--color-charcoal);
+    color: var(--color-warm-white);
+  }
+  .chip:focus-visible{ outline: 2px solid var(--color-charcoal); outline-offset: 2px; }
+
+  /* ---------------- Product grid ---------------- */
+  .store-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+    padding: var(--space-sm) 0 var(--space-xl);
+  }
+  @media (max-width: 900px){
+    .store-grid{ grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 620px){
+    .store-grid{ grid-template-columns: 1fr; }
+    .store-hero{ padding: var(--space-md) 0 var(--space-sm); }
+  }
+
+  .product-card{
+    background: var(--color-warm-white);
+    border: var(--border-light);
+    border-radius: 0;
+    overflow: hidden;
+    display:flex;
+    flex-direction:column;
+    transition: var(--transition-fast);
+  }
+  .product-card:hover{
+    transform: translateY(-2px);
+  }
+
+  .product-photo{
+    position: relative;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    background: var(--color-linen);
+    cursor: pointer;
+  }
+
+  .photo-scroller{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .photo-scroller::-webkit-scrollbar{ display: none; }
+
+  .photo-scroller img{
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    width:100%; height:100%; object-fit: cover;
+    display:block;
+  }
+
+  .photo-nav{
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px; height: 30px;
+    border-radius: 999px;
+    border: none;
+    background: rgba(255,255,255,0.9);
+    color: var(--color-charcoal);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.15s ease, background 0.15s ease;
+    z-index: 2;
+  }
+  .photo-nav:hover{ background: #fff; }
+  .product-photo:hover .photo-nav,
+  .photo-nav:focus-visible{ opacity: 1; }
+  .photo-nav.prev{ left: 8px; }
+  .photo-nav.next{ right: 8px; }
+  .photo-nav:focus-visible{ outline: 2px solid var(--color-charcoal); outline-offset: 2px; }
+
+  .photo-dots{
+    position:absolute;
+    bottom: 10px;
+    left: 0; right: 0;
+    display:flex;
+    justify-content:center;
+    gap: 5px;
+    z-index: 2;
+  }
+  .photo-dots .dot{
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.55);
+    transition: width 0.15s ease, background 0.15s ease;
+  }
+  .photo-dots .dot.active{
+    width: 14px;
+    border-radius: 3px;
+    background: #fff;
+  }
+
+  .price-tag{
+    position:absolute;
+    top: var(--space-xs);
+    left: var(--space-xs);
+    background: rgba(26, 26, 26, 0.84);
+    color: var(--color-warm-white);
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    padding: 5px 10px;
+    border-radius: 999px;
+  }
+
+  .product-body{
+    padding: var(--space-sm);
+    display:flex;
+    flex-direction:column;
+    gap: var(--space-xs);
+    flex:1;
+  }
+  .product-name{
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  .product-name a{
+    color: inherit;
+    text-decoration: none;
+  }
+  .product-name a:hover{ text-decoration: underline; }
+  .product-name a:focus-visible{ outline: 2px solid var(--color-charcoal); outline-offset: 2px; }
+  .product-desc{
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--color-muted);
+    margin: 0 0 10px;
+    flex:1;
+  }
+
+  .buy-mount{ min-height: 44px; }
+  .buy-mount .not-connected{
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    color: var(--color-muted);
+    border: 1px dashed var(--color-linen);
+    border-radius: 8px;
+    padding: 10px 12px;
+    line-height: 1.5;
+  }
+
+  /* ---------------- Floating cart ---------------- */
+  #cart-mount{
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 999;
+  }
+
+  /* ---------------- Product detail view ---------------- */
+  .detail-back{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    margin: var(--space-md) 0;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  .detail-back:hover{ color: var(--color-charcoal); }
+  .detail-back:focus-visible{ outline: 2px solid var(--color-charcoal); outline-offset: 3px; }
+
+  .product-detail{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: var(--space-lg);
+    padding-bottom: var(--space-xl);
+  }
+  @media (max-width: 820px){
+    .product-detail{ grid-template-columns: 1fr; gap: var(--space-md); }
+  }
+
+  .detail-photo{
+    position: relative;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    border-radius: 0;
+    background: var(--color-linen);
+  }
+
+  .detail-info{ padding-top: 4px; }
+  .detail-info .eyebrow{
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+  }
+  .detail-info h2{
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    margin: 10px 0 12px;
+  }
+  .detail-price{
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--color-charcoal);
+    margin: 0 0 20px;
+  }
+  .detail-desc{
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-text);
+    margin: 0 0 28px;
+    max-width: 46ch;
+  }
+
+  .detail-section-label{
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+    margin: 0 0 10px;
+  }
+
+  .size-chips{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  .size-chip{
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    min-width: 40px;
+    text-align:center;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: var(--border-light);
+    background: var(--color-warm-white);
+    color: var(--color-charcoal);
+    cursor: pointer;
+  }
+  .size-chip:hover{ border-color: var(--color-charcoal); }
+  .size-chip[aria-pressed="true"]{
+    border-color: var(--color-charcoal);
+    background: var(--color-charcoal);
+    color: var(--color-warm-white);
+  }
+  .size-chip:focus-visible{ outline: 2px solid var(--color-charcoal); outline-offset: 2px; }
+
+  .size-guide{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 28px;
+    font-size: 13px;
+  }
+  .size-guide th, .size-guide td{
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: var(--border-light);
+  }
+  .size-guide th{
+    font-family: var(--font-body);
+    font-weight: 400;
+    color: var(--color-muted);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .detail-buy-mount{ max-width: 320px; }
+
+  /* ---------------- Footer note ---------------- */
+  .store-footnote{
+    padding: 0 0 var(--space-lg);
+    font-size: 0.85rem;
+    color: var(--color-muted);
+  }
+
+  footer .store-footnote{
+    max-width: min(var(--max-width), 90%);
+    margin: 0 auto;
+  }
+
+  @media (max-width: 767px){
+    #cart-mount{
+      right: 12px;
+      bottom: 12px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html">Sperrin Design</a>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="storefront.html">Store</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="storefront-main">
+<div class="store-wrap" id="grid-view">
+  <section class="store-hero">
+    <span class="eyebrow">New arrivals</span>
+     <h1>Irish fashion,</h1>
+    <h1><span class="accent-underline">made to last</span>.</h1>
+    <p>Sperrin's recent designs — in stock and ready to ship to their new home. Every order is checked out securely through Shopify.</p>
+  </section>
+
+  <nav class="store-filters" id="filters" aria-label="Filter products by category">
+    <!-- Populated by JS from PRODUCTS categories -->
+  </nav>
+
+  <section class="store-grid" id="product-grid" aria-live="polite">
+    <!-- Product cards injected by JS -->
+  </section>
+</div>
+
+<div class="store-wrap" id="detail-view" hidden>
+  <!-- Individual product detail sections injected by JS, one per product, toggled by hash routing -->
+</div>
+
+</main>
+
+<footer>
+  <p class="store-footnote">
+    Prices shown in GBP. Delivery address and payment are collected securely by Shopify at checkout — this page never stores or sees your card details.
+  </p>
+  <p>&copy; 2026 Sperrin Design</p>
+</footer>
+
+<!-- Shopify's cart drawer mounts here, fixed bottom-right -->
+<div id="cart-mount"></div>
+
+<script src="https://sdks.shopifycdn.com/buy-button/latest/buybutton.min.js"></script>
+<script>
+(function () {
+
+  /* TODO. CONFIG — replace with your real Shopify values (see setup notes above) */
+  const SHOPIFY_CONFIG = {
+    domain: 'YOUR-STORE.myshopify.com',
+    storefrontAccessToken: 'YOUR_STOREFRONT_ACCESS_TOKEN',
+  };
+
+  /* 
+     TODO PRODUCTS — one entry per product. `id` must be a real Shopify product
+        ID once connected. Everything else (name/price/photo/description) is
+        just for display — Shopify remains the source of truth for checkout
+        pricing and stock.
+    */
+  const PRODUCTS = [
+    {
+      id: 'REPLACE_WITH_PRODUCT_ID_1',
+      name: '#TODO',
+      category: 'Tops',
+      price: '#TODO',
+      description: '#TODO',
+      details: '#TODO',
+      sizes: ['XS', 'S', 'M', 'L', 'XL'],
+      sizeGuide: [
+        { size: 'XS', chest: '92cm', length: '68cm' },
+        { size: 'S',  chest: '96cm', length: '70cm' },
+        { size: 'M',  chest: '102cm', length: '72cm' },
+        { size: 'L',  chest: '108cm', length: '74cm' },
+        { size: 'XL', chest: '114cm', length: '76cm' }
+      ],
+      images: [
+        'https://picsum.photos/seed/shirt1/700/875',
+        'https://picsum.photos/seed/shirt2/700/875',
+        'https://picsum.photos/seed/shirt3/700/875'
+      ]
+    },
+    {
+      id: 'REPLACE_WITH_PRODUCT_ID_2',
+      name: '#TODO',
+      category: 'Tops',
+      price: '#TODO',
+      description: '#TODO',
+      details: '#TODO',
+      sizeGuide: [
+        { size: '26', chest: 'Waist 66cm', length: '104cm' },
+        { size: '28', chest: 'Waist 71cm', length: '106cm' },
+        { size: '30', chest: 'Waist 76cm', length: '108cm' },
+        { size: '32', chest: 'Waist 81cm', length: '110cm' },
+        { size: '34', chest: 'Waist 86cm', length: '112cm' }
+      ],
+      images: [
+        'https://picsum.photos/seed/denim1/700/875',
+        'https://picsum.photos/seed/denim2/700/875',
+        'https://picsum.photos/seed/denim3/700/875'
+      ]
+    },
+    {
+      id: 'REPLACE_WITH_PRODUCT_ID_3',
+      name: '#TODO',
+      category: 'Knitwear',
+      price: '#TODO',
+      description: '#TODO',
+      details: '#TODO',
+      sizes: ['S', 'M', 'L'],
+      sizeGuide: [
+        { size: 'S', chest: '94cm', length: '64cm' },
+        { size: 'M', chest: '100cm', length: '66cm' },
+        { size: 'L', chest: '106cm', length: '68cm' }
+      ],
+      images: [
+        'https://picsum.photos/seed/jumper1/700/875',
+        'https://picsum.photos/seed/jumper2/700/875'
+      ]
+    },
+    {
+      id: 'REPLACE_WITH_PRODUCT_ID_4',
+      name: '#TODO',
+      category: 'Tops',
+      price: '#TODO',
+      description: '#TODO',
+      details: '#TODO',
+      sizes: ['S', 'M', 'L', 'XL'],
+      sizeGuide: [
+        { size: 'S',  chest: '104cm', length: '66cm' },
+        { size: 'M',  chest: '110cm', length: '68cm' },
+        { size: 'L',  chest: '116cm', length: '70cm' },
+        { size: 'XL', chest: '122cm', length: '72cm' }
+      ],
+      images: [
+        'https://picsum.photos/seed/bomber1/700/875',
+        'https://picsum.photos/seed/bomber2/700/875',
+        'https://picsum.photos/seed/bomber3/700/875'
+      ]
+    },
+    {
+      id: 'REPLACE_WITH_PRODUCT_ID_5',
+      name: '#TODO',
+      category: 'Tops',
+      price: '#TODO',
+      description: '#TODO',
+      details: '#TODO',
+      sizes: ['XS', 'S', 'M', 'L'],
+      sizeGuide: [
+        { size: 'XS', chest: 'Waist 64cm', length: '78cm' },
+        { size: 'S',  chest: 'Waist 68cm', length: '79cm' },
+        { size: 'M',  chest: 'Waist 72cm', length: '80cm' },
+        { size: 'L',  chest: 'Waist 78cm', length: '81cm' }
+      ],
+      images: [
+        'https://picsum.photos/seed/skirt1/700/875',
+        'https://picsum.photos/seed/skirt2/700/875'
+      ]
+    },
+    {
+      id: 'REPLACE_WITH_PRODUCT_ID_6',
+      name: '#TODO',
+      category: 'Tops',
+      price: '#TODO',
+      description: '#TODO',
+      details: '#TODO',
+      sizes: ['XS', 'S', 'M', 'L'],
+      sizeGuide: [
+        { size: 'XS', chest: 'Waist 64cm', length: '78cm' },
+        { size: 'S',  chest: 'Waist 68cm', length: '79cm' },
+        { size: 'M',  chest: 'Waist 72cm', length: '80cm' },
+        { size: 'L',  chest: 'Waist 78cm', length: '81cm' }
+      ],
+      images: [
+        'https://picsum.photos/seed/socks1/700/875',
+        'https://picsum.photos/seed/socks2/700/875'
+      ]
+    }
+  ];
+
+  const isConfigured =
+    !SHOPIFY_CONFIG.domain.startsWith('YOUR-') &&
+    !SHOPIFY_CONFIG.storefrontAccessToken.startsWith('YOUR_');
+
+  const grid = document.getElementById('product-grid');
+  const filterBar = document.getElementById('filters');
+  const categories = ['All', ...new Set(PRODUCTS.map(p => p.category))];
+
+  categories.forEach((cat, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'chip';
+    btn.textContent = cat;
+    btn.setAttribute('aria-pressed', i === 0 ? 'true' : 'false');
+    btn.addEventListener('click', () => {
+      filterBar.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', 'false'));
+      btn.setAttribute('aria-pressed', 'true');
+      document.querySelectorAll('.product-card').forEach(card => {
+        const match = cat === 'All' || card.dataset.category === cat;
+        card.style.display = match ? '' : 'none';
+      });
+    });
+    filterBar.appendChild(btn);
+  });
+
+  function buildGalleryHtml(p, key) {
+    const hasMultiple = p.images.length > 1;
+    const imagesHtml = p.images.map(src => `<img src="${src}" alt="${p.name}" loading="lazy">`).join('');
+    const dotsHtml = hasMultiple
+      ? `<div class="photo-dots">${p.images.map((_, di) =>
+          `<span class="dot${di === 0 ? ' active' : ''}"></span>`).join('')}</div>`
+      : '';
+    const navHtml = hasMultiple
+      ? `<button class="photo-nav prev" aria-label="Previous photo" type="button">‹</button>
+         <button class="photo-nav next" aria-label="Next photo" type="button">›</button>`
+      : '';
+    return `<div class="photo-scroller" id="scroller-${key}">${imagesHtml}</div><span class="price-tag">${p.price}</span>${navHtml}${dotsHtml}`;
+  }
+
+  function wireGallery(root, count) {
+    if (count <= 1) return;
+    const scroller = root.querySelector('.photo-scroller');
+    const dots = root.querySelectorAll('.photo-dots .dot');
+    const prevBtn = root.querySelector('.photo-nav.prev');
+    const nextBtn = root.querySelector('.photo-nav.next');
+
+    const scrollToIndex = (index) => {
+      const clamped = Math.max(0, Math.min(count - 1, index));
+      scroller.scrollTo({ left: clamped * scroller.clientWidth, behavior: 'smooth' });
+    };
+    prevBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      scrollToIndex(Math.round(scroller.scrollLeft / scroller.clientWidth) - 1);
+    });
+    nextBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      scrollToIndex(Math.round(scroller.scrollLeft / scroller.clientWidth) + 1);
+    });
+    let scrollTimer;
+    scroller.addEventListener('scroll', () => {
+      clearTimeout(scrollTimer);
+      scrollTimer = setTimeout(() => {
+        const current = Math.round(scroller.scrollLeft / scroller.clientWidth);
+        dots.forEach((d, di) => d.classList.toggle('active', di === current));
+      }, 60);
+    });
+  }
+
+  // ---- Build grid cards ----
+  PRODUCTS.forEach((p, i) => {
+    const card = document.createElement('article');
+    card.className = 'product-card';
+    card.dataset.category = p.category;
+
+    card.innerHTML = `
+      <div class="product-photo">${buildGalleryHtml(p, 'grid-' + i)}</div>
+      <div class="product-body">
+        <h3 class="product-name"><a href="#product-${i}">${p.name}</a></h3>
+        <p class="product-desc">${p.description}</p>
+        <div class="buy-mount" id="buy-mount-${i}"></div>
+      </div>
+    `;
+    grid.appendChild(card);
+
+    if (!isConfigured || p.id.startsWith('REPLACE_WITH')) {
+      document.getElementById(`buy-mount-${i}`).innerHTML =
+        `<div class="not-connected">Connect Shopify to enable checkout for this item</div>`;
+    }
+
+    wireGallery(card.querySelector('.product-photo'), p.images.length);
+
+    // Clicking anywhere on the photo (but not its nav controls) opens the product page.
+    card.querySelector('.product-photo').addEventListener('click', (e) => {
+      if (e.target.closest('.photo-nav')) return;
+      window.location.hash = `product-${i}`;
+    });
+  });
+
+  // ---- Build detail sections (one per product, hidden until routed to) ----
+  const detailView = document.getElementById('detail-view');
+
+  PRODUCTS.forEach((p, i) => {
+    const section = document.createElement('section');
+
+    const sizeChipsHtml = p.sizes
+      ? `<p class="detail-section-label">Size</p>
+         <div class="size-chips" role="group" aria-label="Select a size">
+           ${p.sizes.map((s, si) => `<button type="button" class="size-chip" aria-pressed="${si === 0}">${s}</button>`).join('')}
+         </div>`
+      : '';
+
+    const sizeGuideHtml = p.sizeGuide
+      ? `<p class="detail-section-label">Size guide</p>
+         <table class="size-guide">
+           <thead><tr><th>Size</th><th>Measurement</th><th>Length</th></tr></thead>
+           <tbody>
+             ${p.sizeGuide.map(row => `<tr><td>${row.size}</td><td>${row.chest}</td><td>${row.length}</td></tr>`).join('')}
+           </tbody>
+         </table>`
+      : '';
+
+    section.className = 'product-detail-page';
+    section.hidden = true;
+    section.id = `detail-${i}`;
+    section.innerHTML = `
+      <button class="detail-back" type="button">← Back to shop</button>
+      <div class="product-detail">
+        <div class="detail-photo">${buildGalleryHtml(p, 'detail-' + i)}</div>
+        <div class="detail-info">
+          <span class="eyebrow">${p.category}</span>
+          <h2>${p.name}</h2>
+          <p class="detail-price">${p.price}</p>
+          <p class="detail-desc">${p.details || p.description}</p>
+          ${sizeChipsHtml}
+          ${sizeGuideHtml}
+          <div class="buy-mount detail-buy-mount" id="buy-mount-detail-${i}"></div>
+        </div>
+      </div>
+    `;
+
+    detailView.appendChild(section);
+
+    if (!isConfigured || p.id.startsWith('REPLACE_WITH')) {
+      document.getElementById(`buy-mount-detail-${i}`).innerHTML =
+        `<div class="not-connected">Connect Shopify to enable checkout for this item</div>`;
+    }
+
+    wireGallery(section.querySelector('.detail-photo'), p.images.length);
+
+    section.querySelector('.detail-back').addEventListener('click', () => {
+      window.location.hash = '';
+    });
+
+    // Cosmetic size selection (visual state only — real variant/size selection for
+    // checkout comes from Shopify's own option control rendered in the buy-mount below).
+    section.querySelectorAll('.size-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        section.querySelectorAll('.size-chip').forEach(c => c.setAttribute('aria-pressed', 'false'));
+        chip.setAttribute('aria-pressed', 'true');
+      });
+    });
+  });
+
+  const gridView = document.getElementById('grid-view');
+
+  function showGrid() {
+    gridView.hidden = false;
+    detailView.hidden = true;
+    detailView.querySelectorAll('.product-detail-page').forEach(s => { s.hidden = true; });
+  }
+
+  function showDetail(index) {
+    const section = document.getElementById(`detail-${index}`);
+    if (!section) { showGrid(); return; }
+    gridView.hidden = true;
+    detailView.hidden = false;
+    detailView.querySelectorAll('.product-detail-page').forEach(s => { s.hidden = true; });
+    section.hidden = false;
+    window.scrollTo({ top: 0 });
+  }
+
+  function route() {
+    const match = window.location.hash.match(/^#product-(\d+)$/);
+    if (match) {
+      showDetail(Number(match[1]));
+    } else {
+      showGrid();
+    }
+  }
+
+  window.addEventListener('hashchange', route);
+  route();
+
+  /* ==========================================================================
+     4. Shopify Buy Button — only runs once real config + product IDs are in.
+        Renders just the "add to cart" control inside each buy-mount div
+        (photo/name/price/description above are our own custom markup), plus
+        one shared floating cart in #cart-mount.
+     ========================================================================== */
+  if (!isConfigured) return;
+
+  const client = ShopifyBuy.buildClient({
+    domain: SHOPIFY_CONFIG.domain,
+    storefrontAccessToken: SHOPIFY_CONFIG.storefrontAccessToken,
+  });
+
+  ShopifyBuy.UI.onReady(client).then(function (ui) {
+
+    ui.createComponent('cart', {
+      node: document.getElementById('cart-mount'),
+      options: {
+        cart: {
+          styles: {
+            footer: { 'background-color': '#F7F7F5' }
+          },
+          text: { total: 'Subtotal', button: 'Checkout' }
+        },
+        toggle: {
+          styles: {
+            toggle: {
+              'background-color': '#16181B',
+              ':hover': { 'background-color': '#2A2D33' },
+              'font-family': "'Inter', sans-serif",
+              'font-weight': '600'
+            }
+          }
+        }
+      }
+    });
+
+    PRODUCTS.forEach((p, i) => {
+      if (p.id.startsWith('REPLACE_WITH')) return;
+
+      // Grid card: compact "quick add" button, no variant picker.
+      ui.createComponent('product', {
+        id: p.id,
+        node: document.getElementById(`buy-mount-${i}`),
+        moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
+        options: {
+          product: {
+            iframe: false,
+            contents: { img: false, title: false, price: false, options: false },
+            width: '100%',
+            styles: {
+              button: {
+                'background-color': '#16181B',
+                'font-family': "'Inter', sans-serif",
+                'font-weight': '600',
+                'font-size': '14px',
+                'padding-top': '11px',
+                'padding-bottom': '11px',
+                'border-radius': '8px',
+                ':hover': { 'background-color': '#2A2D33' },
+                ':focus': { 'background-color': '#2A2D33' }
+              }
+            },
+            buttonDestination: 'cart',
+            text: { button: 'Add to cart' }
+          }
+        }
+      });
+
+      // Detail page: full variant/size picker (Shopify's own option control) + add to cart.
+      ui.createComponent('product', {
+        id: p.id,
+        node: document.getElementById(`buy-mount-detail-${i}`),
+        moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
+        options: {
+          product: {
+            iframe: false,
+            contents: { img: false, title: false, price: false, options: true },
+            width: '100%',
+            styles: {
+              button: {
+                'background-color': '#16181B',
+                'font-family': "'Inter', sans-serif",
+                'font-weight': '600',
+                'font-size': '14px',
+                'padding-top': '11px',
+                'padding-bottom': '11px',
+                'border-radius': '8px',
+                ':hover': { 'background-color': '#2A2D33' },
+                ':focus': { 'background-color': '#2A2D33' }
+              }
+            },
+            buttonDestination: 'cart',
+            text: { button: 'Add to cart' }
+          }
+        }
+      });
+    });
+  });
+
+})();
+</script>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
