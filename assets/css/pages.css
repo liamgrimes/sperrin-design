@@ -24,14 +24,15 @@
 .storefront-main {
     width: min(var(--max-width), 90%);
     margin: 0 auto;
-    padding-top: var(--space-md);
+    padding-top: var(--space-sm);
 }
 
 .store-wrap { width: 100%; }
 
 /* Hero */
 .store-hero {
-    padding: var(--space-md) 0;
+    padding: var(--space-sm) 0 var(--space-md);
+    margin-bottom: var(--space-sm);
     border-bottom: var(--border-light);
 }
 .store-hero .eyebrow {
@@ -79,7 +80,7 @@
     display: flex;
     gap: var(--space-xs);
     flex-wrap: wrap;
-    padding: var(--space-md) 0;
+    padding: var(--space-sm) 0;
 }
 
 .store-grid {

@@ -25,7 +25,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
   {
     id: 'REPLACE_WITH_PRODUCT_ID_2',
     name: 'Blue Celtic Trousers',
-    category: 'Tops',
+    category: 'Trousers',
     price: '#TODO',
     description: '#TODO',
     details: '#TODO',
