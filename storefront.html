@@ -1,0 +1,80 @@
+<!--
+  SETUP — do these steps once the Shopify store exists:
+  1. Create a Shopify store (any plan that includes "Buy Button" works — ideally Lite plan for £9 monthly).
+  2. In Shopify Admin, go to Sales channels → add the "Buy Button" channel.
+  3. In Settings → Apps and sales channels → Buy Button → Manage,
+     generate a Storefront API access token if one isn't shown to you
+     automatically when you create your first buy button.
+     (This token is a PUBLIC, unauthenticated Storefront API token — it is
+     designed to be embedded in client-side JS like this. It cannot access
+     orders, customers, or your admin — it only reads product data and
+     creates checkouts. It is not a secret key.)
+  4. Find your store domain — it looks like: your-store.myshopify.com
+  5. For each product, grab its numeric Product ID:
+     Admin → Products → open a product → the ID is in the URL
+     (.../products/1234567890).
+  6. Fill in SHOPIFY_CONFIG and the PRODUCTS array below with your real
+     domain, token, product IDs, names, prices, descriptions and photos.
+  ============================================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Storefront | Sperrin Design</title>
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<div data-site-header></div>
+
+<main class="storefront-main">
+<div class="store-wrap" id="grid-view">
+  <section class="store-hero">
+    <span class="eyebrow">New arrivals</span>
+     <h1>Irish fashion,</h1>
+    <h1><span class="accent-underline">made to last</span>.</h1>
+    <p>Sperrin's recent designs — in stock and ready to ship to their new home. Every order is checked out securely through Shopify.</p>
+  </section>
+
+  <nav class="store-filters" id="filters" aria-label="Filter products by category">
+    <!-- Populated by JS from PRODUCTS categories -->
+  </nav>
+
+  <section class="store-grid" id="product-grid" aria-live="polite">
+    <!-- Product cards injected by JS -->
+  </section>
+</div>
+
+<div class="store-wrap" id="detail-view" hidden>
+  <!-- Individual product detail sections injected by JS, one per product, toggled by hash routing -->
+</div>
+
+</main>
+
+<div data-site-footer-note class="store-footnote">
+  Prices shown in GBP. Delivery address and payment are collected securely by Shopify at checkout — this page never stores or sees your card details.
+</div>
+<div data-site-footer></div>
+
+<!-- Shopify's cart drawer mounts here, fixed bottom-right -->
+<div id="cart-mount"></div>
+
+<div class="zoom-modal" id="zoom-modal" hidden>
+  <div class="zoom-stage" id="zoom-stage" aria-hidden="true">
+    <button class="zoom-nav prev" id="zoom-prev" type="button" aria-label="Previous image">‹</button>
+    <button class="zoom-nav next" id="zoom-next" type="button" aria-label="Next image">›</button>
+    <button class="zoom-close" id="zoom-close" type="button" aria-label="Close image">×</button>
+    <span class="zoom-counter" id="zoom-counter">1 / 1</span>
+    <img id="zoom-image" alt="Enlarged product image">
+  </div>
+</div>
+
+<script src="https://sdks.shopifycdn.com/buy-button/latest/buybutton.min.js"></script>
+<script src="assets/js/storefront-data.js"></script>
+<script src="assets/js/storefront.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

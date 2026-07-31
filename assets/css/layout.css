@@ -11,6 +11,13 @@ footer {
     padding: var(--space-md);
 }
 
+.site-header,
+.site-footer,
+main {
+    width: min(var(--max-width), 90%);
+    margin: 0 auto;
+}
+
 main {
     padding: var(--space-lg) var(--space-md);
 }
@@ -35,9 +42,16 @@ header {
 
 /* Logo */
 
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 .logo img {
     width: 220px;
     height: auto;
+    display: block;
 }
 
 /* Navigation */
