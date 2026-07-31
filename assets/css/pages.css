@@ -16,3 +16,107 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+/* ============================================
+   Storefront page
+   ============================================ */
+
+.storefront-main {
+    width: min(var(--max-width), 90%);
+    margin: 0 auto;
+    padding-top: var(--space-md);
+}
+
+.store-wrap { width: 100%; }
+
+/* Hero */
+.store-hero {
+    padding: var(--space-md) 0;
+    border-bottom: var(--border-light);
+}
+.store-hero .eyebrow {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+    display: inline-block;
+    margin-bottom: var(--space-xs);
+}
+.store-hero h1 {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    line-height: 1.1;
+    margin: 0 0 var(--space-sm);
+    max-width: 20ch;
+}
+.store-hero p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-muted);
+    max-width: 52ch;
+    margin: 0;
+}
+.store-hero .accent-underline {
+    display: inline-block;
+    position: relative;
+}
+.store-hero .accent-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2px;
+    height: 8px;
+    background: var(--color-linen);
+    opacity: 0.7;
+    z-index: -1;
+}
+
+/* Filters and grid */
+.store-filters {
+    display: flex;
+    gap: var(--space-xs);
+    flex-wrap: wrap;
+    padding: var(--space-md) 0;
+}
+
+.store-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+    padding: var(--space-sm) 0 var(--space-xl);
+}
+@media (max-width: 900px) {
+    .store-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 620px) {
+    .store-grid { grid-template-columns: 1fr; }
+    .store-hero { padding: var(--space-md) 0 var(--space-sm); }
+}
+
+/* Floating cart */
+#cart-mount {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 999;
+}
+@media (max-width: 767px) {
+    #cart-mount {
+        right: 12px;
+        bottom: 12px;
+    }
+}
+
+/* Footer note */
+.store-footnote {
+    padding: 0 0 var(--space-lg);
+    font-size: 0.85rem;
+    color: var(--color-muted);
+}
+footer .store-footnote {
+    max-width: min(var(--max-width), 90%);
+    margin: 0 auto;
+}
