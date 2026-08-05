@@ -402,3 +402,65 @@
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 }
 .zoom-close:hover { background: #fff; }
+
+/* ------------------------------------------------
+   collections
+   ------------------------------------------------ */
+
+.collections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-lg);
+}
+
+.collection-card {
+    background: var(--color-warm-white);
+    overflow: hidden;
+}
+
+.collection-cover {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+}
+
+.collection-body {
+    padding: var(--space-md);
+}
+
+.collection-body h2 {
+    margin-bottom: var(--space-sm);
+}
+
+.collection-body p {
+    color: var(--color-muted);
+}
+
+/* ------------------------------------------------
+   collection page
+   ------------------------------------------------ */
+
+.collection-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-lg);
+}
+
+.collection-piece {
+    background: var(--color-warm-white);
+    overflow: hidden;
+}
+
+.collection-piece img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.piece-info {
+    padding: var(--space-md);
+}

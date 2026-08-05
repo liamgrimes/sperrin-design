@@ -1,41 +1,163 @@
-document.addEventListener("DOMContentLoaded", loadCollections);
+/*
+    Sperrin Design - Collections
+
+    Handles:
+    - Collections overview page
+    - Individual collection pages
+    - Collection cards
+    - Collection piece cards
+*/
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    loadCollections();
+    loadCollectionPage();
+});
+
+
+// ------------------------------------------------
+// Collections overview page
+// ------------------------------------------------
 
 function loadCollections() {
-  const grid = document.querySelector("#collection-grid");
 
-  if (!grid) return;
+    const grid = document.querySelector("#collections-grid");
 
-  const collections = window.SPERRIN_COLLECTIONS.COLLECTIONS;
-  const collection = collections.find(item => item.slug === "fw25");
+    if (!grid) return;
 
-  if (!collection) {
-    console.error("Collection not found");
-    return;
-  }
 
-  collection.pieces.forEach(piece => {
-    grid.appendChild(createPieceCard(piece));
-  });
+    window.SPERRIN_COLLECTIONS.COLLECTIONS.forEach(collection => {
+        grid.appendChild(createCollectionCard(collection));
+    });
 }
 
+
+// Creates collection preview cards
+
+function createCollectionCard(collection) {
+
+    const article = document.createElement("article");
+
+    article.className = "collection-card";
+
+
+    article.innerHTML = `
+        <img
+            src="${collection.coverImage}"
+            alt="${collection.name}"
+            class="collection-cover"
+        >
+
+        <div class="collection-body">
+
+            <h2>${collection.name}</h2>
+
+            <p>
+                ${collection.description}
+            </p>
+
+            <button class="collection-button">
+                View Collection
+            </button>
+
+        </div>
+    `;
+
+
+    article
+        .querySelector("button")
+        .addEventListener("click", () => {
+
+            window.location.href =
+                `collection.html?collection=${collection.slug}`;
+
+        });
+
+
+    return article;
+}
+
+
+// ------------------------------------------------
+// Individual collection page
+// ------------------------------------------------
+
+function loadCollectionPage() {
+
+    const gallery = document.querySelector("#collection-gallery");
+
+    if (!gallery) return;
+
+
+    const params = new URLSearchParams(
+        window.location.search
+    );
+
+
+    const slug = params.get("collection");
+
+
+    const collection =
+        window.SPERRIN_COLLECTIONS.COLLECTIONS.find(
+            item => item.slug === slug
+        );
+
+
+    if (!collection) return;
+
+
+    document.querySelector("#collection-title").textContent =
+        collection.name;
+
+
+    document.querySelector("#collection-description").textContent =
+        collection.description;
+
+
+    collection.pieces.forEach(piece => {
+
+        gallery.appendChild(
+            createPieceCard(piece)
+        );
+
+    });
+}
+
+
+// Creates individual piece cards
+
 function createPieceCard(piece) {
-  const article = document.createElement("article");
-  article.className = "product-card";
 
-  article.innerHTML = `
-    <div class="product-photo">
-      <img 
-        src="${piece.images[0]}" 
-        alt="${piece.name}"
-        loading="lazy"
-      >
-    </div>
+    const article = document.createElement("article");
 
-    <div class="product-body">
-      <h2 class="product-name">${piece.name}</h2>
-      <p class="product-desc">${piece.description}</p>
-    </div>
-  `;
+    article.className = "collection-piece";
 
-  return article;
+
+    article.innerHTML = `
+        <img
+            src="${piece.images[0]}"
+            alt="${piece.name}"
+        >
+
+        <div class="piece-info">
+
+            <h2>${piece.name}</h2>
+
+            <p>
+                ${piece.description}
+            </p>
+
+            <p>
+                Photographer: ${piece.photographer}
+            </p>
+
+            <p>
+                Model: ${piece.model}
+            </p>
+
+        </div>
+    `;
+
+
+    return article;
 }
