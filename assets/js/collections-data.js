@@ -8,30 +8,33 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
     coverImage: "assets/images/collections/fw25/low-angle-group.JPG",
 
     pieces: [
-      {
+    {
         name: "Double Denim",
         images: [
-          "assets/images/Collections/fw25/bw-double-denim-1.JPEG"
+            "assets/images/Collections/fw25/bw-double-denim-1.JPEG",
+            "assets/images/Collections/fw25/bw-double-denim-2.PNG"
         ],
         description: "Collection piece from FW25.",
         photographer: "TBC",
         model: "Luke",
         available: false,
         storeLink: ""
-      },
+    },
 
-      {
+    {
         name: "Gothic Ogham",
         images: [
-          "assets/images/Collections/fw25/bw-gothic-ogham.jpg"
+            "assets/images/Collections/fw25/bw-gothic-ogham.jpg",
+            "assets/images/Collections/fw25/gothic-ogham-1.JPG",
+            "assets/images/Collections/fw25/gothic-ogham-2.JPG"
         ],
         description: "Collection piece from FW25.",
         photographer: "TBC",
         model: "Kathryn Nelson",
         available: false,
         storeLink: ""
-      }
-    ]
+    }
+]
   },
   
   {
