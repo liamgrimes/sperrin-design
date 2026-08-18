@@ -7,8 +7,8 @@
     - Collection cards
     - Collection piece galleries
     - Image navigation
+    - Editorial / campaign images
 */
-
 
 document.addEventListener("DOMContentLoaded", () => {
     loadCollections();
@@ -45,7 +45,6 @@ function createCollectionCard(collection) {
 
         <div class="collection-body">
             <h2>${collection.name}</h2>
-
             <p>${collection.description}</p>
 
             <button class="collection-button">
@@ -74,10 +73,9 @@ function loadCollectionPage() {
     const params = new URLSearchParams(window.location.search);
     const slug = params.get("collection");
 
-    const collection =
-        window.SPERRIN_COLLECTIONS.COLLECTIONS.find(
-            item => item.slug === slug
-        );
+    const collection = window.SPERRIN_COLLECTIONS.COLLECTIONS.find(
+        item => item.slug === slug
+    );
 
     if (!collection) return;
 
@@ -87,9 +85,45 @@ function loadCollectionPage() {
     document.querySelector("#collection-description").textContent =
         collection.description;
 
+    // Outfit grid
+    const outfitGrid = document.createElement("div");
+    outfitGrid.className = "collection-outfits";
+
     collection.pieces.forEach(piece => {
-        gallery.appendChild(createPieceCard(piece));
+        outfitGrid.appendChild(createPieceCard(piece));
     });
+
+    gallery.appendChild(outfitGrid);
+
+    // Editorial section
+    if (collection.editorial && collection.editorial.length) {
+        const editorialSection = document.createElement("section");
+        editorialSection.className = "collection-editorial-section";
+
+        editorialSection.innerHTML = `
+            <div class="editorial-heading">
+                <h2>Editorial</h2>
+                <p>FW25 campaign photography.</p>
+            </div>
+
+            <div class="collection-editorial"></div>
+        `;
+
+        const editorialGrid =
+            editorialSection.querySelector(".collection-editorial");
+
+        collection.editorial.forEach(image => {
+            const img = document.createElement("img");
+
+            img.src = image;
+            img.alt = `${collection.name} editorial`;
+            img.loading = "lazy";
+
+            editorialGrid.appendChild(img);
+        });
+
+        gallery.appendChild(editorialSection);
+    }
 }
 
 
@@ -119,7 +153,10 @@ function createPieceCard(piece) {
         </div>
     `;
 
-    wireGallery(article.querySelector(".product-photo"), piece.images.length);
+    wireGallery(
+        article.querySelector(".product-photo"),
+        piece.images.length
+    );
 
     return article;
 }
@@ -235,7 +272,10 @@ function wireGallery(root, count) {
             );
 
             dots.forEach((dot, index) => {
-                dot.classList.toggle("active", index === current);
+                dot.classList.toggle(
+                    "active",
+                    index === current
+                );
             });
         }, 60);
     });
