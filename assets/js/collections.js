@@ -46,14 +46,10 @@ function createCollectionCard(collection) {
         <div class="collection-body">
             <h2>${collection.name}</h2>
             <p>${collection.description}</p>
-
-            <button class="collection-button">
-                View Collection
-            </button>
         </div>
     `;
 
-    article.querySelector("button").addEventListener("click", () => {
+    article.addEventListener("click", () => {
         window.location.href =
             `collection.html?collection=${collection.slug}`;
     });
