@@ -125,8 +125,8 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                     "assets/images/collections/festival-szn/culottes.JPEG"
                 ],
                 description: "Collection piece from Festival Szn.",
-                photographer: "Broinnínn Devlin",
-                model: "TBC",
+                photographer: "TBC ",
+                model: "Broinnínn Devlin",
                 available: false,
                 storeLink: ""
             },
@@ -251,19 +251,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 ],
                 description: "",
                 photographer: "TBC",
-                model: "TBC",
-                available: false,
-                storeLink: ""
-            },
-
-            {
-                name: "Outfit 5",
-                images: [
-                    "assets/images/collections/SS26/CF4C54C5-7977-4C20-9E84-8691FD248A3C.JPEG"
-                ],
-                description: "",
-                photographer: "TBC",
-                model: "TBC",
+                model: "Kathryn Nelson",
                 available: false,
                 storeLink: ""
             },
@@ -290,7 +278,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 ],
                 description: "",
                 photographer: "TBC",
-                model: "TBC",
+                model: "Broinnínn Devlin",
                 available: false,
                 storeLink: ""
             },
@@ -304,7 +292,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 ],
                 description: "",
                 photographer: "TBC",
-                model: "TBC",
+                model: "Broinnínn Devlin",
                 available: false,
                 storeLink: ""
             },
@@ -330,7 +318,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 ],
                 description: "",
                 photographer: "TBC",
-                model: "TBC",
+                model: "Victoria Crawford",
                 available: false,
                 storeLink: ""
             },
@@ -343,7 +331,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 ],
                 description: "",
                 photographer: "TBC",
-                model: "TBC",
+                model: "Kathryn Nelson",
                 available: false,
                 storeLink: ""
             }
@@ -407,7 +395,8 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
     {
         name: "Hunt Collection",
         slug: "hunt-collection",
-        cover: "assets/images/collections/Hunt Collection/IMG_3357.JPG",
+        description: "Liam, fix later",
+        coverImage: "assets/images/collections/Hunt Collection/IMG_3357.JPG",
 
         pieces: [
             {
