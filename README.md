@@ -1,7 +1,7 @@
 # Sperrin Design
 Sperrin Design Website
 
-Official website for Sperrin Design — a contemporary Irish fashion brand inspired by heritage, sustainability, craftsmanship, and slow fashion principles.
+Official website for Sperrin Design - a contemporary Irish fashion brand inspired by heritage, sustainability, craftsmanship, and slow fashion principles.
 
 Project Goals
 

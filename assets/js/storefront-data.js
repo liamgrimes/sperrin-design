@@ -14,11 +14,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     details: '#TODO',
     sizes: ['XS', 'S', 'M', 'L', 'XL'],
     sizeGuide: [
-      { size: 'XS', chest: '92cm', length: '68cm' },
-      { size: 'S', chest: '96cm', length: '70cm' },
-      { size: 'M', chest: '102cm', length: '72cm' },
-      { size: 'L', chest: '108cm', length: '74cm' },
-      { size: 'XL', chest: '114cm', length: '76cm' },
+      { size: 'XS', chest: '92cm', length: '68cm' }
     ],
     images: ['assets/images/Available_Pieces/Black Top Short/Black Sleeve Shorts SS26 Ruth.JPEG'],
   },
@@ -30,11 +26,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     description: '#TODO',
     details: '#TODO',
     sizeGuide: [
-      { size: '26', chest: 'Waist 66cm', length: '104cm' },
-      { size: '28', chest: 'Waist 71cm', length: '106cm' },
-      { size: '30', chest: 'Waist 76cm', length: '108cm' },
-      { size: '32', chest: 'Waist 81cm', length: '110cm' },
-      { size: '34', chest: 'Waist 86cm', length: '112cm' },
+      { size: '26', chest: 'Waist 66cm', length: '104cm' }
     ],
     images: [
       'assets/images/Available_Pieces/Blue Celtic White Trouser/Beach Blue Trouser Vic 3.webp',
@@ -51,9 +43,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     details: '#TODO',
     sizes: ['S', 'M', 'L'],
     sizeGuide: [
-      { size: 'S', chest: '94cm', length: '64cm' },
-      { size: 'M', chest: '100cm', length: '66cm' },
-      { size: 'L', chest: '106cm', length: '68cm' },
+      { size: 'S', chest: '94cm', length: '64cm' }
     ],
     images: ['assets/images/Available_Pieces/Dark Blue Tie Top Trouser/Blue Top Trouser Ziggy.JPEG'],
   },
@@ -66,10 +56,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     details: '#TODO',
     sizes: ['S', 'M', 'L', 'XL'],
     sizeGuide: [
-      { size: 'S', chest: '104cm', length: '66cm' },
-      { size: 'M', chest: '110cm', length: '68cm' },
-      { size: 'L', chest: '116cm', length: '70cm' },
-      { size: 'XL', chest: '122cm', length: '72cm' },
+      { size: 'S', chest: '104cm', length: '66cm' }
     ],
     images: [
       'assets/images/Available_Pieces/Denim Blue Gold Chain Top Trouser/Blue Top Trouser Fia.webp',
@@ -87,10 +74,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     details: '#TODO',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' },
-      { size: 'S', chest: 'Waist 68cm', length: '79cm' },
-      { size: 'M', chest: 'Waist 72cm', length: '80cm' },
-      { size: 'L', chest: 'Waist 78cm', length: '81cm' },
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
       'assets/images/Available_Pieces/Floral Sleeves Shorts/Green Floral Sleeve Short Paris.JPEG',
@@ -107,10 +91,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     details: '#TODO',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' },
-      { size: 'S', chest: 'Waist 68cm', length: '79cm' },
-      { size: 'M', chest: 'Waist 72cm', length: '80cm' },
-      { size: 'L', chest: 'Waist 78cm', length: '81cm' },
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
       'assets/images/Available_Pieces/Floral Trouser/Green Floral Trouser Ziggy 3.webp',
@@ -127,10 +108,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     details: '#TODO',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' },
-      { size: 'S', chest: 'Waist 68cm', length: '79cm' },
-      { size: 'M', chest: 'Waist 72cm', length: '80cm' },
-      { size: 'L', chest: 'Waist 78cm', length: '81cm' },
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
       'assets/images/Available_Pieces/Green Tapestry/BFS Green Tapestry Brooke.webp',
@@ -148,10 +126,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     details: '#TODO',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' },
-      { size: 'S', chest: 'Waist 68cm', length: '79cm' },
-      { size: 'M', chest: 'Waist 72cm', length: '80cm' },
-      { size: 'L', chest: 'Waist 78cm', length: '81cm' },
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
       'assets/images/Available_Pieces/Porcelain Top Trouser/Porcelain Top Trouser Freya.webp',
@@ -169,10 +144,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     details: '#TODO',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' },
-      { size: 'S', chest: 'Waist 68cm', length: '79cm' },
-      { size: 'M', chest: 'Waist 72cm', length: '80cm' },
-      { size: 'L', chest: 'Waist 78cm', length: '81cm' },
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
       'assets/images/Available_Pieces/Porcelain Trouser Brown Body/Brown Bodysuit Porcelain Shorts Eva 5.JPEG',
@@ -190,10 +162,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     details: '#TODO',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' },
-      { size: 'S', chest: 'Waist 68cm', length: '79cm' },
-      { size: 'M', chest: 'Waist 72cm', length: '80cm' },
-      { size: 'L', chest: 'Waist 78cm', length: '81cm' },
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
       'assets/images/Available_Pieces/Teal Dungaree/Teal Dungarees Ziggy 3.JPG',
@@ -211,10 +180,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     details: '#TODO',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' },
-      { size: 'S', chest: 'Waist 68cm', length: '79cm' },
-      { size: 'M', chest: 'Waist 72cm', length: '80cm' },
-      { size: 'L', chest: 'Waist 78cm', length: '81cm' },
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
       'assets/images/Available_Pieces/White Ribbon Top Blue Floral Trouser/BFS White Ribbon Trouser Ziggy 2.JPEG',
