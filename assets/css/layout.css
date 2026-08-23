@@ -107,3 +107,16 @@ footer {
 }
 
 }
+
+body {
+    background-image: url("../images/ogham-edit.png");
+    background-repeat: repeat-y;
+    background-position: left top;
+    background-size: 90px auto;
+
+    main,
+    header,
+    footer {
+        margin-left: 90px;
+}
+}
