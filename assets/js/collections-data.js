@@ -402,6 +402,123 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             "assets/images/collections/Na Tonnta Poirceallaín/056A0024.JPEG",
             "assets/images/collections/Na Tonnta Poirceallaín/056A0088.JPEG"
         ]
+    },
+
+    {
+        name: "Hunt Collection",
+        slug: "hunt-collection",
+        cover: "assets/images/collections/Hunt Collection/IMG_3357.JPG",
+
+        pieces: [
+            {
+            name: "Outfit 1",
+            images: [
+                "assets/images/collections/Hunt Collection/IMG_3194.JPG",
+                "assets/images/collections/Hunt Collection/IMG_3280.JPG",
+                "assets/images/collections/Hunt Collection/IMG_3357.JPG"
+            ]
+            },
+            {
+            name: "Outfit 2",
+            images: [
+                "assets/images/collections/Hunt Collection/IMG_3234.JPG",
+                "assets/images/collections/Hunt Collection/IMG_3207.JPG"
+            ]
+            },
+            {
+            name: "Outfit 3",
+            images: [
+                "assets/images/collections/Hunt Collection/IMG_3278.JPG",
+                "assets/images/collections/Hunt Collection/IMG_4823.JPG",
+                "assets/images/collections/Hunt Collection/IMG_4821.JPG"
+            ]
+            },
+            {
+            name: "Outfit 4",
+            images: [
+                "assets/images/collections/Hunt Collection/IMG_4292.JPG"
+            ]
+            },
+            {
+            name: "Outfit 5",
+            images: [
+                "assets/images/collections/Hunt Collection/IMG_4333.JPG",
+                "assets/images/collections/Hunt Collection/IMG_4306.JPG",
+                "assets/images/collections/Hunt Collection/IMG_4313.JPG",
+                "assets/images/collections/Hunt Collection/IMG_4318.JPG"
+            ]
+            },
+            {
+            name: "Outfit 6",
+            images: [
+                "assets/images/collections/Hunt Collection/IMG_4418.JPG",
+                "assets/images/collections/Hunt Collection/IMG_4423.JPG",
+                "assets/images/collections/Hunt Collection/IMG_4414.JPG",
+                "assets/images/collections/Hunt Collection/IMG_4814.JPG",
+                "assets/images/collections/Hunt Collection/IMG_4765.JPG",
+                "assets/images/collections/Hunt Collection/IMG_4771.JPG",
+                "assets/images/collections/Hunt Collection/IMG_4798.JPG"
+            ]
+            },
+            {
+            name: "Outfit 7",
+            images: [
+                "assets/images/collections/Hunt Collection/IMG_4475.JPG"
+            ]
+            },
+            {
+            name: "Outfit 8",
+            images: [
+                "assets/images/collections/Hunt Collection/IMG_4519.JPG",
+                "assets/images/collections/Hunt Collection/IMG_4514.JPG"
+            ]
+            },
+            {
+            name: "Outfit 9",
+            images: [
+                "assets/images/collections/Hunt Collection/IMG_4543.JPG",
+                "assets/images/collections/Hunt Collection/IMG_4837.JPG",
+                "assets/images/collections/Hunt Collection/IMG_4833.JPG"
+            ]
+            },
+            {
+            name: "Outfit 10",
+            images: [
+                "assets/images/collections/Hunt Collection/IMG_4598.JPG",
+                "assets/images/collections/Hunt Collection/IMG_4580.JPG",
+                "assets/images/collections/Hunt Collection/IMG_4582.JPG",
+                "assets/images/collections/Hunt Collection/IMG_4584.JPG",
+                "assets/images/collections/Hunt Collection/IMG_4592.JPG"
+            ]
+            },
+            {
+            name: "Outfit 11",
+            images: [
+                "assets/images/collections/Hunt Collection/IMG_4713.JPG",
+                "assets/images/collections/Hunt Collection/IMG_4689.JPG",
+                "assets/images/collections/Hunt Collection/IMG_4696.JPG",
+                "assets/images/collections/Hunt Collection/IMG_4734.JPG"
+            ]
+            },
+            {
+            name: "Outfit 12",
+            images: [
+                "assets/images/collections/Hunt Collection/IMG_4718.JPG",
+                "assets/images/collections/Hunt Collection/IMG_4721.JPG",
+                "assets/images/collections/Hunt Collection/IMG_4728.JPG"
+            ]
+            }
+        ],
+
+        editorial: [
+            "assets/images/collections/Hunt Collection/IMG_4573.JPG",
+            "assets/images/collections/Hunt Collection/IMG_4848.JPG",
+            "assets/images/collections/Hunt Collection/IMG_4355.JPG",
+            "assets/images/collections/Hunt Collection/IMG_4366.JPG",
+            "assets/images/collections/Hunt Collection/IMG_4399.JPG",
+            "assets/images/collections/Hunt Collection/IMG_4528.JPG",
+            "assets/images/collections/Hunt Collection/IMG_4538.JPG"
+        ]
     }
 
 ];
