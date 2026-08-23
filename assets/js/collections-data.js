@@ -59,6 +59,34 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
     },
 
     {
+        name: "Vogue Editorial",
+        slug: "vogue-editorial",
+        description: "Sperrin Design featured in a Vogue shoot with Saoirse-Monica Jackson.",
+        coverImage: "assets/images/collections/Saoirse/IMG_9071.JPG",
+
+        pieces: [],
+
+        editorial: [
+            "assets/images/collections/Saoirse/IMG_9372.JPG",
+            "assets/images/collections/Saoirse/IMG_9375.JPG",
+            "assets/images/collections/Saoirse/IMG_9380.JPG",
+            "assets/images/collections/Saoirse/IMG_9383.JPG",
+            "assets/images/collections/Saoirse/IMG_9384.JPG",
+            "assets/images/collections/Saoirse/IMG_9386.JPG",
+            "assets/images/collections/Saoirse/IMG_9048.JPG",
+            "assets/images/collections/Saoirse/IMG_9071.JPG",
+            "assets/images/collections/Saoirse/IMG_9092.JPG",
+            "assets/images/collections/Saoirse/IMG_9111.JPG",
+            "assets/images/collections/Saoirse/IMG_9112.JPG",
+            "assets/images/collections/Saoirse/IMG_9117.JPG",
+            "assets/images/collections/Saoirse/IMG_9119.JPG",
+            "assets/images/collections/Saoirse/IMG_9121.JPG",
+            "assets/images/collections/Saoirse/IMG_9125.JPG",
+            "assets/images/collections/Saoirse/IMG_9142.JPG"
+        ]
+    },
+
+    {
         name: "Festival Szn",
         slug: "festival-szn",
         description: "Sperrin Design Festival Szn collection.",
@@ -164,7 +192,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             "assets/images/collections/festival-szn/alleyway-2-group.JPEG"
         ]
     },
-    
+
     {
         name: "SS26",
         slug: "ss26",
