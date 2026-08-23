@@ -364,6 +364,44 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             "assets/images/collections/SS26/35AF2D28-9018-41DA-AACD-1452CC502B27.JPEG",
             "assets/images/collections/SS26/60F30F47-2825-4D9A-83EB-5BA2E652A7C0.JPEG"
         ]
+    },
+
+    {
+        name: "Na Tonnta Poirceallaín",
+        slug: "na-tonnta-poirceallain",
+        description: "Sperrin Design editorial featuring Na Tonnta Poirceallaín.",
+        coverImage: "assets/images/collections/Na Tonnta Poirceallaín/056A0251.JPEG",
+
+        pieces: [],
+
+        models: [
+            "TBC",
+            "TBC"
+        ],
+
+        photographer: "TBC",
+
+        editorial: [
+            "assets/images/collections/Na Tonnta Poirceallaín/056A0134.JPEG",
+            "assets/images/collections/Na Tonnta Poirceallaín/056A0251.JPEG",
+            "assets/images/collections/Na Tonnta Poirceallaín/056A0301.JPEG",
+            "assets/images/collections/Na Tonnta Poirceallaín/056A9486.JPEG",
+            "assets/images/collections/Na Tonnta Poirceallaín/056A9500.JPEG",
+            "assets/images/collections/Na Tonnta Poirceallaín/056A9571.JPEG",
+            "assets/images/collections/Na Tonnta Poirceallaín/056A9608.JPEG",
+            "assets/images/collections/Na Tonnta Poirceallaín/056A9690.JPEG",
+            "assets/images/collections/Na Tonnta Poirceallaín/056A9761.JPEG",
+            "assets/images/collections/Na Tonnta Poirceallaín/056A9888.JPEG",
+            "assets/images/collections/Na Tonnta Poirceallaín/77E4534E-1C76-4907-AC93-692CC272A696.JPG",
+            "assets/images/collections/Na Tonnta Poirceallaín/4909299B-92A0-4B82-BE06-25F05D079121.JPG",
+            "assets/images/collections/Na Tonnta Poirceallaín/A1591406-7AE9-4ABA-8232-EC49136F1BDC.JPG",
+            "assets/images/collections/Na Tonnta Poirceallaín/IMG_1946.JPG",
+            "assets/images/collections/Na Tonnta Poirceallaín/IMG_6020.JPG",
+            "assets/images/collections/Na Tonnta Poirceallaín/IMG_6022.JPG",
+            "assets/images/collections/Na Tonnta Poirceallaín/IMG_6024.JPG",
+            "assets/images/collections/Na Tonnta Poirceallaín/056A0024.JPEG",
+            "assets/images/collections/Na Tonnta Poirceallaín/056A0088.JPEG"
+        ]
     }
 
 ];

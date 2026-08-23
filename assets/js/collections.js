@@ -82,14 +82,21 @@ function loadCollectionPage() {
         collection.description;
 
     // Outfit grid
-    const outfitGrid = document.createElement("div");
-    outfitGrid.className = "collection-outfits";
+    if (collection.pieces && collection.pieces.length > 0) {
+        const outfitGrid = document.createElement("div");
+        outfitGrid.className = "collection-outfits";
 
-    collection.pieces.forEach(piece => {
-        outfitGrid.appendChild(createPieceCard(piece));
-    });
+        collection.pieces.forEach(piece => {
+            outfitGrid.appendChild(createPieceCard(piece));
+        });
 
-    gallery.appendChild(outfitGrid);
+        gallery.appendChild(outfitGrid);
+    }
+
+        // Remove gallery spacing for editorial-only collections
+    if (!collection.pieces || collection.pieces.length === 0) {
+        gallery.classList.add("editorial-only");
+    }
 
     // Editorial section
     if (collection.editorial && collection.editorial.length) {
@@ -99,7 +106,7 @@ function loadCollectionPage() {
         editorialSection.innerHTML = `
             <div class="editorial-heading">
                 <h2>Editorial</h2>
-                <p>FW25 campaign photography.</p>
+                <p>Campaign photography.</p>
             </div>
 
             <div class="collection-editorial"></div>

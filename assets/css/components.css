@@ -455,6 +455,10 @@
     gap: var(--space-lg);
 }
 
+.collection-gallery.editorial-only {
+    margin-top: 0;
+}
+
 
 /* ------------------------------------------------
    Collection pieces
