@@ -16,22 +16,57 @@
   <h1>Contact</h1>
 
   <!-- CONTACT FORM -->
-  <section id="contact-form">
-    <h2>Get in touch</h2>
+ <section id="contact-form">
+  <h2>Get in touch</h2>
 
-    <form>
-      <label for="name">Name</label>
-      <input id="name" type="text" name="name" required />
+  <form id="contact-form-element">
+    <label for="name">Name</label>
+    <input id="name" type="text" name="name" required />
 
-      <label for="email">Email</label>
-      <input id="email" type="email" name="email" required />
+    <label for="email">Email</label>
+    <input id="email" type="email" name="email" required />
 
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
 
-      <button type="submit">Send</button>
-    </form>
-  </section>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<script>
+  const form = document.getElementById('contact-form-element');
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const payload = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      message: document.getElementById('message').value
+    };
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.message || 'Failed to send message');
+      }
+
+      alert('Message sent successfully.');
+      form.reset();
+    } catch (error) {
+      alert(error.message || 'Something went wrong.');
+    }
+  });
+</script>
 
   <!-- SOCIAL LINKS -->
   <section id="social-links">

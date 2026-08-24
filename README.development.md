@@ -25,3 +25,4 @@ In the current beta, GoDaddy Node.js Hosting allows 2 preview apps and 1 publish
     Render?
 -contact form posts to /api/contact
 -backend sends mail using GoDaddy SMTP credentials -->
+
