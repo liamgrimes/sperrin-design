@@ -162,7 +162,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                     "assets/images/collections/festival-season/hoodie-4.JPG"
                 ],
                 description: "Collection piece from Festival Season.",
-                photographer: ["Megan Hill", "Bryony Coles"],
+                photographer: ["Megan Hill", " Bryony Coles"],
                 model: ["Astrid", " Malak"],
                 available: false,
                 storeLink: ""
@@ -178,7 +178,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                     "assets/images/collections/festival-season/zip-up-y2k-5.JPG"
                 ],
                 description: "Collection piece from Festival Season.",
-                photographer: ["Sophie Maginn","Bryony Coles"],
+                photographer: ["Sophie Maginn"," Bryony Coles"],
                 model: ["Grace", " Anona"],
                 available: false,
                 storeLink: ""
@@ -221,7 +221,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
         name: "SS26",
         slug: "ss26",
         description: "Sperrin Design Spring Summer 2026 collection.",
-        coverImage: "assets/images/collections/SS26/DSCF1032.JPEG",
+        coverImage: "assets/images/collections/SS26/beach-group-3.JPEG",
 
         pieces: [
             {
@@ -230,8 +230,8 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                     "assets/images/collections/SS26/green-tapestry-trouser.JPEG"
                 ],
                 description: "",
-                photographer: ["Sophie Maginn", " Finn O'Neill"],
-                model: ["Ieva"],
+                photographer: ["Sophie Maginn"],
+                model: [""],
                 available: false,
                 storeLink: ""
             },
@@ -287,7 +287,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 ],
                 description: "",
                 photographer: "TBC",
-                model: ["Paris", "Rachel"],
+                model: ["Paris", " Rachel"],
                 available: false,
                 storeLink: ""
             },
