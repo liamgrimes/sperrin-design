@@ -30,7 +30,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 ],
                 description: "Collection piece from FW25.",
                 photographer: "Megan Hill",
-                model: "Kathryn Nelson",
+                model: "Kathryn ",
                 available: false,
                 storeLink: ""
             },
@@ -114,7 +114,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 ],
                 description: "Collection piece from Festival season.",
                 photographer: "Megan Hill",
-                model: "Kathryn Nelson",
+                model: "Kathryn ",
                 available: false,
                 storeLink: ""
             },
@@ -126,7 +126,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 ],
                 description: "Collection piece from Festival season.",
                 photographer: "Ollie",
-                model: "Broinnínn Devlin",
+                model: "Broinnínn ",
                 available: false,
                 storeLink: ""
             },
@@ -253,7 +253,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 ],
                 description: "",
                 photographer: "Sophie Maginn",
-                model: "Kathryn Nelson",
+                model: "Kathryn ",
                 available: false,
                 storeLink: ""
             },
@@ -320,7 +320,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 ],
                 description: "",
                 photographer: "Finn O'Neill",
-                model: "Victoria",
+                model: "Vic",
                 available: false,
                 storeLink: ""
             },
