@@ -9,41 +9,41 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
 
         pieces: [
             {
-                name: "Double Denim",
+                name: "Cargo Double Denim",
                 images: [
                     "assets/images/collections/fw25/bw-double-denim-1.JPEG",
                     "assets/images/collections/fw25/bw-double-denim-2.PNG"
                 ],
                 description: "Collection piece from FW25.",
-                photographer: "TBC",
-                model: "Luke",
+                photographer: ["Megan Hill"],
+                model: ["Luke"],
                 available: false,
                 storeLink: ""
             },
 
             {
-                name: "Gothic Ogham",
+                name: "Mythology Ogham",
                 images: [
                     "assets/images/collections/fw25/bw-gothic-ogham.jpg",
                     "assets/images/collections/fw25/gothic-ogham-1.JPG",
                     "assets/images/collections/fw25/gothic-ogham-2.JPG"
                 ],
                 description: "Collection piece from FW25.",
-                photographer: "TBC",
-                model: "Kathryn Nelson",
+                photographer: ["Megan Hill"],
+                model: ["Kathryn"],
                 available: false,
                 storeLink: ""
             },
 
             {
-                name: "Grunge Streetwear",
+                name: "Bean Sí Cargos",
                 images: [
                     "assets/images/collections/fw25/grunge-streetwear.PNG",
                     "assets/images/collections/fw25/grunge-streetwear-2.JPEG"
                 ],
                 description: "Collection piece from FW25.",
-                photographer: "TBC",
-                model: "Model 1",
+                photographer: ["Megan Hill"],
+                model: ["Lucy"],
                 available: false,
                 storeLink: ""
             }
@@ -87,99 +87,99 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
     },
 
     {
-        name: "Festival Szn",
-        slug: "festival-szn",
-        description: "Sperrin Design Festival Szn collection.",
-        coverImage: "assets/images/collections/festival-szn/cover-photo.JPG",
+        name: "Festival Season",
+        slug: "festival-season",
+        description: "Sperrin Design Festival Season collection.",
+        coverImage: "assets/images/collections/festival-season/cover-photo.JPG",
 
         pieces: [
             {
-                name: "Blouse & Whimsy Bloomers",
+                name: "Porcelain Blouse & Whimsy Bloomers",
                 images: [
-                    "assets/images/collections/festival-szn/blouse-whimsy-bloomer.JPG",
-                    "assets/images/collections/festival-szn/blouse-whimsy-bloomer-2.JPG",
-                    "assets/images/collections/festival-szn/blouse-whimsy-bloomer-3.webp",
-                    "assets/images/collections/festival-szn/blouse-whimsy-bloomer-4.webp",
-                    "assets/images/collections/festival-szn/blouse-whimsy-bloomer-5.webp",
-                    "assets/images/collections/festival-szn/blouse-whimsy-bloomer-6.webp"
+                    "assets/images/collections/festival-season/blouse-whimsy-bloomer.JPG",
+                    "assets/images/collections/festival-season/blouse-whimsy-bloomer-2.JPG",
+                    "assets/images/collections/festival-season/blouse-whimsy-bloomer-3.webp",
+                    "assets/images/collections/festival-season/blouse-whimsy-bloomer-4.webp",
+                    "assets/images/collections/festival-season/blouse-whimsy-bloomer-5.webp",
+                    "assets/images/collections/festival-season/blouse-whimsy-bloomer-6.webp"
                 ],
-                description: "Collection piece from Festival Szn.",
-                photographer: "TBC",
-                model: "TBC",
+                description: "Collection piece from Festival Season.",
+                photographer: ["Bryony Coles"],
+                model: ["Freya"],
                 available: false,
                 storeLink: ""
             },
 
             {
-                name: "Whimsy Blouse & Shorts",
+                name: "Whimsy Blouse & Porcelain Shorts",
                 images: [
 
-                    "assets/images/collections/festival-szn/whimsy-blouse-shorts.JPG",
-                    "assets/images/collections/festival-szn/whimsy-blouse-shorts-2.JPG"
+                    "assets/images/collections/festival-season/whimsy-blouse-shorts.JPG",
+                    "assets/images/collections/festival-season/whimsy-blouse-shorts-2.JPG"
                 ],
-                description: "Collection piece from Festival Szn.",
-                photographer: "TBC",
-                model: "Kathryn Nelson",
+                description: "Collection piece from Festival Season.",
+                photographer: ["Megan Hill"],
+                model: ["Kathryn"],
                 available: false,
                 storeLink: ""
             },
 
             {
-                name: "Culottes",
+                name: "Green Tapestry Culottes",
                 images: [
-                    "assets/images/collections/festival-szn/culottes.JPEG",
-                    "assets/images/collections/festival-szn/culottes2.webp",
-                    "assets/images/collections/festival-szn/culottes3.webp",
-                    "assets/images/collections/festival-szn/culottes4.webp"
+                    "assets/images/collections/festival-season/culottes.JPEG",
+                    "assets/images/collections/festival-season/culottes2.webp",
+                    "assets/images/collections/festival-season/culottes3.webp",
+                    "assets/images/collections/festival-season/culottes4.webp"
                 ],
-                description: "Collection piece from Festival Szn.",
-                photographer: "TBC ",
-                model: "Broinnínn Devlin",
+                description: "Collection piece from Festival Season.",
+                photographer: ["Ollie"],
+                model: ["Broinnínn"],
                 available: false,
                 storeLink: ""
             },
 
             {
-                name: "Double Denim Zip-Up",
+                name: "Denim Eyelet Jorts",
                 images: [
-                    "assets/images/collections/festival-szn/double-denim-zip-up.webp",
-                    "assets/images/collections/festival-szn/double-denim-zip-up-2.webp",
-                    "assets/images/collections/festival-szn/double-denim-zip-up-3.webp"
+                    "assets/images/collections/festival-season/double-denim-zip-up.webp",
+                    "assets/images/collections/festival-season/double-denim-zip-up-2.webp",
+                    "assets/images/collections/festival-season/double-denim-zip-up-3.webp"
                 ],
-                description: "Collection piece from Festival Szn.",
-                photographer: "TBC",
-                model: "TBC",
+                description: "Collection piece from Festival Season.",
+                photographer: ["Ollie"],
+                model: ["Fia"],
                 available: false,
                 storeLink: ""
             },
 
             {
-                name: "Hoodie",
+                name: "Hooded Play-suit",
                 images: [
-                    "assets/images/collections/festival-szn/hoodie.JPG",
-                    "assets/images/collections/festival-szn/hoodie-2.JPG",
-                    "assets/images/collections/festival-szn/hoodie-3.JPG",
-                    "assets/images/collections/festival-szn/hoodie-4.JPG"
+                    "assets/images/collections/festival-season/hoodie.JPG",
+                    "assets/images/collections/festival-season/hoodie-2.JPG",
+                    "assets/images/collections/festival-season/hoodie-3.JPG",
+                    "assets/images/collections/festival-season/hoodie-4.JPG"
                 ],
-                description: "Collection piece from Festival Szn.",
-                photographer: "TBC",
-                model: "TBC",
+                description: "Collection piece from Festival Season.",
+                photographer: ["Megan Hill", "Bryony Coles"],
+                model: ["Astrid", " Malak"],
                 available: false,
                 storeLink: ""
             },
 
             {
-                name: "Zip-Up Y2K",
+                name: "Denim Hunt Cargo",
                 images: [
-                    "assets/images/collections/festival-szn/zip-up-y2k-6.JPEG",
-                    "assets/images/collections/festival-szn/zip-up-y2k-2.JPG",
-                    "assets/images/collections/festival-szn/zip-up-y2k-3.JPG",
-                    "assets/images/collections/festival-szn/zip-up-y2k-4.JPG",
-                    "assets/images/collections/festival-szn/zip-up-y2k-5.JPG"
+                    "assets/images/collections/festival-season/zip-up-y2k-6.JPEG",
+                    "assets/images/collections/festival-season/zip-up-y2k-2.JPG",
+                    "assets/images/collections/festival-season/zip-up-y2k-3.JPG",
+                    "assets/images/collections/festival-season/zip-up-y2k-4.JPG",
+                    "assets/images/collections/festival-season/zip-up-y2k-5.JPG"
                 ],
-                description: "Collection piece from Festival Szn.",
-                photographer: "TBC",
-                model: "TBC",
+                description: "Collection piece from Festival Season.",
+                photographer: ["Sophie Maginn","Bryony Coles"],
+                model: ["Grace", " Anona"],
                 available: false,
                 storeLink: ""
             },
@@ -187,37 +187,35 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             {
                 name: "Teal Linen Dungarees",
                 images: [
-                    "assets/images/collections/festival-szn/teal-dungarees-3.JPG",
-                    "assets/images/collections/festival-szn/teal-dungarees-2.JPG",
-                    "assets/images/collections/festival-szn/teal-dungarees-4.JPG",
-                    "assets/images/collections/festival-szn/teal-dungarees-5.JPG"
+                    "assets/images/collections/festival-season/teal-dungarees-3.JPG",
+                    "assets/images/collections/festival-season/teal-dungarees-2.JPG",
+                    "assets/images/collections/festival-season/teal-dungarees-4.JPG",
+                    "assets/images/collections/festival-season/teal-dungarees-5.JPG"
                 ],
-                description: "Collection piece from Festival Szn.",
-                photographer: "TBC",
-                model: "Broinnínn Devlin",
+                description: "Collection piece from Festival Season.",
+                photographer: ["TBC"],
+                model: ["Broinnínn"],
                 available: false,
                 storeLink: ""
             }
         ],
 
         editorial: [
-            "assets/images/collections/festival-szn/cover-photo.JPG",
-
-            "assets/images/collections/festival-szn/skate-3-group.JPG",
-            "assets/images/collections/festival-szn/skate-3-group-2.JPG",
-            "assets/images/collections/festival-szn/skate-3-group-3.JPG",
-            "assets/images/collections/festival-szn/skate-3-group-4.JPG",
-
-            "assets/images/collections/festival-szn/skate-2-group.JPG",
-            "assets/images/collections/festival-szn/skate-2-group-2.JPG",
-            "assets/images/collections/festival-szn/skate-2-group-3.JPG",
-            "assets/images/collections/festival-szn/skate-2-group-4.JPG",
-
-            "assets/images/collections/festival-szn/skate-5-group.JPG",
-
-            "assets/images/collections/festival-szn/alleyway-2-group.JPEG"
+            "assets/images/collections/festival-season/cover-photo.JPG",
+            "assets/images/collections/festival-season/skate-3-group.JPG",
+            "assets/images/collections/festival-season/skate-3-group-2.JPG",
+            "assets/images/collections/festival-season/skate-3-group-3.JPG",
+            "assets/images/collections/festival-season/skate-3-group-4.JPG",
+            "assets/images/collections/festival-season/skate-2-group.JPG",
+            "assets/images/collections/festival-season/skate-2-group-2.JPG",
+            "assets/images/collections/festival-season/skate-2-group-3.JPG",
+            "assets/images/collections/festival-season/skate-2-group-4.JPG",
+            "assets/images/collections/festival-season/skate-5-group.JPG",
+            "assets/images/collections/festival-season/alleyway-2-group.JPEG"
         ]
     },
+
+    //Spring Summer 26
 
     {
         name: "SS26",
@@ -232,14 +230,14 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                     "assets/images/collections/SS26/green-tapestry-trouser.JPEG"
                 ],
                 description: "",
-                photographer: "TBC",
-                model: "TBC",
+                photographer: ["Sophie Maginn", " Finn O'Neill"],
+                model: ["Ieva"],
                 available: false,
                 storeLink: ""
             },
 
             {
-                name: "Y2K Zip Up & Thistle Trousers",
+                name: "Denim Hunt Zip Up & Thistle Trousers",
                 images: [
                     "assets/images/collections/SS26/thistle-flares-3.JPEG",
                     "assets/images/collections/SS26/thistle-flares.JPEG",
@@ -247,8 +245,8 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                     "assets/images/collections/SS26/thistle-flares-4.JPEG"
                 ],
                 description: "",
-                photographer: "TBC",
-                model: "TBC",
+                photographer: ["Sophie Maginn", " Finn O'Neill"],
+                model: ["Ieva"],
                 available: false,
                 storeLink: ""
             },
@@ -260,27 +258,27 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                     "assets/images/collections/SS26/errigal-2.JPEG"
                 ],
                 description: "",
-                photographer: "TBC",
-                model: "TBC",
+                photographer: ["Sophie Maginn"],
+                model: ["Ruth"],
                 available: false,
                 storeLink: ""
             },
 
             {
-                name: "Green Tapestry Top & Denim Eyelet Jorts",
+                name: "Green Tapestry & Denim Eyelet Jorts Pick N' Mix",
                 images: [
                     "assets/images/collections/SS26/green-tapestry-top-denim-jort-2.JPEG",
                     "assets/images/collections/SS26/green-tapestry-top-denim-jort.JPEG"
                 ],
                 description: "",
-                photographer: "TBC",
-                model: "Kathryn Nelson",
+                photographer: ["Sophie Maginn"],
+                model: ["Kathryn"],
                 available: false,
                 storeLink: ""
             },
 
             {
-                name: "Green Tapestry Sleeves & Shorts",
+                name: "Green Tapestry Set",
                 images: [
                     "assets/images/collections/SS26/green-tapestry-sleeve-short-2.JPEG",
                     "assets/images/collections/SS26/green-tapestry-sleeve-short-5.JPG",
@@ -289,7 +287,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 ],
                 description: "",
                 photographer: "TBC",
-                model: "Paris Campbell, Rachel",
+                model: ["Paris", "Rachel"],
                 available: false,
                 storeLink: ""
             },
@@ -309,8 +307,8 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
 
                 ],
                 description: "",
-                photographer: "TBC",
-                model: "TBC",
+                photographer: ["Sophie Maginn", " Jordan Picces"],
+                model: ["Paris", " Rachel"],
                 available: false,
                 storeLink: ""
             },
@@ -321,8 +319,8 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                     "assets/images/collections/SS26/herringbone-set.JPEG"
                 ],
                 description: "",
-                photographer: "TBC",
-                model: "Broinnínn Devlin",
+                photographer: ["Sophie Maginn"],
+                model: ["Broinnínn"],
                 available: false,
                 storeLink: ""
             },
@@ -335,8 +333,8 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                     "assets/images/collections/SS26/blue-blossom-culotte-3.webp"
                 ],
                 description: "",
-                photographer: "TBC",
-                model: "Broinnínn Devlin",
+                photographer: ["Chloe Jayne"],
+                model: ["Broinnínn"],
                 available: false,
                 storeLink: ""
             },
@@ -351,8 +349,8 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                     
                 ],
                 description: "",
-                photographer: "TBC",
-                model: "Victoria Crawford",
+                photographer: ["Finn O'Neill"],
+                model: ["Vic"],
                 available: false,
                 storeLink: ""
             },
@@ -366,8 +364,8 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                     "assets/images/collections/SS26/thistle-set-4.webp"
                 ],
                 description: "",
-                photographer: "TBC",
-                model: "Kathryn Nelson, Brooke Hatch", 
+                photographer: ["Finn O'Neill", " Jordan Picces"],
+                model: ["Kathryn", " Brook"],
                 available: false,
                 storeLink: ""
             }
@@ -389,6 +387,8 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             "assets/images/collections/SS26/BFS-Group-8.JPEG"
         ]
     },
+
+    //Na Tonnta Poirceallaín Collection
 
     {
         name: "Na Tonnta Poirceallaín",
@@ -428,6 +428,8 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
         ]
     },
 
+    //Hunt Collection
+
     {
         name: "Hunt Collection",
         slug: "hunt-collection",
@@ -441,29 +443,53 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 "assets/images/collections/Hunt Collection/IMG_3194.JPG",
                 "assets/images/collections/Hunt Collection/IMG_3280.JPG",
                 "assets/images/collections/Hunt Collection/IMG_3357.JPG"
-            ]
+            ],
+            description: "",
+            photographer: "Bryony Coles",
+            model: "TBC",
+            available: false,
+            storeLink: ""
             },
+
             {
             name: "Outfit 2",
             images: [
                 "assets/images/collections/Hunt Collection/IMG_3234.JPG",
                 "assets/images/collections/Hunt Collection/IMG_3207.JPG"
-            ]
+            ],
+            description: "",
+            photographer: "Bryony Coles",
+            model: "TBC",
+            available: false,
+            storeLink: ""
             },
+
             {
             name: "Outfit 3",
             images: [
                 "assets/images/collections/Hunt Collection/IMG_3278.JPG",
                 "assets/images/collections/Hunt Collection/IMG_4823.JPG",
                 "assets/images/collections/Hunt Collection/IMG_4821.JPG"
-            ]
+            ],
+            description: "",
+            photographer: ["Bryony Coles" ," Megan Hill"],
+            model: "TBC",
+            available: false,
+            storeLink: ""
             },
+
             {
             name: "Outfit 4",
             images: [
                 "assets/images/collections/Hunt Collection/IMG_4292.JPG"
-            ]
+            ],
+            description: "",
+            photographer: "Megan Hill",
+            model: "TBC",
+            available: false,
+            storeLink: ""
             },
+
             {
             name: "Outfit 5",
             images: [
@@ -471,8 +497,14 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 "assets/images/collections/Hunt Collection/IMG_4306.JPG",
                 "assets/images/collections/Hunt Collection/IMG_4313.JPG",
                 "assets/images/collections/Hunt Collection/IMG_4318.JPG"
-            ]
+            ],
+            description: "",
+            photographer: "Megan Hill",
+            model: "TBC",
+            available: false,
+            storeLink: ""
             },
+
             {
             name: "Outfit 6",
             images: [
@@ -483,29 +515,53 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 "assets/images/collections/Hunt Collection/IMG_4765.JPG",
                 "assets/images/collections/Hunt Collection/IMG_4771.JPG",
                 "assets/images/collections/Hunt Collection/IMG_4798.JPG"
-            ]
+            ],
+            description: "",
+            photographer: "Megan Hill",
+            model: "TBC",
+            available: false,
+            storeLink: ""
             },
+
             {
             name: "Outfit 7",
             images: [
                 "assets/images/collections/Hunt Collection/IMG_4475.JPG"
-            ]
+            ],
+            description: "",
+            photographer: "Megan Hill",
+            model: "TBC",
+            available: false,
+            storeLink: ""
             },
+
             {
             name: "Outfit 8",
             images: [
                 "assets/images/collections/Hunt Collection/IMG_4519.JPG",
                 "assets/images/collections/Hunt Collection/IMG_4514.JPG"
-            ]
+            ],
+            description: "",
+            photographer: "Megan Hill",
+            model: "TBC",
+            available: false,
+            storeLink: ""
             },
+
             {
             name: "Outfit 9",
             images: [
                 "assets/images/collections/Hunt Collection/IMG_4543.JPG",
                 "assets/images/collections/Hunt Collection/IMG_4837.JPG",
                 "assets/images/collections/Hunt Collection/IMG_4833.JPG"
-            ]
+            ],
+            description: "",
+            photographer: "Megan Hill",
+            model: "TBC",
+            available: false,
+            storeLink: ""
             },
+
             {
             name: "Outfit 10",
             images: [
@@ -514,8 +570,14 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 "assets/images/collections/Hunt Collection/IMG_4582.JPG",
                 "assets/images/collections/Hunt Collection/IMG_4584.JPG",
                 "assets/images/collections/Hunt Collection/IMG_4592.JPG"
-            ]
+            ],
+            description: "",
+            photographer: "Megan Hill",
+            model: "TBC",
+            available: false,
+            storeLink: ""
             },
+
             {
             name: "Outfit 11",
             images: [
@@ -523,15 +585,26 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 "assets/images/collections/Hunt Collection/IMG_4689.JPG",
                 "assets/images/collections/Hunt Collection/IMG_4696.JPG",
                 "assets/images/collections/Hunt Collection/IMG_4734.JPG"
-            ]
+            ],
+            description: "",
+            photographer: "Megan Hill",
+            model: "TBC",
+            available: false,
+            storeLink: ""
             },
+
             {
             name: "Outfit 12",
             images: [
                 "assets/images/collections/Hunt Collection/IMG_4718.JPG",
                 "assets/images/collections/Hunt Collection/IMG_4721.JPG",
                 "assets/images/collections/Hunt Collection/IMG_4728.JPG"
-            ]
+            ],
+            description: "",
+            photographer: "Megan Hill",
+            model: "TBC",
+            available: false,
+            storeLink: ""
             }
         ],
 
@@ -545,5 +618,4 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             "assets/images/collections/Hunt Collection/IMG_4538.JPG"
         ]
     }
-
 ];
