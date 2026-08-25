@@ -90,16 +90,16 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
         name: "Festival Season",
         slug: "festival-season",
         description: "Sperrin Design Festival Season collection.",
-        coverImage: "assets/images/collections/festival-szn/cover-photo.JPG",
+        coverImage: "assets/images/collections/festival-season/cover-photo.JPG",
 
         pieces: [
             {
                 name: "Porcelain Blouse & Whimsy Shorts",
                 images: [
-                    "assets/images/collections/festival-szn/blouse-whimsy-shorts.JPG",
-                    "assets/images/collections/festival-szn/blouse-whimsy-shorts-2.JPG"
+                    "assets/images/collections/festival-season/blouse-whimsy-shorts.JPG",
+                    "assets/images/collections/festival-season/blouse-whimsy-shorts-2.JPG"
                 ],
-                description: "Collection piece from Festival Szn.",
+                description: "Collection piece from Festival season.",
                 photographer: "Bryony Coles",
                 model: "Freya Marshall",
                 available: false,
@@ -109,10 +109,10 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             {
                 name: "Whimsy Blouse & Porcelain Shorts",
                 images: [
-                    "assets/images/collections/festival-szn/whimsy-blouse-shorts.JPG",
-                    "assets/images/collections/festival-szn/whimsy-blouse-shorts-2.JPG"
+                    "assets/images/collections/festival-season/whimsy-blouse-shorts.JPG",
+                    "assets/images/collections/festival-season/whimsy-blouse-shorts-2.JPG"
                 ],
-                description: "Collection piece from Festival Szn.",
+                description: "Collection piece from Festival season.",
                 photographer: "Megan Hill",
                 model: "Kathryn Nelson",
                 available: false,
@@ -122,9 +122,9 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             {
                 name: "Green Tapestry Culottes",
                 images: [
-                    "assets/images/collections/festival-szn/culottes.JPEG"
+                    "assets/images/collections/festival-season/culottes.JPEG"
                 ],
-                description: "Collection piece from Festival Szn.",
+                description: "Collection piece from Festival season.",
                 photographer: "Ollie",
                 model: "Broinnínn Devlin",
                 available: false,
@@ -134,9 +134,9 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             {
                 name: "Denim Eyelet Jorts",
                 images: [
-                    "assets/images/collections/festival-szn/double-denim-zip-up.JPEG"
+                    "assets/images/collections/festival-season/double-denim-zip-up.JPEG"
                 ],
-                description: "Collection piece from Festival Szn.",
+                description: "Collection piece from Festival season.",
                 photographer: "Ollie",
                 model: "Fia",
                 available: false,
@@ -146,12 +146,12 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             {
                 name: "Hooded Play-suit",
                 images: [
-                    "assets/images/collections/festival-szn/hoodie.JPG",
-                    "assets/images/collections/festival-szn/hoodie-2.JPG",
-                    "assets/images/collections/festival-szn/hoodie-3.JPG",
-                    "assets/images/collections/festival-szn/hoodie-4.JPG"
+                    "assets/images/collections/festival-season/hoodie.JPG",
+                    "assets/images/collections/festival-season/hoodie-2.JPG",
+                    "assets/images/collections/festival-season/hoodie-3.JPG",
+                    "assets/images/collections/festival-season/hoodie-4.JPG"
                 ],
-                description: "Collection piece from Festival Szn.",
+                description: "Collection piece from Festival season.",
                 photographer: ["Megan Hill", "Bryony Coles"],
                 model: ["Astrid", " Malak"],
                 available: false,
@@ -161,12 +161,12 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             {
                 name: "Denim Hunt Cargo",
                 images: [
-                    "assets/images/collections/festival-szn/zip-up-y2k.JPEG",
-                    "assets/images/collections/festival-szn/zip-up-y2k-2.JPG",
-                    "assets/images/collections/festival-szn/zip-up-y2k-3.JPG",
-                    "assets/images/collections/festival-szn/zip-up-y2k-4.JPG"
+                    "assets/images/collections/festival-season/zip-up-y2k.JPEG",
+                    "assets/images/collections/festival-season/zip-up-y2k-2.JPG",
+                    "assets/images/collections/festival-season/zip-up-y2k-3.JPG",
+                    "assets/images/collections/festival-season/zip-up-y2k-4.JPG"
                 ],
-                description: "Collection piece from Festival Szn.",
+                description: "Collection piece from Festival season.",
                 photographer: ["Sophie Maginn","Bryony Coles"],
                 model: ["Grace", " Anona"],
                 available: false,
@@ -175,23 +175,25 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
         ],
 
         editorial: [
-            "assets/images/collections/festival-szn/cover-photo.JPG",
+            "assets/images/collections/festival-season/cover-photo.JPG",
 
-            "assets/images/collections/festival-szn/skate-3-group.JPG",
-            "assets/images/collections/festival-szn/skate-3-group-2.JPG",
-            "assets/images/collections/festival-szn/skate-3-group-3.JPG",
-            "assets/images/collections/festival-szn/skate-3-group-4.JPG",
+            "assets/images/collections/festival-season/skate-3-group.JPG",
+            "assets/images/collections/festival-season/skate-3-group-2.JPG",
+            "assets/images/collections/festival-season/skate-3-group-3.JPG",
+            "assets/images/collections/festival-season/skate-3-group-4.JPG",
 
-            "assets/images/collections/festival-szn/skate-2-group.JPG",
-            "assets/images/collections/festival-szn/skate-2-group-2.JPG",
-            "assets/images/collections/festival-szn/skate-2-group-3.JPG",
-            "assets/images/collections/festival-szn/skate-2-group-4.JPG",
+            "assets/images/collections/festival-season/skate-2-group.JPG",
+            "assets/images/collections/festival-season/skate-2-group-2.JPG",
+            "assets/images/collections/festival-season/skate-2-group-3.JPG",
+            "assets/images/collections/festival-season/skate-2-group-4.JPG",
 
-            "assets/images/collections/festival-szn/skate-5-group.JPG",
+            "assets/images/collections/festival-season/skate-5-group.JPG",
 
-            "assets/images/collections/festival-szn/alleyway-2-group.JPEG"
+            "assets/images/collections/festival-season/alleyway-2-group.JPEG"
         ]
     },
+
+    //Spring Summer 26
 
     {
         name: "SS26",
@@ -354,6 +356,8 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
         ]
     },
 
+    //Na Tonnta Poirceallaín Collection
+
     {
         name: "Na Tonnta Poirceallaín",
         slug: "na-tonnta-poirceallain",
@@ -391,6 +395,8 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             "assets/images/collections/Na Tonnta Poirceallaín/056A0088.JPEG"
         ]
     },
+
+    //Hunt Collection
 
     {
         name: "Hunt Collection",
