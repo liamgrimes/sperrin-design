@@ -19,7 +19,10 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'M', chest: '98cm', length: '66cm' },
       { size: 'L', chest: '102cm', length: '68cm' }
     ],
-    images: ['assets/images/Available_Pieces/Black Top Short/Black Sleeve Shorts SS26 Ruth.JPEG'],
+    images: [
+      'assets/images/collections/SS26/errigal.JPEG',
+      'assets/images/collections/SS26/errigal-2.JPEG'
+    ],
   },
   {
     id: 'REPLACE_WITH_PRODUCT_ID_1',
@@ -35,7 +38,10 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'M', chest: '98cm', length: '66cm' },
       { size: 'L', chest: '102cm', length: '68cm' }
     ],
-    images: ['assets/images/Available_Pieces/Black Top Short/Black Sleeve Shorts SS26 Ruth.JPEG'],
+    images: [
+      'assets/images/collections/SS26/errigal.JPEG',
+      'assets/images/collections/SS26/errigal-2.JPEG'
+    ],
   },
   {
     id: 'REPLACE_WITH_PRODUCT_ID_2',
@@ -48,9 +54,9 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: '26', chest: 'Waist 66cm', length: '104cm' }
     ],
     images: [
-      'assets/images/Available_Pieces/Blue Celtic White Trouser/Beach Blue Trouser Vic 3.webp',
-      'assets/images/Available_Pieces/Blue Celtic White Trouser/Beach Blue Trouser Vic 2.webp',
-      'assets/images/Available_Pieces/Blue Celtic White Trouser/Beach Blue Trouser Vic.JPEG',
+      'assets/images/collections/SS26/grey-celtic-bloomers-3.webp',
+      'assets/images/collections/SS26/grey-celtic-bloomers-4.webp',
+      'assets/images/collections/SS26/grey-celtic-bloomers-2.JPEG',
     ],
   },
   {
@@ -64,7 +70,9 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     sizeGuide: [
       { size: 'S', chest: '94cm', length: '64cm' }
     ],
-    images: ['assets/images/Available_Pieces/Dark Blue Tie Top Trouser/Blue Top Trouser Ziggy.JPEG'],
+    images: [
+      'assets/images/collections/SS26/herringbone-set.JPEG'
+    ],
   },
   {
     id: 'REPLACE_WITH_PRODUCT_ID_3',
@@ -77,7 +85,9 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     sizeGuide: [
       { size: 'S', chest: '94cm', length: '64cm' }
     ],
-    images: ['assets/images/Available_Pieces/Dark Blue Tie Top Trouser/Blue Top Trouser Ziggy.JPEG'],
+    images: [
+      'assets/images/collections/SS26/herringbone-set.JPEG'
+    ],
   },
   {
     id: 'REPLACE_WITH_PRODUCT_ID_4',
@@ -91,9 +101,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'S', chest: '104cm', length: '66cm' }
     ],
     images: [
-      'assets/images/Available_Pieces/Denim Blue Gold Chain Top Trouser/Blue Top Trouser Fia 2.JPEG',
-      'assets/images/Available_Pieces/Denim Blue Gold Chain Top Trouser/Blue Top Trouser Fia 3.webp',
-      'assets/images/Available_Pieces/Denim Blue Gold Chain Top Trouser/Blue Top Trouser Fia 4.webp',
+      'assets/images/collections/festival-szn/double-denim-zip-up-top.JPEG'
     ],
   },
    {
@@ -108,9 +116,9 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'S', chest: '104cm', length: '66cm' }
     ],
     images: [
-      'assets/images/Available_Pieces/Denim Blue Gold Chain Top Trouser/Blue Top Trouser Fia.webp',
-      'assets/images/Available_Pieces/Denim Blue Gold Chain Top Trouser/Blue Top Trouser Fia 3.webp',
-      'assets/images/Available_Pieces/Denim Blue Gold Chain Top Trouser/Blue Top Trouser Fia 4.webp',
+      'assets/images/collections/festival-szn/double-denim-zip-up.webp',
+      'assets/images/collections/festival-szn/double-denim-zip-up-2.webp',
+      'assets/images/collections/festival-szn/double-denim-zip-up-3.webp'
     ],
   },
   {
@@ -125,9 +133,11 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
-      'assets/images/Available_Pieces/Floral Sleeves Shorts/Green Floral Sleeve Short Paris.JPEG',
-      'assets/images/Available_Pieces/Floral Sleeves Shorts/Green Floral Sleeve Short Rachel 2.webp',
-      'assets/images/Available_Pieces/Floral Sleeves Shorts/Green Floral Sleeve Short Rachel.webp',
+        'assets/images/collections/SS26/green-tapestry-sleeve-short-2.JPEG',
+        'assets/images/collections/SS26/green-tapestry-sleeve-short-5.JPG',
+        'assets/images/collections/SS26/green-tapestry-sleeve-short-6.JPG',
+        'assets/images/collections/SS26/green-tapestry-sleeve-short-3.webp',
+        'assets/images/collections/SS26/green-tapestry-sleeve-short-4.webp'
     ],
   },
   {
@@ -142,9 +152,11 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
-      'assets/images/Available_Pieces/Floral Sleeves Shorts/Green Floral Sleeve Short Paris.JPEG',
-      'assets/images/Available_Pieces/Floral Sleeves Shorts/Green Floral Sleeve Short Rachel 2.webp',
-      'assets/images/Available_Pieces/Floral Sleeves Shorts/Green Floral Sleeve Short Rachel.webp',
+      'assets/images/collections/SS26/green-tapestry-sleeve-short-2.JPEG',
+      'assets/images/collections/SS26/green-tapestry-sleeve-short-5.JPG',
+      'assets/images/collections/SS26/green-tapestry-sleeve-short-6.JPG',
+      'assets/images/collections/SS26/green-tapestry-sleeve-short-3.webp',
+      'assets/images/collections/SS26/green-tapestry-sleeve-short-4.webp'
     ],
   },
   {
@@ -159,9 +171,10 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
-      'assets/images/Available_Pieces/Floral Trouser/Green Floral Trouser Ziggy 3.webp',
-      'assets/images/Available_Pieces/Floral Trouser/Green Floral Trouser Ziggy 2.webp',
-      'assets/images/Available_Pieces/Floral Trouser/Green Floral Trouser Ziggy.webp',
+      'assets/images/collections/festival-szn/culottes.JPEG',
+      'assets/images/collections/festival-szn/culottes4.webp',
+      'assets/images/collections/festival-szn/culottes3.webp',
+      'assets/images/collections/festival-szn/culottes2.webp'
     ],
   },
   {
@@ -176,10 +189,10 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
-      'assets/images/Available_Pieces/Green Tapestry/Beach Green Tapestry Kat 3.webp',
-      'assets/images/Available_Pieces/Green Tapestry/BFS Green Tapestry Brooke.webp',
-      'assets/images/Available_Pieces/Green Tapestry/Beach Green Tapestry Kat 2.JPEG',
-      'assets/images/Available_Pieces/Green Tapestry/Beach Green Tapestry Kat.webp',
+      'assets/images/collections/SS26/thistle-set-4.webp',
+      'assets/images/collections/SS26/thistle-set-2.webp',
+      'assets/images/collections/SS26/thistle-set-3.webp',
+      'assets/images/collections/SS26/thistle-set.JPEG',
     ],
   },
   {
@@ -194,9 +207,9 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
-      'assets/images/Available_Pieces/Green Tapestry/BFS Green Tapestry Brooke.webp',
-      'assets/images/Available_Pieces/Green Tapestry/Beach Green Tapestry Kat 2.JPEG',
-      'assets/images/Available_Pieces/Green Tapestry/Beach Green Tapestry Kat.webp',
+      'assets/images/collections/SS26/thistle-set-2.webp',
+      'assets/images/collections/SS26/thistle-set-3.webp',
+      'assets/images/collections/SS26/thistle-set.JPEG',
     ],
   },
   {
@@ -211,10 +224,11 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
-      'assets/images/Available_Pieces/Porcelain Top Trouser/Porcelain Top Trouser Freya.webp',
-      'assets/images/Available_Pieces/Porcelain Top Trouser/Porcelain Top Sky Short Aoibhinn.webp',
-      'assets/images/Available_Pieces/Porcelain Top Trouser/Porcelain Top Trouser Freya 3.webp',
-      'assets/images/Available_Pieces/Porcelain Top Trouser/Porcelain Top Trouser Freya 4.webp',
+      'assets/images/collections/festival-szn/blouse-whimsy-bloomer-3.webp',
+      'assets/images/collections/festival-szn/blouse-whimsy-bloomer-2.JPG',
+      'assets/images/collections/festival-szn/blouse-whimsy-bloomer-4.webp',
+      'assets/images/collections/festival-szn/blouse-whimsy-bloomer-5.webp',
+      'assets/images/collections/festival-szn/blouse-whimsy-bloomer-6.webp',
     ],
   },
   {
@@ -229,10 +243,9 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
-      'assets/images/Available_Pieces/Porcelain Trouser Brown Body/Brown Bodysuit Porcelain Shorts Eva 5.JPEG',
-      'assets/images/Available_Pieces/Porcelain Trouser Brown Body/Brown Bodysuit Porcelain Shorts Eva 2.JPEG',
-      'assets/images/Available_Pieces/Porcelain Trouser Brown Body/Brown Bodysuit Porcelain Shorts Eva 3.JPEG',
-      'assets/images/Available_Pieces/Porcelain Trouser Brown Body/Brown Bodysuit Porcelain Shorts Eva 4.JPEG',
+      'assets/images/collections/festival-szn/whimsy-blouse-shorts.JPG',
+      'assets/images/collections/SS26/brown-corset-porcelain-shorts-3.JPEG',
+      'assets/images/collections/SS26/brown-corset-porcelain-shorts-6.JPEG'
     ],
   },
   {
@@ -247,10 +260,12 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
-      'assets/images/Available_Pieces/Porcelain Trouser Brown Body/Brown Bodysuit Porcelain Shorts Eva 5.JPEG',
-      'assets/images/Available_Pieces/Porcelain Trouser Brown Body/Brown Bodysuit Porcelain Shorts Eva 2.JPEG',
-      'assets/images/Available_Pieces/Porcelain Trouser Brown Body/Brown Bodysuit Porcelain Shorts Eva 3.JPEG',
-      'assets/images/Available_Pieces/Porcelain Trouser Brown Body/Brown Bodysuit Porcelain Shorts Eva 4.JPEG',
+      'assets/images/collections/SS26/brown-corset.JPEG',
+      'assets/images/collections/SS26/brown-corset-porcelain-shorts-5.JPEG',
+      'assets/images/collections/SS26/brown-corset-porcelain-shorts-4.JPEG',
+      'assets/images/collections/SS26/brown-corset-porcelain-shorts-8.JPEG',
+      'assets/images/collections/SS26/brown-corset-porcelain-shorts-6.JPEG',
+      'assets/images/collections/SS26/brown-corset-porcelain-shorts-7.JPEG'
     ],
   },
   {
@@ -265,10 +280,10 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
-      'assets/images/Available_Pieces/Teal Dungaree/Teal Dungarees Ziggy 3.JPG',
-      'assets/images/Available_Pieces/Teal Dungaree/Teal Dungarees Ziggy 2.JPG',
-      'assets/images/Available_Pieces/Teal Dungaree/Teal Dungarees Ziggy 4.JPG',
-      'assets/images/Available_Pieces/Teal Dungaree/Teal Dungarees Ziggy 5.JPG',
+      'assets/images/collections/festival-szn/teal-dungarees-3.JPG',
+      'assets/images/collections/festival-szn/teal-dungarees-2.JPG',
+      'assets/images/collections/festival-szn/teal-dungarees-4.JPG',
+      'assets/images/collections/festival-szn/teal-dungarees-5.JPG'
     ],
   },
   {
@@ -283,8 +298,9 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
-      'assets/images/Available_Pieces/White Ribbon Top Blue Floral Trouser/BFS White Ribbon Trouser Ziggy 2.JPEG',
-      'assets/images/Available_Pieces/White Ribbon Top Blue Floral Trouser/BFS White Ribbon Trouser Ziggy.webp',
+      'assets/images/collections/SS26/blue-blossom-culotte.JPEG',
+      'assets/images/collections/SS26/blue-blossom-culotte-2.JPEG',
+      'assets/images/collections/SS26/blue-blossom-culotte-3.webp'
     ],
   },
 ];
