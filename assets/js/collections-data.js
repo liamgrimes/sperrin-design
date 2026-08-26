@@ -356,13 +356,13 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
         ]
     },
 
-    //Na Tonnta Poirceallaín Collection
+    //na-tonnta-poirceallain Collection
 
     {
-        name: "Na Tonnta Poirceallaín",
+        name: "Na Tonnta Poirceallain",
         slug: "na-tonnta-poirceallain",
-        description: "Sperrin Design editorial featuring Na Tonnta Poirceallaín.",
-        coverImage: "assets/images/collections/Na Tonnta Poirceallaín/056A0251.JPEG",
+        description: "Sperrin Design editorial featuring na-tonnta-poirceallain.",
+        coverImage: "assets/images/collections/na-tonnta-poirceallain/056A0251.JPEG",
 
         pieces: [],
 
@@ -374,43 +374,43 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
         photographer: "TBC",
 
         editorial: [
-            "assets/images/collections/Na Tonnta Poirceallaín/056A0134.JPEG",
-            "assets/images/collections/Na Tonnta Poirceallaín/056A0251.JPEG",
-            "assets/images/collections/Na Tonnta Poirceallaín/056A0301.JPEG",
-            "assets/images/collections/Na Tonnta Poirceallaín/056A9486.JPEG",
-            "assets/images/collections/Na Tonnta Poirceallaín/056A9500.JPEG",
-            "assets/images/collections/Na Tonnta Poirceallaín/056A9571.JPEG",
-            "assets/images/collections/Na Tonnta Poirceallaín/056A9608.JPEG",
-            "assets/images/collections/Na Tonnta Poirceallaín/056A9690.JPEG",
-            "assets/images/collections/Na Tonnta Poirceallaín/056A9761.JPEG",
-            "assets/images/collections/Na Tonnta Poirceallaín/056A9888.JPEG",
-            "assets/images/collections/Na Tonnta Poirceallaín/77E4534E-1C76-4907-AC93-692CC272A696.JPG",
-            "assets/images/collections/Na Tonnta Poirceallaín/4909299B-92A0-4B82-BE06-25F05D079121.JPG",
-            "assets/images/collections/Na Tonnta Poirceallaín/A1591406-7AE9-4ABA-8232-EC49136F1BDC.JPG",
-            "assets/images/collections/Na Tonnta Poirceallaín/IMG_1946.JPG",
-            "assets/images/collections/Na Tonnta Poirceallaín/IMG_6020.JPG",
-            "assets/images/collections/Na Tonnta Poirceallaín/IMG_6022.JPG",
-            "assets/images/collections/Na Tonnta Poirceallaín/IMG_6024.JPG",
-            "assets/images/collections/Na Tonnta Poirceallaín/056A0024.JPEG",
-            "assets/images/collections/Na Tonnta Poirceallaín/056A0088.JPEG"
+            "assets/images/collections/na-tonnta-poirceallain/056A0134.JPEG",
+            "assets/images/collections/na-tonnta-poirceallain/056A0251.JPEG",
+            "assets/images/collections/na-tonnta-poirceallain/056A0301.JPEG",
+            "assets/images/collections/na-tonnta-poirceallain/056A9486.JPEG",
+            "assets/images/collections/na-tonnta-poirceallain/056A9500.JPEG",
+            "assets/images/collections/na-tonnta-poirceallain/056A9571.JPEG",
+            "assets/images/collections/na-tonnta-poirceallain/056A9608.JPEG",
+            "assets/images/collections/na-tonnta-poirceallain/056A9690.JPEG",
+            "assets/images/collections/na-tonnta-poirceallain/056A9761.JPEG",
+            "assets/images/collections/na-tonnta-poirceallain/056A9888.JPEG",
+            "assets/images/collections/na-tonnta-poirceallain/77E4534E-1C76-4907-AC93-692CC272A696.JPG",
+            "assets/images/collections/na-tonnta-poirceallain/4909299B-92A0-4B82-BE06-25F05D079121.JPG",
+            "assets/images/collections/na-tonnta-poirceallain/A1591406-7AE9-4ABA-8232-EC49136F1BDC.JPG",
+            "assets/images/collections/na-tonnta-poirceallain/IMG_1946.JPG",
+            "assets/images/collections/na-tonnta-poirceallain/IMG_6020.JPG",
+            "assets/images/collections/na-tonnta-poirceallain/IMG_6022.JPG",
+            "assets/images/collections/na-tonnta-poirceallain/IMG_6024.JPG",
+            "assets/images/collections/na-tonnta-poirceallain/056A0024.JPEG",
+            "assets/images/collections/na-tonnta-poirceallain/056A0088.JPEG"
         ]
     },
 
-    //Hunt Collection
+    //hunt-collection
 
     {
         name: "Hunt Collection",
         slug: "hunt-collection",
         description: "Liam, fix later",
-        coverImage: "assets/images/collections/Hunt Collection/IMG_3357.JPG",
+        coverImage: "assets/images/collections/hunt-collection/IMG_3357.JPG",
 
         pieces: [
             {
             name: "Outfit 1",
             images: [
-                "assets/images/collections/Hunt Collection/IMG_3194.JPG",
-                "assets/images/collections/Hunt Collection/IMG_3280.JPG",
-                "assets/images/collections/Hunt Collection/IMG_3357.JPG"
+                "assets/images/collections/hunt-collection/IMG_3194.JPG",
+                "assets/images/collections/hunt-collection/IMG_3280.JPG",
+                "assets/images/collections/hunt-collection/IMG_3357.JPG"
             ],
             description: "",
             photographer: "Bryony Coles",
@@ -422,8 +422,8 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             {
             name: "Outfit 2",
             images: [
-                "assets/images/collections/Hunt Collection/IMG_3234.JPG",
-                "assets/images/collections/Hunt Collection/IMG_3207.JPG"
+                "assets/images/collections/hunt-collection/IMG_3234.JPG",
+                "assets/images/collections/hunt-collection/IMG_3207.JPG"
             ],
             description: "",
             photographer: "Bryony Coles",
@@ -435,9 +435,9 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             {
             name: "Outfit 3",
             images: [
-                "assets/images/collections/Hunt Collection/IMG_3278.JPG",
-                "assets/images/collections/Hunt Collection/IMG_4823.JPG",
-                "assets/images/collections/Hunt Collection/IMG_4821.JPG"
+                "assets/images/collections/hunt-collection/IMG_3278.JPG",
+                "assets/images/collections/hunt-collection/IMG_4823.JPG",
+                "assets/images/collections/hunt-collection/IMG_4821.JPG"
             ],
             description: "",
             photographer: ["Bryony Coles" ," Megan Hill"],
@@ -449,7 +449,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             {
             name: "Outfit 4",
             images: [
-                "assets/images/collections/Hunt Collection/IMG_4292.JPG"
+                "assets/images/collections/hunt-collection/IMG_4292.JPG"
             ],
             description: "",
             photographer: "Megan Hill",
@@ -461,10 +461,10 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             {
             name: "Outfit 5",
             images: [
-                "assets/images/collections/Hunt Collection/IMG_4333.JPG",
-                "assets/images/collections/Hunt Collection/IMG_4306.JPG",
-                "assets/images/collections/Hunt Collection/IMG_4313.JPG",
-                "assets/images/collections/Hunt Collection/IMG_4318.JPG"
+                "assets/images/collections/hunt-collection/IMG_4333.JPG",
+                "assets/images/collections/hunt-collection/IMG_4306.JPG",
+                "assets/images/collections/hunt-collection/IMG_4313.JPG",
+                "assets/images/collections/hunt-collection/IMG_4318.JPG"
             ],
             description: "",
             photographer: "Megan Hill",
@@ -476,13 +476,13 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             {
             name: "Outfit 6",
             images: [
-                "assets/images/collections/Hunt Collection/IMG_4418.JPG",
-                "assets/images/collections/Hunt Collection/IMG_4423.JPG",
-                "assets/images/collections/Hunt Collection/IMG_4414.JPG",
-                "assets/images/collections/Hunt Collection/IMG_4814.JPG",
-                "assets/images/collections/Hunt Collection/IMG_4765.JPG",
-                "assets/images/collections/Hunt Collection/IMG_4771.JPG",
-                "assets/images/collections/Hunt Collection/IMG_4798.JPG"
+                "assets/images/collections/hunt-collection/IMG_4418.JPG",
+                "assets/images/collections/hunt-collection/IMG_4423.JPG",
+                "assets/images/collections/hunt-collection/IMG_4414.JPG",
+                "assets/images/collections/hunt-collection/IMG_4814.JPG",
+                "assets/images/collections/hunt-collection/IMG_4765.JPG",
+                "assets/images/collections/hunt-collection/IMG_4771.JPG",
+                "assets/images/collections/hunt-collection/IMG_4798.JPG"
             ],
             description: "",
             photographer: "Megan Hill",
@@ -494,7 +494,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             {
             name: "Outfit 7",
             images: [
-                "assets/images/collections/Hunt Collection/IMG_4475.JPG"
+                "assets/images/collections/hunt-collection/IMG_4475.JPG"
             ],
             description: "",
             photographer: "Megan Hill",
@@ -506,8 +506,8 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             {
             name: "Outfit 8",
             images: [
-                "assets/images/collections/Hunt Collection/IMG_4519.JPG",
-                "assets/images/collections/Hunt Collection/IMG_4514.JPG"
+                "assets/images/collections/hunt-collection/IMG_4519.JPG",
+                "assets/images/collections/hunt-collection/IMG_4514.JPG"
             ],
             description: "",
             photographer: "Megan Hill",
@@ -519,9 +519,9 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             {
             name: "Outfit 9",
             images: [
-                "assets/images/collections/Hunt Collection/IMG_4543.JPG",
-                "assets/images/collections/Hunt Collection/IMG_4837.JPG",
-                "assets/images/collections/Hunt Collection/IMG_4833.JPG"
+                "assets/images/collections/hunt-collection/IMG_4543.JPG",
+                "assets/images/collections/hunt-collection/IMG_4837.JPG",
+                "assets/images/collections/hunt-collection/IMG_4833.JPG"
             ],
             description: "",
             photographer: "Megan Hill",
@@ -533,11 +533,11 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             {
             name: "Outfit 10",
             images: [
-                "assets/images/collections/Hunt Collection/IMG_4598.JPG",
-                "assets/images/collections/Hunt Collection/IMG_4580.JPG",
-                "assets/images/collections/Hunt Collection/IMG_4582.JPG",
-                "assets/images/collections/Hunt Collection/IMG_4584.JPG",
-                "assets/images/collections/Hunt Collection/IMG_4592.JPG"
+                "assets/images/collections/hunt-collection/IMG_4598.JPG",
+                "assets/images/collections/hunt-collection/IMG_4580.JPG",
+                "assets/images/collections/hunt-collection/IMG_4582.JPG",
+                "assets/images/collections/hunt-collection/IMG_4584.JPG",
+                "assets/images/collections/hunt-collection/IMG_4592.JPG"
             ],
             description: "",
             photographer: "Megan Hill",
@@ -549,10 +549,10 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             {
             name: "Outfit 11",
             images: [
-                "assets/images/collections/Hunt Collection/IMG_4713.JPG",
-                "assets/images/collections/Hunt Collection/IMG_4689.JPG",
-                "assets/images/collections/Hunt Collection/IMG_4696.JPG",
-                "assets/images/collections/Hunt Collection/IMG_4734.JPG"
+                "assets/images/collections/hunt-collection/IMG_4713.JPG",
+                "assets/images/collections/hunt-collection/IMG_4689.JPG",
+                "assets/images/collections/hunt-collection/IMG_4696.JPG",
+                "assets/images/collections/hunt-collection/IMG_4734.JPG"
             ],
             description: "",
             photographer: "Megan Hill",
@@ -564,9 +564,9 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             {
             name: "Outfit 12",
             images: [
-                "assets/images/collections/Hunt Collection/IMG_4718.JPG",
-                "assets/images/collections/Hunt Collection/IMG_4721.JPG",
-                "assets/images/collections/Hunt Collection/IMG_4728.JPG"
+                "assets/images/collections/hunt-collection/IMG_4718.JPG",
+                "assets/images/collections/hunt-collection/IMG_4721.JPG",
+                "assets/images/collections/hunt-collection/IMG_4728.JPG"
             ],
             description: "",
             photographer: "Megan Hill",
@@ -577,13 +577,13 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
         ],
 
         editorial: [
-            "assets/images/collections/Hunt Collection/IMG_4573.JPG",
-            "assets/images/collections/Hunt Collection/IMG_4848.JPG",
-            "assets/images/collections/Hunt Collection/IMG_4355.JPG",
-            "assets/images/collections/Hunt Collection/IMG_4366.JPG",
-            "assets/images/collections/Hunt Collection/IMG_4399.JPG",
-            "assets/images/collections/Hunt Collection/IMG_4528.JPG",
-            "assets/images/collections/Hunt Collection/IMG_4538.JPG"
+            "assets/images/collections/hunt-collection/IMG_4573.JPG",
+            "assets/images/collections/hunt-collection/IMG_4848.JPG",
+            "assets/images/collections/hunt-collection/IMG_4355.JPG",
+            "assets/images/collections/hunt-collection/IMG_4366.JPG",
+            "assets/images/collections/hunt-collection/IMG_4399.JPG",
+            "assets/images/collections/hunt-collection/IMG_4528.JPG",
+            "assets/images/collections/hunt-collection/IMG_4538.JPG"
         ]
     }
 
