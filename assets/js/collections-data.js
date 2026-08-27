@@ -90,6 +90,8 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
         ]
     },
 
+    //Festival Season
+
     {
         name: "Festival Season",
         slug: "festival-season",

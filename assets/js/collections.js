@@ -99,15 +99,22 @@ function loadCollectionPage() {
     }
 
     // Editorial section
+
+// Editorial section
     if (collection.editorial && collection.editorial.length) {
         const editorialSection = document.createElement("section");
         editorialSection.className = "collection-editorial-section";
 
+        const isEditorialOnly =
+            !collection.pieces || collection.pieces.length === 0;
+
         editorialSection.innerHTML = `
-            <div class="editorial-heading">
-                <h2>Editorial</h2>
-                <p>Campaign photography.</p>
-            </div>
+            ${isEditorialOnly ? "" : `
+                <div class="editorial-heading">
+                    <h2>Editorial</h2>
+                    <p>Campaign photography.</p>
+                </div>
+            `}
 
             <div class="collection-editorial"></div>
         `;

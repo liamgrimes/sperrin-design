@@ -123,6 +123,34 @@ footer .store-footnote {
 }
 
 /* ============================================
+   Collection page
+   ============================================ */
+
+/* Collection page spacing */
+
+.collection-main,
+.collections-main {
+    padding-top: var(--space-sm);
+}
+
+.collection-main section,
+.collections-main section {
+    padding-top: 0;
+}
+
+.collection-header {
+    padding-top: var(--space-sm);
+    padding-bottom: var(--space-sm);
+    margin-bottom: var(--space-sm);
+}
+
+.collections-intro {
+    padding-top: var(--space-sm);
+    padding-bottom: var(--space-sm);
+    margin-bottom: var(--space-sm);
+}
+
+/* ============================================
    Home page
    ============================================ */
 
@@ -135,7 +163,7 @@ footer .store-footnote {
 #connect {
     width: min(var(--max-width), 90%);
     margin: 0 auto;
-    padding: var(--space-lg) 0;
+    padding: var(--space-md) 0;
 }
 
 
@@ -160,6 +188,8 @@ footer .store-footnote {
 
 #hero {
     text-align: center;
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-md);
 }
 
 .hero-image {
@@ -326,6 +356,8 @@ footer .store-footnote {
 #connect {
     text-align: center;
     max-width: 800px;
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-md);
 }
 
 #connect p {
