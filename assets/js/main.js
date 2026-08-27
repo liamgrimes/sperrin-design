@@ -92,5 +92,35 @@
     setActiveNavItem();
   }
 
-  document.addEventListener('DOMContentLoaded', mountSharedShell);
+  function renderRandomProduct() {
+    const productHost = document.querySelector('#random-product');
+
+    if (!productHost) return;
+
+    const products = window.SPERRIN_STOREFRONT?.PRODUCTS;
+
+    if (!products || !products.length) return;
+
+    const randomProduct =
+      products[Math.floor(Math.random() * products.length)];
+
+    productHost.innerHTML = `
+      <a href="storefront.html" class="random-product-card">
+        <img
+          src="${randomProduct.images[0]}"
+          alt="${randomProduct.name}"
+        >
+
+        <div class="random-product-info">
+          <h3>${randomProduct.name}</h3>
+          <p>${randomProduct.price}</p>
+        </div>
+      </a>
+    `;
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    mountSharedShell();
+    renderRandomProduct();
+  });
 })();

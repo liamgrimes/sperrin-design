@@ -101,7 +101,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'S', chest: '104cm', length: '66cm' }
     ],
     images: [
-      'assets/images/collections/festival-szn/double-denim-zip-up-top.JPEG'
+      'assets/images/collections/festival-season/double-denim-zip-up-top.JPEG'
     ],
   },
    {
@@ -116,9 +116,9 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'S', chest: '104cm', length: '66cm' }
     ],
     images: [
-      'assets/images/collections/festival-szn/double-denim-zip-up.webp',
-      'assets/images/collections/festival-szn/double-denim-zip-up-2.webp',
-      'assets/images/collections/festival-szn/double-denim-zip-up-3.webp'
+      'assets/images/collections/festival-season/double-denim-zip-up.webp',
+      'assets/images/collections/festival-season/double-denim-zip-up-2.webp',
+      'assets/images/collections/festival-season/double-denim-zip-up-3.webp'
     ],
   },
   {
@@ -171,10 +171,10 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
-      'assets/images/collections/festival-szn/culottes.JPEG',
-      'assets/images/collections/festival-szn/culottes4.webp',
-      'assets/images/collections/festival-szn/culottes3.webp',
-      'assets/images/collections/festival-szn/culottes2.webp'
+      'assets/images/collections/festival-season/culottes.JPEG',
+      'assets/images/collections/festival-season/culottes4.webp',
+      'assets/images/collections/festival-season/culottes3.webp',
+      'assets/images/collections/festival-season/culottes2.webp'
     ],
   },
   {
@@ -224,11 +224,11 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
-      'assets/images/collections/festival-szn/blouse-whimsy-bloomer-3.webp',
-      'assets/images/collections/festival-szn/blouse-whimsy-bloomer-2.JPG',
-      'assets/images/collections/festival-szn/blouse-whimsy-bloomer-4.webp',
-      'assets/images/collections/festival-szn/blouse-whimsy-bloomer-5.webp',
-      'assets/images/collections/festival-szn/blouse-whimsy-bloomer-6.webp',
+      'assets/images/collections/festival-season/blouse-whimsy-bloomer-3.webp',
+      'assets/images/collections/festival-season/blouse-whimsy-bloomer-2.JPG',
+      'assets/images/collections/festival-season/blouse-whimsy-bloomer-4.webp',
+      'assets/images/collections/festival-season/blouse-whimsy-bloomer-5.webp',
+      'assets/images/collections/festival-season/blouse-whimsy-bloomer-6.webp',
     ],
   },
   {
@@ -243,7 +243,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
-      'assets/images/collections/festival-szn/whimsy-blouse-shorts.JPG',
+      'assets/images/collections/festival-season/whimsy-blouse-shorts.JPG',
       'assets/images/collections/SS26/brown-corset-porcelain-shorts-3.JPEG',
       'assets/images/collections/SS26/brown-corset-porcelain-shorts-6.JPEG'
     ],
@@ -280,10 +280,10 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
-      'assets/images/collections/festival-szn/teal-dungarees-3.JPG',
-      'assets/images/collections/festival-szn/teal-dungarees-2.JPG',
-      'assets/images/collections/festival-szn/teal-dungarees-4.JPG',
-      'assets/images/collections/festival-szn/teal-dungarees-5.JPG'
+      'assets/images/collections/festival-season/teal-dungarees-3.JPG',
+      'assets/images/collections/festival-season/teal-dungarees-2.JPG',
+      'assets/images/collections/festival-season/teal-dungarees-4.JPG',
+      'assets/images/collections/festival-season/teal-dungarees-5.JPG'
     ],
   },
   {

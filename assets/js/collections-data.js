@@ -1,6 +1,8 @@
 window.SPERRIN_COLLECTIONS = window.SPERRIN_COLLECTIONS || {};
 
 window.SPERRIN_COLLECTIONS.COLLECTIONS = [
+
+    // FW 25
     {
         name: "FW25",
         slug: "fw25",
@@ -57,6 +59,8 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             "assets/images/collections/fw25/mid-angle-group.JPG"
         ]
     },
+
+    //Vogue Editorial
 
     {
         name: "Vogue Editorial",
@@ -433,7 +437,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
     {
         name: "Hunt Collection",
         slug: "hunt-collection",
-        description: "Liam, fix later",
+        description: "Sperrin Design's Original Collection inspired by University dissertation",
         coverImage: "assets/images/collections/hunt-collection/IMG_3357.JPG",
 
         pieces: [
