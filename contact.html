@@ -68,10 +68,45 @@
       </ul>      
     </section>
   </div>
+
+  <div class="contact-modal" id="contact-success-modal" hidden>
+    <div class="contact-modal-content" role="dialog" aria-modal="true" aria-labelledby="contact-success-title">
+      <button class="contact-modal-close" id="contact-success-close" type="button" aria-label="Close confirmation">&times;</button>
+      <span class="eyebrow">Thank you</span>
+      <h2 id="contact-success-title">Message sent</h2>
+      <p>We'll get back to you soon!</p>
+      <button class="contact-modal-action" id="contact-success-action" type="button">Close</button>
+    </div>
+  </div>
   
 
   <script>
     const form = document.getElementById('contact-form-element');
+    const submitButton = form.querySelector('button[type="submit"]');
+    const successModal = document.getElementById('contact-success-modal');
+    const successClose = document.getElementById('contact-success-close');
+    const successAction = document.getElementById('contact-success-action');
+
+    function closeSuccessModal() {
+      successModal.hidden = true;
+      document.body.style.overflow = '';
+      submitButton.focus();
+    }
+
+    function openSuccessModal() {
+      successModal.hidden = false;
+      document.body.style.overflow = 'hidden';
+      successClose.focus();
+    }
+
+    successClose.addEventListener('click', closeSuccessModal);
+    successAction.addEventListener('click', closeSuccessModal);
+    successModal.addEventListener('click', (event) => {
+      if (event.target === successModal) closeSuccessModal();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (!successModal.hidden && event.key === 'Escape') closeSuccessModal();
+    });
 
     form.addEventListener('submit', async (event) => {
       event.preventDefault();
@@ -97,7 +132,7 @@
           throw new Error(result.message || 'Failed to send message');
         }
 
-        alert('Message sent successfully.');
+        openSuccessModal();
         form.reset();
       } catch (error) {
         alert(error.message || 'Something went wrong.');

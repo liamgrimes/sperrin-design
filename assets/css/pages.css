@@ -197,6 +197,68 @@
     border-color: rgba(26, 26, 26, 0.4);
 }
 
+.contact-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: grid;
+    place-items: center;
+    padding: var(--space-sm);
+    background: rgba(26, 26, 26, 0.55);
+}
+.contact-modal[hidden] { display: none; }
+.contact-modal-content {
+    position: relative;
+    width: min(100%, 440px);
+    padding: clamp(2rem, 6vw, 3.5rem);
+    box-sizing: border-box;
+    text-align: center;
+    background: var(--color-warm-white);
+    border: var(--border-light);
+    box-shadow: 0 20px 60px rgba(26, 26, 26, 0.18);
+}
+.contact-modal-content h2 {
+    margin: 0 0 var(--space-xs);
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-weight: 500;
+}
+.contact-modal-content p {
+    margin: 0 0 var(--space-md);
+    color: var(--color-muted);
+    line-height: 1.6;
+}
+.contact-modal-close {
+    position: absolute;
+    top: 0.8rem;
+    right: 0.8rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    border: none;
+    background: transparent;
+    color: var(--color-text);
+    font-size: 1.7rem;
+    line-height: 1;
+    cursor: pointer;
+}
+.contact-modal-close:focus-visible,
+.contact-modal-action:focus-visible {
+    outline: 2px solid var(--color-charcoal);
+    outline-offset: 3px;
+}
+.contact-modal-action {
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 999px;
+    background: var(--color-charcoal);
+    color: var(--color-warm-white);
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
 /* Filters and grid */
 .store-filters {
     display: flex;
