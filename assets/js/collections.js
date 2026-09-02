@@ -143,6 +143,51 @@ function loadCollectionPage() {
 
 // Creates a piece card with an image gallery
 
+function createStoreLinks(piece) {
+    if (
+        !piece.available ||
+        !Array.isArray(piece.storeLinks) ||
+        !piece.storeLinks.length
+    ) {
+        return "";
+    }
+
+    const products = window.SPERRIN_STOREFRONT?.PRODUCTS || [];
+
+    const links = piece.storeLinks
+        .map(productId => {
+            const productIndex = products.findIndex(
+                product => product.id === productId
+            );
+
+            if (productIndex === -1) return "";
+
+            const product = products[productIndex];
+
+            return `
+                <a
+                    href="storefront.html#product-${productIndex}"
+                    class="piece-store-link"
+                >
+                    Shop ${product.name}
+                </a>
+            `;
+        })
+        .filter(Boolean)
+        .join("");
+
+    if (!links) return "";
+
+    return `
+        <div class="piece-store-links">
+            <span>Shop this look</span>
+            <div class="piece-store-buttons">
+                ${links}
+            </div>
+        </div>
+    `;
+}
+
 function createPieceCard(piece) {
     const article = document.createElement("article");
     article.className = "collection-piece";
@@ -160,6 +205,8 @@ function createPieceCard(piece) {
             <p>Photographer: ${piece.photographer}</p>
 
             <p>Model: ${piece.model}</p>
+
+            ${createStoreLinks(piece)}
         </div>
     `;
 

@@ -624,8 +624,6 @@ footer .store-footnote {
 
 /* About story sections */
 
-/* About story sections */
-
 .about-story {
     display: grid;
     grid-template-columns: 1fr;
@@ -653,6 +651,27 @@ footer .store-footnote {
     margin: 0;
     font-size: 1.1rem;
     line-height: 1.7;
+}
+
+
+/* Mobile About page */
+
+@media (max-width: 767px) {
+
+    .about-story {
+        text-align: center;
+    }
+
+    .about-story-image {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-story-content {
+        margin: 0 auto;
+        text-align: justify;
+    }
+
 }
 
 
@@ -687,4 +706,72 @@ footer .store-footnote {
         grid-row: 1;
     }
 
+}
+
+/* ============================================
+   Collection store links
+   ============================================ */
+
+.piece-store-links {
+    margin-top: var(--space-md);
+}
+
+.piece-store-links > span {
+    display: block;
+    margin-bottom: var(--space-md);
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    color: var(--color-muted);
+}
+
+.piece-store-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+}
+
+.piece-store-link {
+    display: inline-block;
+    padding: 0.9rem 1.5rem;
+    border: none;
+    border-radius: 999px;
+    background: var(--color-charcoal);
+    color: var(--color-warm-white);
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+
+.piece-store-link:hover {
+    transform: translateY(-1px);
+    opacity: 0.96;
+}
+
+.piece-store-link:focus-visible {
+    outline: 2px solid var(--color-charcoal);
+    outline-offset: 3px;
+}
+
+.piece-store-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+}
+
+.piece-store-link {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border: 1px solid currentColor;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.piece-store-link:hover {
+    background-color: #1a1a1a;
+    color: #fff;
 }
