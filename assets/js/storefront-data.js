@@ -6,7 +6,7 @@ window.SPERRIN_STOREFRONT.SHOPIFY_CONFIG = {
 
 window.SPERRIN_STOREFRONT.PRODUCTS = [
   {
-    id: '16105029206396',
+    id: '16104824209788',
     name: 'Errigal Sleeves',
     category: 'Tops',
     price: '£119',
@@ -20,8 +20,8 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'L', chest: '102cm', length: '68cm' }
     ],
     images: [
-      'assets/images/collections/SS26/errigal.JPEG',
-      'assets/images/collections/SS26/errigal-2.JPEG'
+      'assets/images/collections/SS26/errigal-2.JPEG',
+      'assets/images/collections/SS26/errigal.JPEG'
     ],
   },
   {
@@ -157,10 +157,10 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
+      'assets/images/collections/SS26/green-tapestry-sleeve-short-3.webp',
       'assets/images/collections/SS26/green-tapestry-sleeve-short-2.JPEG',
       'assets/images/collections/SS26/green-tapestry-sleeve-short-5.JPG',
       'assets/images/collections/SS26/green-tapestry-sleeve-short-6.JPG',
-      'assets/images/collections/SS26/green-tapestry-sleeve-short-3.webp',
       'assets/images/collections/SS26/green-tapestry-sleeve-short-4.webp'
     ],
   },
@@ -301,8 +301,8 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     name: 'Blue Blossom Culottes',
     category: 'Bottoms',
     price: '£129',
-    description: 'Deadstock fabric: Polyester/Cotton blend.',
-    details: 'Deadstock fabric: Polyester/Cotton blend. Dry clean only.',
+    description: '100% polyester.',
+    details: '100% polyester. Dry clean only.',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' },
