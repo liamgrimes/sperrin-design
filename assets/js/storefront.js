@@ -5,6 +5,13 @@
     domain: 'YOUR-STORE.myshopify.com',
     storefrontAccessToken: 'YOUR_STOREFRONT_ACCESS_TOKEN',
   };
+  const GBP_MONEY_FORMAT = '%C2%A3%7B%7Bamount%7D%7D';
+
+  PRODUCTS.forEach((product) => {
+    if (typeof product.price === 'string' && !product.price.startsWith('£')) {
+      product.price = `£${product.price.replace(/^[^\d]*/, '').replace(/\D.*$/, '')}`;
+    }
+  });
 
   const isConfigured =
     !SHOPIFY_CONFIG.domain.startsWith('YOUR-') &&
@@ -303,9 +310,28 @@ function initShopifyBuy() {
     storefrontAccessToken: SHOPIFY_CONFIG.storefrontAccessToken,
   });
 
+  const shopifyButtonStyles = {
+    'background-color': 'rgba(26, 26, 26, 0.84)',
+    'border': 'none',
+    'border-radius': '999px',
+    'color': '#FFFFFF',
+    'font-family': "'Inter', sans-serif",
+    'font-size': '0.8rem',
+    'font-weight': '500',
+    'letter-spacing': '0.04em',
+    'padding': '5px 10px',
+    ':hover': {
+      'background-color': '#1A1A1A',
+    },
+    ':focus': {
+      'background-color': '#1A1A1A',
+    },
+  };
+
   ShopifyBuy.UI.onReady(client).then((ui) => {
     ui.createComponent('cart', {
       node: document.getElementById('cart-mount'),
+      moneyFormat: GBP_MONEY_FORMAT,
       options: {
         cart: {
           styles: {
@@ -332,24 +358,13 @@ function initShopifyBuy() {
       ui.createComponent('product', {
         id: product.id,
         node: document.getElementById(`buy-mount-${index}`),
-        moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
+        moneyFormat: GBP_MONEY_FORMAT,
         options: {
           product: {
             iframe: false,
             contents: { img: false, title: false, price: false, options: false },
-            width: '100%',
             styles: {
-              button: {
-                'background-color': '#16181B',
-                'font-family': "'Inter', sans-serif",
-                'font-weight': '600',
-                'font-size': '14px',
-                'padding-top': '11px',
-                'padding-bottom': '11px',
-                'border-radius': '8px',
-                ':hover': { 'background-color': '#2A2D33' },
-                ':focus': { 'background-color': '#2A2D33' },
-              },
+              button: shopifyButtonStyles,
             },
             buttonDestination: 'cart',
             text: { button: 'Add to cart' },
@@ -360,24 +375,13 @@ function initShopifyBuy() {
       ui.createComponent('product', {
         id: product.id,
         node: document.getElementById(`buy-mount-detail-${index}`),
-        moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
+        moneyFormat: GBP_MONEY_FORMAT,
         options: {
           product: {
             iframe: false,
             contents: { img: false, title: false, price: false, options: true },
-            width: '100%',
             styles: {
-              button: {
-                'background-color': '#16181B',
-                'font-family': "'Inter', sans-serif",
-                'font-weight': '600',
-                'font-size': '14px',
-                'padding-top': '11px',
-                'padding-bottom': '11px',
-                'border-radius': '8px',
-                ':hover': { 'background-color': '#2A2D33' },
-                ':focus': { 'background-color': '#2A2D33' },
-              },
+              button: shopifyButtonStyles,
             },
             buttonDestination: 'cart',
             text: { button: 'Add to cart' },
