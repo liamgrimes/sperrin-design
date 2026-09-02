@@ -1,10 +1,7 @@
 (function () {
   const storefront = window.SPERRIN_STOREFRONT || {};
   const PRODUCTS = Array.isArray(storefront.PRODUCTS) ? storefront.PRODUCTS : [];
-  const SHOPIFY_CONFIG = storefront.SHOPIFY_CONFIG || {
-    domain: 'YOUR-STORE.myshopify.com',
-    storefrontAccessToken: 'YOUR_STOREFRONT_ACCESS_TOKEN',
-  };
+  const SHOPIFY_CONFIG = storefront.SHOPIFY_CONFIG;
   const GBP_MONEY_FORMAT = '%C2%A3%7B%7Bamount%7D%7D';
 
   PRODUCTS.forEach((product) => {
@@ -14,6 +11,8 @@
   });
 
   const isConfigured =
+    typeof SHOPIFY_CONFIG?.domain === 'string' &&
+    typeof SHOPIFY_CONFIG?.storefrontAccessToken === 'string' &&
     !SHOPIFY_CONFIG.domain.startsWith('YOUR-') &&
     !SHOPIFY_CONFIG.storefrontAccessToken.startsWith('YOUR_');
 
