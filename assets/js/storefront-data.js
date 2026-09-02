@@ -33,7 +33,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     details: 'Deadstock fabric: Polyester/Cotton blend. Dry clean only.',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
-      { size: 'XS', chest: '92cm', length: '68cm' }
+      { size: 'XS', chest: '92cm', length: '68cm' },
       { size: 'XS', chest: '92cm', length: '68cm' },
       { size: 'S', chest: '94cm', length: '64cm' },
       { size: 'M', chest: '98cm', length: '66cm' },
@@ -52,7 +52,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     description: '100% linen.',
     details: '100% Linen. Dry clean only.',
     sizeGuide: [
-      { size: '26', chest: 'Waist 66cm', length: '104cm' }
+      { size: '26', chest: 'Waist 66cm', length: '104cm' },
       { size: '26', chest: 'Waist 66cm', length: '104cm' }
     ],
     images: [
@@ -85,7 +85,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     details: 'Outer fabric: 60% Polyester, 40% Wool. Lining: 100% Cotton. Dry clean only.',
     sizes: ['S', 'M', 'L'],
     sizeGuide: [
-      { size: 'S', chest: '94cm', length: '64cm' }
+      { size: 'S', chest: '94cm', length: '64cm' },
       { size: 'S', chest: '94cm', length: '64cm' }
     ],
     images: [
@@ -116,7 +116,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     details: '100% cotton. Dry clean only.',
     sizes: ['S', 'M', 'L', 'XL'],
     sizeGuide: [
-      { size: 'S', chest: '104cm', length: '66cm' }
+      { size: 'S', chest: '104cm', length: '66cm' },
       { size: 'S', chest: '104cm', length: '66cm' }
     ],
     images: [
@@ -153,7 +153,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     details: '80% polyester, 20% cotton. Dry clean only.',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' },
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
@@ -173,7 +173,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     details: '80% polyester, 20% cotton. Dry clean only.',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' },
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
@@ -210,7 +210,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     details: '100% cotton. Dry clean only.',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' },
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
@@ -247,7 +247,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     details: '100% polyester. Dry clean only.',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' },
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
@@ -265,7 +265,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     details: '100% polyester. Dry clean only.',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' },
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
@@ -286,7 +286,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     details: '100% linen. Dry clean only.',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' },
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
@@ -305,7 +305,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     details: 'Deadstock fabric: Polyester/Cotton blend. Dry clean only.',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' },
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
