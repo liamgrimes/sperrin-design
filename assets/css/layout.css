@@ -113,10 +113,10 @@ body {
     background-repeat: repeat-y;
     background-position: left top;
     background-size: 90px auto;
-
-    main,
-    header,
-    footer {
-        margin-left: 90px;
 }
+
+@media (max-width: 767px) {
+    body {
+        background-image: none;
+    }
 }

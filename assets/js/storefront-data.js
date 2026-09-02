@@ -7,51 +7,96 @@ window.SPERRIN_STOREFRONT.SHOPIFY_CONFIG = {
 window.SPERRIN_STOREFRONT.PRODUCTS = [
   {
     id: 'REPLACE_WITH_PRODUCT_ID_1',
-    name: 'Black Sleeves & Black Shorts',
+    name: 'Errigal Sleeves',
     category: 'Tops',
-    price: '#TODO',
+    price: '£119',
     description: '#TODO',
     details: '#TODO',
-    sizes: ['XS', 'S', 'M', 'L', 'XL'],
+    sizes: ['XS', 'S', 'M', 'L'],
+    sizeGuide: [
+      { size: 'XS', chest: '92cm', length: '68cm' },
+      { size: 'S', chest: '94cm', length: '64cm' },
+      { size: 'M', chest: '98cm', length: '66cm' },
+      { size: 'L', chest: '102cm', length: '68cm' }
+    ],
+    images: [
+      'assets/images/collections/SS26/errigal.JPEG',
+      'assets/images/collections/SS26/errigal-2.JPEG'
+    ],
+  },
+  {
+    id: 'REPLACE_WITH_PRODUCT_ID_1',
+    name: 'Errigal Shorts',
+    category: 'Shorts',
+    price: '£99',
+    description: '#TODO',
+    details: '#TODO',
+    sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
       { size: 'XS', chest: '92cm', length: '68cm' }
+      { size: 'XS', chest: '92cm', length: '68cm' },
+      { size: 'S', chest: '94cm', length: '64cm' },
+      { size: 'M', chest: '98cm', length: '66cm' },
+      { size: 'L', chest: '102cm', length: '68cm' }
     ],
-    images: ['assets/images/Available_Pieces/Black Top Short/Black Sleeve Shorts SS26 Ruth.JPEG'],
+    images: [
+      'assets/images/collections/SS26/errigal.JPEG',
+      'assets/images/collections/SS26/errigal-2.JPEG'
+    ],
   },
   {
     id: 'REPLACE_WITH_PRODUCT_ID_2',
-    name: 'Blue Celtic Trousers',
-    category: 'Trousers',
-    price: '#TODO',
+    name: 'Grey Celtic Bloomers',
+    category: 'Bottoms',
+    price: '£149',
     description: '#TODO',
     details: '#TODO',
     sizeGuide: [
       { size: '26', chest: 'Waist 66cm', length: '104cm' }
+      { size: '26', chest: 'Waist 66cm', length: '104cm' }
     ],
     images: [
-      'assets/images/Available_Pieces/Blue Celtic White Trouser/Beach Blue Trouser Vic 3.webp',
-      'assets/images/Available_Pieces/Blue Celtic White Trouser/Beach Blue Trouser Vic 2.webp',
-      'assets/images/Available_Pieces/Blue Celtic White Trouser/Beach Blue Trouser Vic.JPEG',
+      'assets/images/collections/SS26/grey-celtic-bloomers-3.webp',
+      'assets/images/collections/SS26/grey-celtic-bloomers-4.webp',
+      'assets/images/collections/SS26/grey-celtic-bloomers-2.JPEG',
     ],
   },
   {
     id: 'REPLACE_WITH_PRODUCT_ID_3',
-    name: 'Dark Denim Blue Top & Trouser',
-    category: 'Tops',
-    price: '#TODO',
+    name: 'Blue Herringbone Jacket',
+    category: 'Jacket',
+    price: '£199',
     description: '#TODO',
     details: '#TODO',
     sizes: ['S', 'M', 'L'],
     sizeGuide: [
       { size: 'S', chest: '94cm', length: '64cm' }
     ],
-    images: ['assets/images/Available_Pieces/Dark Blue Tie Top Trouser/Blue Top Trouser Ziggy.JPEG'],
+    images: [
+      'assets/images/collections/SS26/herringbone-set.JPEG'
+    ],
+  },
+  {
+    id: 'REPLACE_WITH_PRODUCT_ID_3',
+    name: 'Blue Herringbone Bloomers',
+    category: 'Bottoms',
+    price: '£179',
+    description: '#TODO',
+    details: '#TODO',
+    sizes: ['S', 'M', 'L'],
+    sizeGuide: [
+      { size: 'S', chest: '94cm', length: '64cm' }
+      { size: 'S', chest: '94cm', length: '64cm' }
+    ],
+    images: [
+      'assets/images/collections/SS26/herringbone-set.JPEG'
+    ],
   },
   {
     id: 'REPLACE_WITH_PRODUCT_ID_4',
-    name: 'Denim Blue Top & Trouser with Gold Chains',
+    name: 'Denim Zip Up Top',
     category: 'Tops',
-    price: '#TODO',
+    price: '£89',
     description: '#TODO',
     details: '#TODO',
     sizes: ['S', 'M', 'L', 'XL'],
@@ -59,17 +104,32 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'S', chest: '104cm', length: '66cm' }
     ],
     images: [
-      'assets/images/Available_Pieces/Denim Blue Gold Chain Top Trouser/Blue Top Trouser Fia.webp',
-      'assets/images/Available_Pieces/Denim Blue Gold Chain Top Trouser/Blue Top Trouser Fia 2.JPEG',
-      'assets/images/Available_Pieces/Denim Blue Gold Chain Top Trouser/Blue Top Trouser Fia 3.webp',
-      'assets/images/Available_Pieces/Denim Blue Gold Chain Top Trouser/Blue Top Trouser Fia 4.webp',
+      'assets/images/collections/festival-season/double-denim-zip-up-top.JPEG'
+    ],
+  },
+   {
+    id: 'REPLACE_WITH_PRODUCT_ID_4',
+    name: 'Denim Eyelet Jorts',
+    category: 'Bottoms',
+    price: '£149',
+    description: '#TODO',
+    details: '#TODO',
+    sizes: ['S', 'M', 'L', 'XL'],
+    sizeGuide: [
+      { size: 'S', chest: '104cm', length: '66cm' }
+      { size: 'S', chest: '104cm', length: '66cm' }
+    ],
+    images: [
+      'assets/images/collections/festival-season/double-denim-zip-up.webp',
+      'assets/images/collections/festival-season/double-denim-zip-up-2.webp',
+      'assets/images/collections/festival-season/double-denim-zip-up-3.webp'
     ],
   },
   {
     id: 'REPLACE_WITH_PRODUCT_ID_5',
-    name: 'Floral Sleeves & Shorts',
+    name: 'Green Tapestry Cropped Sleeves',
     category: 'Tops',
-    price: '#TODO',
+    price: '£129',
     description: '#TODO',
     details: '#TODO',
     sizes: ['XS', 'S', 'M', 'L'],
@@ -77,33 +137,57 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
-      'assets/images/Available_Pieces/Floral Sleeves Shorts/Green Floral Sleeve Short Paris.JPEG',
-      'assets/images/Available_Pieces/Floral Sleeves Shorts/Green Floral Sleeve Short Rachel 2.webp',
-      'assets/images/Available_Pieces/Floral Sleeves Shorts/Green Floral Sleeve Short Rachel.webp',
+        'assets/images/collections/SS26/green-tapestry-sleeve-short-2.JPEG',
+        'assets/images/collections/SS26/green-tapestry-sleeve-short-5.JPG',
+        'assets/images/collections/SS26/green-tapestry-sleeve-short-6.JPG',
+        'assets/images/collections/SS26/green-tapestry-sleeve-short-3.webp',
+        'assets/images/collections/SS26/green-tapestry-sleeve-short-4.webp'
+    ],
+  },
+  {
+    id: 'REPLACE_WITH_PRODUCT_ID_5',
+    name: 'Green Tapestry Shorts',
+    category: 'Shorts',
+    price: '£119',
+    description: '#TODO',
+    details: '#TODO',
+    sizes: ['XS', 'S', 'M', 'L'],
+    sizeGuide: [
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+    ],
+    images: [
+      'assets/images/collections/SS26/green-tapestry-sleeve-short-2.JPEG',
+      'assets/images/collections/SS26/green-tapestry-sleeve-short-5.JPG',
+      'assets/images/collections/SS26/green-tapestry-sleeve-short-6.JPG',
+      'assets/images/collections/SS26/green-tapestry-sleeve-short-3.webp',
+      'assets/images/collections/SS26/green-tapestry-sleeve-short-4.webp'
     ],
   },
   {
     id: 'REPLACE_WITH_PRODUCT_ID_6',
-    name: 'Floral Trouser',
-    category: 'Trousers',
-    price: '#TODO',
+    name: 'Green Tapestry Culottes',
+    category: 'Bottoms',
+    price: '£189',
     description: '#TODO',
     details: '#TODO',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
-      'assets/images/Available_Pieces/Floral Trouser/Green Floral Trouser Ziggy 3.webp',
-      'assets/images/Available_Pieces/Floral Trouser/Green Floral Trouser Ziggy 2.webp',
-      'assets/images/Available_Pieces/Floral Trouser/Green Floral Trouser Ziggy.webp',
+      'assets/images/collections/festival-season/culottes.JPEG',
+      'assets/images/collections/festival-season/culottes4.webp',
+      'assets/images/collections/festival-season/culottes3.webp',
+      'assets/images/collections/festival-season/culottes2.webp'
     ],
   },
   {
     id: 'REPLACE_WITH_PRODUCT_ID_7',
-    name: 'Green Tapestry',
+    name: 'Thistle Cropped Top',
     category: 'Tops',
-    price: '#TODO',
+    price: '£99',
     description: '#TODO',
     details: '#TODO',
     sizes: ['XS', 'S', 'M', 'L'],
@@ -111,17 +195,35 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
-      'assets/images/Available_Pieces/Green Tapestry/BFS Green Tapestry Brooke.webp',
-      'assets/images/Available_Pieces/Green Tapestry/Beach Green Tapestry Kat 2.JPEG',
-      'assets/images/Available_Pieces/Green Tapestry/Beach Green Tapestry Kat 3.webp',
-      'assets/images/Available_Pieces/Green Tapestry/Beach Green Tapestry Kat.webp',
+      'assets/images/collections/SS26/thistle-set-4.webp',
+      'assets/images/collections/SS26/thistle-set-2.webp',
+      'assets/images/collections/SS26/thistle-set-3.webp',
+      'assets/images/collections/SS26/thistle-set.JPEG',
+    ],
+  },
+  {
+    id: 'REPLACE_WITH_PRODUCT_ID_7',
+    name: 'Thistle Shorts',
+    category: 'Shorts',
+    price: '£139',
+    description: '#TODO',
+    details: '#TODO',
+    sizes: ['XS', 'S', 'M', 'L'],
+    sizeGuide: [
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+    ],
+    images: [
+      'assets/images/collections/SS26/thistle-set-2.webp',
+      'assets/images/collections/SS26/thistle-set-3.webp',
+      'assets/images/collections/SS26/thistle-set.JPEG',
     ],
   },
   {
     id: 'REPLACE_WITH_PRODUCT_ID_8',
-    name: 'Porcelain Top & Trouser',
-    category: 'Tops',
-    price: '#TODO',
+    name: 'Whimsy Bloomers',
+    category: 'Bottoms',
+    price: '£129',
     description: '#TODO',
     details: '#TODO',
     sizes: ['XS', 'S', 'M', 'L'],
@@ -129,62 +231,87 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
-      'assets/images/Available_Pieces/Porcelain Top Trouser/Porcelain Top Trouser Freya.webp',
-      'assets/images/Available_Pieces/Porcelain Top Trouser/Porcelain Top Sky Short Aoibhinn.webp',
-      'assets/images/Available_Pieces/Porcelain Top Trouser/Porcelain Top Trouser Freya 3.webp',
-      'assets/images/Available_Pieces/Porcelain Top Trouser/Porcelain Top Trouser Freya 4.webp',
+      'assets/images/collections/festival-season/blouse-whimsy-bloomer-3.webp',
+      'assets/images/collections/festival-season/blouse-whimsy-bloomer-2.JPG',
+      'assets/images/collections/festival-season/blouse-whimsy-bloomer-4.webp',
+      'assets/images/collections/festival-season/blouse-whimsy-bloomer-5.webp',
+      'assets/images/collections/festival-season/blouse-whimsy-bloomer-6.webp',
     ],
   },
   {
     id: 'REPLACE_WITH_PRODUCT_ID_9',
-    name: 'Porcelain Trouser & Brown Body Suit',
-    category: 'Tops',
-    price: '#TODO',
+    name: 'Porcelain Shorts',
+    category: 'Shorts',
+    price: '£119',
     description: '#TODO',
     details: '#TODO',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
-      'assets/images/Available_Pieces/Porcelain Trouser Brown Body/Brown Bodysuit Porcelain Shorts Eva 5.JPEG',
-      'assets/images/Available_Pieces/Porcelain Trouser Brown Body/Brown Bodysuit Porcelain Shorts Eva 2.JPEG',
-      'assets/images/Available_Pieces/Porcelain Trouser Brown Body/Brown Bodysuit Porcelain Shorts Eva 3.JPEG',
-      'assets/images/Available_Pieces/Porcelain Trouser Brown Body/Brown Bodysuit Porcelain Shorts Eva 4.JPEG',
+      'assets/images/collections/festival-season/whimsy-blouse-shorts.JPG',
+      'assets/images/collections/SS26/brown-corset-porcelain-shorts-3.JPEG',
+      'assets/images/collections/SS26/brown-corset-porcelain-shorts-6.JPEG'
+    ],
+  },
+  {
+    id: 'REPLACE_WITH_PRODUCT_ID_9',
+    name: 'Brown Corset Top',
+    category: 'Tops',
+    price: '£29',
+    description: '#TODO',
+    details: '#TODO',
+    sizes: ['XS', 'S', 'M', 'L'],
+    sizeGuide: [
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+    ],
+    images: [
+      'assets/images/collections/SS26/brown-corset.JPEG',
+      'assets/images/collections/SS26/brown-corset-porcelain-shorts-5.JPEG',
+      'assets/images/collections/SS26/brown-corset-porcelain-shorts-4.JPEG',
+      'assets/images/collections/SS26/brown-corset-porcelain-shorts-8.JPEG',
+      'assets/images/collections/SS26/brown-corset-porcelain-shorts-6.JPEG',
+      'assets/images/collections/SS26/brown-corset-porcelain-shorts-7.JPEG'
     ],
   },
   {
     id: 'REPLACE_WITH_PRODUCT_ID_10',
-    name: 'Teal Dungarees',
-    category: 'Trousers',
-    price: '#TODO',
+    name: 'Teal Linen Dungarees',
+    category: 'Bottoms',
+    price: '£149',
     description: '#TODO',
     details: '#TODO',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
-      'assets/images/Available_Pieces/Teal Dungaree/Teal Dungarees Ziggy 3.JPG',
-      'assets/images/Available_Pieces/Teal Dungaree/Teal Dungarees Ziggy 2.JPG',
-      'assets/images/Available_Pieces/Teal Dungaree/Teal Dungarees Ziggy 4.JPG',
-      'assets/images/Available_Pieces/Teal Dungaree/Teal Dungarees Ziggy 5.JPG',
+      'assets/images/collections/festival-season/teal-dungarees-3.JPG',
+      'assets/images/collections/festival-season/teal-dungarees-2.JPG',
+      'assets/images/collections/festival-season/teal-dungarees-4.JPG',
+      'assets/images/collections/festival-season/teal-dungarees-5.JPG'
     ],
   },
   {
     id: 'REPLACE_WITH_PRODUCT_ID_11',
-    name: 'White Ribbon Top & Blue Trouser',
-    category: 'Tops',
-    price: '#TODO',
+    name: 'Blue Blossom Culottes',
+    category: 'Bottoms',
+    price: '£129',
     description: '#TODO',
     details: '#TODO',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
-      'assets/images/Available_Pieces/White Ribbon Top Blue Floral Trouser/BFS White Ribbon Trouser Ziggy 2.JPEG',
-      'assets/images/Available_Pieces/White Ribbon Top Blue Floral Trouser/BFS White Ribbon Trouser Ziggy.webp',
+      'assets/images/collections/SS26/blue-blossom-culotte.JPEG',
+      'assets/images/collections/SS26/blue-blossom-culotte-2.JPEG',
+      'assets/images/collections/SS26/blue-blossom-culotte-3.webp'
     ],
   },
 ];
