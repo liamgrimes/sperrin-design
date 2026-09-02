@@ -422,3 +422,93 @@ footer .store-footnote {
     }
 
 }
+
+
+/* ============================================
+   About page
+   ============================================ */
+
+.about-intro {
+    text-align: center;
+    padding-top: var(--space-sm);
+    padding-bottom: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+.about-intro h1 {
+    margin-bottom: var(--space-sm);
+}
+
+.about-tagline {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+
+/* About story sections */
+
+/* About story sections */
+
+.about-story {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
+    padding: var(--space-sm) 0;
+}
+
+.about-story-image {
+    width: 100%;
+    max-width: 400px;
+}
+
+.about-story-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.about-story-content {
+    max-width: 55ch;
+}
+
+.about-story-content p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+
+/* Desktop */
+
+@media (min-width: 768px) {
+
+    .about-story {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-lg);
+        align-items: center;
+    }
+
+    .about-story-image {
+        grid-column: 1;
+    }
+
+    .about-story-content {
+        grid-column: 2;
+    }
+
+    /* Alternate sections */
+
+    .about-story-reverse .about-story-image {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: end;
+    }
+
+    .about-story-reverse .about-story-content {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+}
