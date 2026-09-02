@@ -12,6 +12,33 @@
     font-family: var(--font-body);
 }
 
+.eyebrow {
+    display: inline-block;
+    margin-bottom: var(--space-xs);
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+}
+
+.accent-underline {
+    display: inline-block;
+    position: relative;
+}
+
+.accent-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2px;
+    height: 8px;
+    background: var(--color-linen);
+    opacity: 0.7;
+    z-index: -1;
+}
+
 /* ------------------------------------------------
    Filter chip
    ------------------------------------------------ */
@@ -185,6 +212,30 @@
 }
 
 .buy-mount { min-height: 44px; }
+.buy-mount .shopify-buy__btn {
+    appearance: none;
+    background-color: rgba(26, 26, 26, 0.84) !important;
+    border: none !important;
+    border-radius: 999px !important;
+    color: var(--color-warm-white) !important;
+    cursor: pointer;
+    font-family: var(--font-body) !important;
+    font-size: 0.8rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.04em !important;
+    line-height: 1.2;
+    padding: 5px 10px !important;
+    transition: var(--transition-fast);
+}
+.buy-mount .shopify-buy__btn:hover,
+.buy-mount .shopify-buy__btn:focus-visible {
+    background-color: var(--color-charcoal) !important;
+    color: var(--color-warm-white) !important;
+}
+.buy-mount .shopify-buy__btn:focus-visible {
+    outline: 2px solid var(--color-charcoal);
+    outline-offset: 3px;
+}
 .buy-mount .not-connected {
     font-family: var(--font-body);
     font-size: 0.8rem;
