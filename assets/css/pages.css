@@ -21,7 +21,8 @@
    Storefront page
    ============================================ */
 
-.storefront-main {
+.storefront-main,
+.contact-main {
     width: min(var(--max-width), 90%);
     margin: 0 auto;
     padding-top: var(--space-sm);
@@ -29,13 +30,14 @@
 
 .store-wrap { width: 100%; }
 
-/* Hero */
-.store-hero {
+/* Shared hero treatment */
+.store-hero,
+.contact-hero {
     padding: var(--space-sm) 0 var(--space-md);
     margin-bottom: var(--space-sm);
     border-bottom: var(--border-light);
 }
-.store-hero .eyebrow {
+.eyebrow {
     font-family: var(--font-body);
     font-size: 0.8rem;
     letter-spacing: 0.12em;
@@ -44,7 +46,8 @@
     display: inline-block;
     margin-bottom: var(--space-xs);
 }
-.store-hero h1 {
+.store-hero h1,
+.contact-hero h1 {
     font-family: var(--font-heading);
     font-weight: 500;
     font-size: clamp(2rem, 5vw, 3.4rem);
@@ -52,7 +55,8 @@
     margin: 0 0 var(--space-sm);
     max-width: 20ch;
 }
-.store-hero p {
+.store-hero p,
+.contact-hero p {
     font-size: 1rem;
     line-height: 1.6;
     color: var(--color-muted);
@@ -75,6 +79,186 @@
     z-index: -1;
 }
 
+/* Contact page */
+.contact-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.9fr);
+    gap: var(--space-md);
+    padding: var(--space-md) 0 var(--space-xl);
+}
+.contact-card {
+    background: rgba(255, 255, 255, 0.45);
+    border: var(--border-light);
+    padding: clamp(1.25rem, 2vw, 2rem);
+    box-shadow: 0 8px 30px rgba(26, 26, 26, 0.02);
+}
+.contact-card h2 {
+    font-size: clamp(1.7rem, 2.4vw, 2.4rem);
+    margin: 0 0 var(--space-md);
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+.field-group label {
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: 1px solid rgba(26, 26, 26, 0.12);
+    background: rgba(255, 255, 255, 0.8);
+    color: var(--color-text);
+    border-radius: 12px;
+    padding: 0.9rem 1rem;
+    font: inherit;
+    line-height: 1.5;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+    box-sizing: border-box;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: var(--color-muted);
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: rgba(26, 26, 26, 0.45);
+    box-shadow: 0 0 0 4px rgba(26, 26, 26, 0.05);
+    background: var(--color-warm-white);
+}
+.contact-form textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+.contact-form button {
+    align-self: flex-start;
+    border: none;
+    background: var(--color-charcoal);
+    color: var(--color-warm-white);
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.9rem 1.5rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+.contact-form button:hover {
+    transform: translateY(-1px);
+    opacity: 0.96;
+}
+.contact-form button:focus-visible {
+    outline: 2px solid var(--color-charcoal);
+    outline-offset: 3px;
+}
+.contact-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 381.391px;
+    max-width: 100%;
+    min-height: 300px;
+}
+.contact-social p {
+    margin: 0 0 var(--space-md);
+    color: var(--color-muted);
+    line-height: 1.7;
+}
+.contact-social ul {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.9rem;
+}
+.contact-social li a {
+    display: inline-flex;
+    align-items: top;
+    gap: 0.5rem;
+    font-family: var(--font-body);
+    font-weight: 500;
+    color: var(--color-text);
+    padding-bottom: 0.1rem;
+    border-bottom: 1px solid rgba(26, 26, 26, 0.12);
+}
+.contact-social li a:hover {
+    color: var(--color-charcoal);
+    border-color: rgba(26, 26, 26, 0.4);
+}
+
+.contact-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: grid;
+    place-items: center;
+    padding: var(--space-sm);
+    background: rgba(26, 26, 26, 0.55);
+}
+.contact-modal[hidden] { display: none; }
+.contact-modal-content {
+    position: relative;
+    width: min(100%, 440px);
+    padding: clamp(2rem, 6vw, 3.5rem);
+    box-sizing: border-box;
+    text-align: center;
+    background: var(--color-warm-white);
+    border: var(--border-light);
+    box-shadow: 0 20px 60px rgba(26, 26, 26, 0.18);
+}
+.contact-modal-content h2 {
+    margin: 0 0 var(--space-xs);
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-weight: 500;
+}
+.contact-modal-content p {
+    margin: 0 0 var(--space-md);
+    color: var(--color-muted);
+    line-height: 1.6;
+}
+.contact-modal-close {
+    position: absolute;
+    top: 0.8rem;
+    right: 0.8rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    border: none;
+    background: transparent;
+    color: var(--color-text);
+    font-size: 1.7rem;
+    line-height: 1;
+    cursor: pointer;
+}
+.contact-modal-close:focus-visible,
+.contact-modal-action:focus-visible {
+    outline: 2px solid var(--color-charcoal);
+    outline-offset: 3px;
+}
+.contact-modal-action {
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 999px;
+    background: var(--color-charcoal);
+    color: var(--color-warm-white);
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
 /* Filters and grid */
 .store-filters {
     display: flex;
@@ -91,10 +275,17 @@
 }
 @media (max-width: 900px) {
     .store-grid { grid-template-columns: repeat(2, 1fr); }
+    .contact-layout { grid-template-columns: 1fr; }
+    .contact-social {
+        width: 100%;
+        min-height: auto;
+    }
 }
 @media (max-width: 620px) {
     .store-grid { grid-template-columns: 1fr; }
-    .store-hero { padding: var(--space-md) 0 var(--space-sm); }
+    .store-hero,
+    .contact-hero { padding: var(--space-md) 0 var(--space-sm); }
+    .contact-form button { width: 100%; }
 }
 
 /* Floating cart */

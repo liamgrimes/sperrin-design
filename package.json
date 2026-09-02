@@ -2,15 +2,20 @@
   "name": "sperrin-design",
   "version": "1.0.0",
   "description": "Sperrin Design Website",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "build": "echo build",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-     "images": "node scripts/optimise-images.js"
+    "images": "node scripts/optimise-images.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemailer": "^9.0.5",
     "sharp": "^0.35.3"
   }
 }
