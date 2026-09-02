@@ -1,29 +1,10 @@
-<!--
-  SETUP — do these steps once the Shopify store exists:
-  1. Create a Shopify store (any plan that includes "Buy Button" works — ideally Lite plan for £9 monthly).
-  2. In Shopify Admin, go to Sales channels → add the "Buy Button" channel.
-  3. In Settings → Apps and sales channels → Buy Button → Manage,
-     generate a Storefront API access token if one isn't shown to you
-     automatically when you create your first buy button.
-     (This token is a PUBLIC, unauthenticated Storefront API token — it is
-     designed to be embedded in client-side JS like this. It cannot access
-     orders, customers, or your admin — it only reads product data and
-     creates checkouts. It is not a secret key.)
-  4. Find your store domain — it looks like: your-store.myshopify.com
-  5. For each product, grab its numeric Product ID:
-     Admin → Products → open a product → the ID is in the URL
-     (.../products/1234567890).
-  6. Fill in SHOPIFY_CONFIG and the PRODUCTS array below with your real
-     domain, token, product IDs, names, prices, descriptions and photos.
-  ============================================================================
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Storefront | Sperrin Design</title>
-<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="assets/css/style.css?v=2" />
 </head>
 <body>
 
@@ -35,7 +16,7 @@
     <span class="eyebrow">New arrivals</span>
      <h1>Irish fashion,</h1>
     <h1><span class="accent-underline">made to last</span>.</h1>
-    <p>Sperrin's recent designs - in stock and ready to ship to their new home. Every order is checked out securely through Shopify, and can be tailored upon request.</p>
+    <p>Sperrin's recent designs - in stock and ready to ship to their new home. Every order is checked out securely through Shopify.</p>
   </section>
 
   <nav class="store-filters" id="filters" aria-label="Filter products by category">
@@ -71,7 +52,7 @@
   </div>
 </div>
 
-<script src="https://sdks.shopifycdn.com/buy-button/latest/buybutton.min.js"></script>
+<script src="https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js"></script>
 <script src="assets/js/storefront-data.js"></script>
 <script src="assets/js/storefront.js"></script>
 <script src="assets/js/main.js"></script>

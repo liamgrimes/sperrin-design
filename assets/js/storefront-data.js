@@ -1,17 +1,17 @@
 window.SPERRIN_STOREFRONT = window.SPERRIN_STOREFRONT || {};
 window.SPERRIN_STOREFRONT.SHOPIFY_CONFIG = {
-  domain: 'YOUR-STORE.myshopify.com',
-  storefrontAccessToken: 'YOUR_STOREFRONT_ACCESS_TOKEN',
+  domain: 'hc0tk6-zz.myshopify.com',
+  storefrontAccessToken: '75c3465da5f58e0bb92ca6864dfed5c2',
 };
 
 window.SPERRIN_STOREFRONT.PRODUCTS = [
   {
-    id: 'REPLACE_WITH_PRODUCT_ID_1',
+    id: '16105029206396',
     name: 'Errigal Sleeves',
     category: 'Tops',
     price: '£119',
-    description: '#TODO',
-    details: '#TODO',
+    description: 'Polyester/Cotton blend.',
+    details: 'Deadstock fabric: Polyester/Cotton blend. Dry clean only.',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
       { size: 'XS', chest: '92cm', length: '68cm' },
@@ -25,14 +25,15 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     ],
   },
   {
-    id: 'REPLACE_WITH_PRODUCT_ID_1',
+    id: '16104968290684',
     name: 'Errigal Shorts',
     category: 'Shorts',
     price: '£99',
-    description: '#TODO',
-    details: '#TODO',
+    description: 'Polyester/Cotton blend.',
+    details: 'Deadstock fabric: Polyester/Cotton blend. Dry clean only.',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
+      { size: 'XS', chest: '92cm', length: '68cm' }
       { size: 'XS', chest: '92cm', length: '68cm' },
       { size: 'S', chest: '94cm', length: '64cm' },
       { size: 'M', chest: '98cm', length: '66cm' },
@@ -44,13 +45,14 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     ],
   },
   {
-    id: 'REPLACE_WITH_PRODUCT_ID_2',
+    id: '16104969961852',
     name: 'Grey Celtic Bloomers',
     category: 'Bottoms',
     price: '£149',
-    description: '#TODO',
-    details: '#TODO',
+    description: '100% linen.',
+    details: '100% Linen. Dry clean only.',
     sizeGuide: [
+      { size: '26', chest: 'Waist 66cm', length: '104cm' }
       { size: '26', chest: 'Waist 66cm', length: '104cm' }
     ],
     images: [
@@ -60,12 +62,12 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     ],
   },
   {
-    id: 'REPLACE_WITH_PRODUCT_ID_3',
+    id: '16104970420604',
     name: 'Blue Herringbone Jacket',
     category: 'Jacket',
     price: '£199',
-    description: '#TODO',
-    details: '#TODO',
+    description: 'Outer fabric: 60% Polyester, 40% Wool. Lining: 100% Cotton.',
+    details: 'Outer fabric: 60% Polyester, 40% Wool. Lining: 100% Cotton. Dry clean only.',
     sizes: ['S', 'M', 'L'],
     sizeGuide: [
       { size: 'S', chest: '94cm', length: '64cm' }
@@ -75,14 +77,15 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     ],
   },
   {
-    id: 'REPLACE_WITH_PRODUCT_ID_3',
+    id: '16104983593340',
     name: 'Blue Herringbone Bloomers',
     category: 'Bottoms',
     price: '£179',
-    description: '#TODO',
-    details: '#TODO',
+    description: 'Outer fabric: 60% Polyester, 40% Wool. Lining: 100% Cotton.',
+    details: 'Outer fabric: 60% Polyester, 40% Wool. Lining: 100% Cotton. Dry clean only.',
     sizes: ['S', 'M', 'L'],
     sizeGuide: [
+      { size: 'S', chest: '94cm', length: '64cm' }
       { size: 'S', chest: '94cm', length: '64cm' }
     ],
     images: [
@@ -90,12 +93,12 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     ],
   },
   {
-    id: 'REPLACE_WITH_PRODUCT_ID_4',
+    id: '16104993653116',
     name: 'Denim Zip Up Top',
     category: 'Tops',
     price: '£89',
-    description: '#TODO',
-    details: '#TODO',
+    description: '100% cotton.',
+    details: '100% cotton. Dry clean only.',
     sizes: ['S', 'M', 'L', 'XL'],
     sizeGuide: [
       { size: 'S', chest: '104cm', length: '66cm' }
@@ -105,14 +108,15 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     ],
   },
    {
-    id: 'REPLACE_WITH_PRODUCT_ID_4',
+    id: '16104995029372',
     name: 'Denim Eyelet Jorts',
     category: 'Bottoms',
     price: '£149',
-    description: '#TODO',
-    details: '#TODO',
+    description: '100% cotton.',
+    details: '100% cotton. Dry clean only.',
     sizes: ['S', 'M', 'L', 'XL'],
     sizeGuide: [
+      { size: 'S', chest: '104cm', length: '66cm' }
       { size: 'S', chest: '104cm', length: '66cm' }
     ],
     images: [
@@ -122,12 +126,12 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     ],
   },
   {
-    id: 'REPLACE_WITH_PRODUCT_ID_5',
+    id: '16104996143484',
     name: 'Green Tapestry Cropped Sleeves',
     category: 'Tops',
     price: '£129',
-    description: '#TODO',
-    details: '#TODO',
+    description: '80% polyester, 20% cotton.',
+    details: '80% polyester, 20% cotton. Dry clean only.',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
@@ -141,14 +145,15 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     ],
   },
   {
-    id: 'REPLACE_WITH_PRODUCT_ID_5',
+    id: '16104997814652',
     name: 'Green Tapestry Shorts',
     category: 'Shorts',
     price: '£119',
-    description: '#TODO',
-    details: '#TODO',
+    description: '80% polyester, 20% cotton.',
+    details: '80% polyester, 20% cotton. Dry clean only.',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
@@ -160,14 +165,15 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     ],
   },
   {
-    id: 'REPLACE_WITH_PRODUCT_ID_6',
+    id: '16104999813500',
     name: 'Green Tapestry Culottes',
     category: 'Bottoms',
     price: '£189',
-    description: '#TODO',
-    details: '#TODO',
+    description: '80% polyester, 20% cotton.',
+    details: '80% polyester, 20% cotton. Dry clean only.',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
@@ -178,12 +184,12 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     ],
   },
   {
-    id: 'REPLACE_WITH_PRODUCT_ID_7',
+    id: '16105001091452',
     name: 'Thistle Cropped Top',
     category: 'Tops',
     price: '£99',
-    description: '#TODO',
-    details: '#TODO',
+    description: '100% cotton.',
+    details: '100% cotton. Dry clean only.',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
@@ -196,14 +202,15 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     ],
   },
   {
-    id: 'REPLACE_WITH_PRODUCT_ID_7',
+    id: '16105001910652',
     name: 'Thistle Shorts',
     category: 'Shorts',
     price: '£139',
-    description: '#TODO',
-    details: '#TODO',
+    description: '100% cotton.',
+    details: '100% cotton. Dry clean only.',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
@@ -213,12 +220,12 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     ],
   },
   {
-    id: 'REPLACE_WITH_PRODUCT_ID_8',
+    id: '16105002533244',
     name: 'Whimsy Bloomers',
     category: 'Bottoms',
     price: '£129',
-    description: '#TODO',
-    details: '#TODO',
+    description: '100% linen.',
+    details: '100% linen. Dry clean only.',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
@@ -232,14 +239,15 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     ],
   },
   {
-    id: 'REPLACE_WITH_PRODUCT_ID_9',
+    id: '16105003712892',
     name: 'Porcelain Shorts',
     category: 'Shorts',
     price: '£119',
-    description: '#TODO',
-    details: '#TODO',
+    description: '100% polyester.',
+    details: '100% polyester. Dry clean only.',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
@@ -249,14 +257,15 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     ],
   },
   {
-    id: 'REPLACE_WITH_PRODUCT_ID_9',
+    id: '16105004335484',
     name: 'Brown Corset Top',
     category: 'Tops',
     price: '£29',
-    description: '#TODO',
-    details: '#TODO',
+    description: '100% polyester.',
+    details: '100% polyester. Dry clean only.',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
@@ -269,14 +278,15 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     ],
   },
   {
-    id: 'REPLACE_WITH_PRODUCT_ID_10',
+    id: '16105005023612',
     name: 'Teal Linen Dungarees',
     category: 'Bottoms',
     price: '£149',
-    description: '#TODO',
-    details: '#TODO',
+    description: '100% linen.',
+    details: '100% linen. Dry clean only.',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
@@ -287,14 +297,15 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     ],
   },
   {
-    id: 'REPLACE_WITH_PRODUCT_ID_11',
+    id: '16105005777276',
     name: 'Blue Blossom Culottes',
     category: 'Bottoms',
     price: '£129',
-    description: '#TODO',
-    details: '#TODO',
+    description: 'Deadstock fabric: Polyester/Cotton blend.',
+    details: 'Deadstock fabric: Polyester/Cotton blend. Dry clean only.',
     sizes: ['XS', 'S', 'M', 'L'],
     sizeGuide: [
+      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
       { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
     ],
     images: [
