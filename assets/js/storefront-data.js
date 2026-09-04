@@ -5,45 +5,45 @@ window.SPERRIN_STOREFRONT.SHOPIFY_CONFIG = {
 };
 
 window.SPERRIN_STOREFRONT.PRODUCTS = [
-  {
-    id: '16104824209788',
-    name: 'Errigal Sleeves',
-    category: 'Tops',
-    price: '£119',
-    description: 'Polyester/Cotton blend.',
-    details: 'Deadstock fabric: Polyester/Cotton blend. Dry clean only.',
-    sizes: ['XS', 'S', 'M', 'L'],
-    sizeGuide: [
-      { size: 'XS', chest: '92cm', length: '68cm' },
-      { size: 'S', chest: '94cm', length: '64cm' },
-      { size: 'M', chest: '98cm', length: '66cm' },
-      { size: 'L', chest: '102cm', length: '68cm' }
-    ],
-    images: [
-      'assets/images/collections/SS26/errigal-2.JPEG',
-      'assets/images/collections/SS26/errigal.JPEG'
-    ],
-  },
-  {
-    id: '16104968290684',
-    name: 'Errigal Shorts',
-    category: 'Shorts',
-    price: '£99',
-    description: 'Polyester/Cotton blend.',
-    details: 'Deadstock fabric: Polyester/Cotton blend. Dry clean only.',
-    sizes: ['XS', 'S', 'M', 'L'],
-    sizeGuide: [
-      { size: 'XS', chest: '92cm', length: '68cm' },
-      { size: 'XS', chest: '92cm', length: '68cm' },
-      { size: 'S', chest: '94cm', length: '64cm' },
-      { size: 'M', chest: '98cm', length: '66cm' },
-      { size: 'L', chest: '102cm', length: '68cm' }
-    ],
-    images: [
-      'assets/images/collections/SS26/errigal.JPEG',
-      'assets/images/collections/SS26/errigal-2.JPEG'
-    ],
-  },
+  // {
+  //   id: '16104824209788',
+  //   name: 'Errigal Sleeves',
+  //   category: 'Tops',
+  //   price: '£119',
+  //   description: 'Polyester/Cotton blend.',
+  //   details: 'Deadstock fabric: Polyester/Cotton blend. Dry clean only.',
+  //   sizes: ['XS', 'S', 'M', 'L'],
+  //   sizeGuide: [
+  //     { size: 'XS', chest: '92cm', length: '68cm' },
+  //     { size: 'S', chest: '94cm', length: '64cm' },
+  //     { size: 'M', chest: '98cm', length: '66cm' },
+  //     { size: 'L', chest: '102cm', length: '68cm' }
+  //   ],
+  //   images: [
+  //     'assets/images/collections/SS26/errigal-2.JPEG',
+  //     'assets/images/collections/SS26/errigal.JPEG'
+  //   ],
+  // },
+  // {
+  //   id: '16104968290684',
+  //   name: 'Errigal Shorts',
+  //   category: 'Shorts',
+  //   price: '£99',
+  //   description: 'Polyester/Cotton blend.',
+  //   details: 'Deadstock fabric: Polyester/Cotton blend. Dry clean only.',
+  //   sizes: ['XS', 'S', 'M', 'L'],
+  //   sizeGuide: [
+  //     { size: 'XS', chest: '92cm', length: '68cm' },
+  //     { size: 'XS', chest: '92cm', length: '68cm' },
+  //     { size: 'S', chest: '94cm', length: '64cm' },
+  //     { size: 'M', chest: '98cm', length: '66cm' },
+  //     { size: 'L', chest: '102cm', length: '68cm' }
+  //   ],
+  //   images: [
+  //     'assets/images/collections/SS26/errigal.JPEG',
+  //     'assets/images/collections/SS26/errigal-2.JPEG'
+  //   ],
+  // },
   {
     id: '16104969961852',
     name: 'Grey Celtic Bloomers',
@@ -51,9 +51,12 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     price: '£149',
     description: '100% linen.',
     details: '100% Linen. Dry clean only.',
+    sizes: ['6', '8', '10', '12'],
     sizeGuide: [
-      { size: '26', chest: 'Waist 66cm', length: '104cm' },
-      { size: '26', chest: 'Waist 66cm', length: '104cm' }
+      { size: '6', waist: 'Waist 26"', length: 'Inseam 22"' },
+      { size: '8', waist: 'Waist 28"', length: 'Inseam 22"' },
+      { size: '10', waist: 'Waist 30"', length: 'Inseam 22"' },
+      { size: '12', waist: 'Waist 32"', length: 'Inseam 22"' }
     ],
     images: [
       'assets/images/collections/SS26/grey-celtic-bloomers-3.webp',
@@ -68,9 +71,12 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     price: '£199',
     description: 'Outer fabric: 60% Polyester, 40% Wool. Lining: 100% Cotton.',
     details: 'Outer fabric: 60% Polyester, 40% Wool. Lining: 100% Cotton. Dry clean only.',
-    sizes: ['S', 'M', 'L'],
+    sizes: ['8', '10', '12', '14'],
     sizeGuide: [
-      { size: 'S', chest: '94cm', length: '64cm' }
+      { size: '8', chest: 'Chest 32"' },
+      { size: '10', chest: 'Chest 34"' },
+      { size: '12', chest: 'Chest 36"' },
+      { size: '14', chest: 'Chest 38"' }
     ],
     images: [
       'assets/images/collections/SS26/herringbone-set.JPEG'
@@ -83,10 +89,12 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     price: '£179',
     description: 'Outer fabric: 60% Polyester, 40% Wool. Lining: 100% Cotton.',
     details: 'Outer fabric: 60% Polyester, 40% Wool. Lining: 100% Cotton. Dry clean only.',
-    sizes: ['S', 'M', 'L'],
+    sizes: ['6', '8', '10', '12'],
     sizeGuide: [
-      { size: 'S', chest: '94cm', length: '64cm' },
-      { size: 'S', chest: '94cm', length: '64cm' }
+      { size: '6', waist: 'Waist 26"', length: 'Inseam 16"' },
+      { size: '8', waist: 'Waist 28"', length: 'Inseam 16"' },
+      { size: '10', waist: 'Waist 30"', length: 'Inseam 16"' },
+      { size: '12', waist: 'Waist 32"', length: 'Inseam 16"' }
     ],
     images: [
       'assets/images/collections/SS26/herringbone-set.JPEG'
@@ -99,9 +107,13 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     price: '£89',
     description: '100% cotton.',
     details: '100% cotton. Dry clean only.',
-    sizes: ['S', 'M', 'L', 'XL'],
+    sizes: ['8', '10', '12', '14', '16'],
     sizeGuide: [
-      { size: 'S', chest: '104cm', length: '66cm' }
+      { size: '8', chest: 'Chest 32"' },
+      { size: '10', chest: 'Chest 34"' },
+      { size: '12', chest: 'Chest 36"' },
+      { size: '14', chest: 'Chest 38"' },
+      { size: '16', chest: 'Chest 40"' }
     ],
     images: [
       'assets/images/collections/festival-season/double-denim-zip-up-top.JPEG'
@@ -114,10 +126,14 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     price: '£149',
     description: '100% cotton.',
     details: '100% cotton. Dry clean only.',
-    sizes: ['S', 'M', 'L', 'XL'],
+    sizes: ['6', '8', '10', '12', '14', '16'], 
     sizeGuide: [
-      { size: 'S', chest: '104cm', length: '66cm' },
-      { size: 'S', chest: '104cm', length: '66cm' }
+      { size: '6', waist: 'Waist 26"', length: 'Inseam 16"' },
+      { size: '8', waist: 'Waist 28"', length: 'Inseam 16"' },
+      { size: '10', waist: 'Waist 30"', length: 'Inseam 16"' },
+      { size: '12', waist: 'Waist 32"', length: 'Inseam 16"' },
+      { size: '14', waist: 'Waist 34"', length: 'Inseam 16"' },
+      { size: '16', waist: 'Waist 36"', length: 'Inseam 16"' },
     ],
     images: [
       'assets/images/collections/festival-season/double-denim-zip-up.webp',
@@ -132,9 +148,13 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     price: '£129',
     description: '80% polyester, 20% cotton.',
     details: '80% polyester, 20% cotton. Dry clean only.',
-    sizes: ['XS', 'S', 'M', 'L'],
+    sizes: ['8', '10', '12', '14', '16'],
     sizeGuide: [
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+      { size: '8', chest: 'Chest 32"' },
+      { size: '10', chest: 'Chest 34"' },
+      { size: '12', chest: 'Chest 36"' },
+      { size: '14', chest: 'Chest 38"' },
+      { size: '16', chest: 'Chest 40"' }
     ],
     images: [
         'assets/images/collections/SS26/green-tapestry-sleeve-short-2.JPEG',
@@ -151,10 +171,15 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     price: '£119',
     description: '80% polyester, 20% cotton.',
     details: '80% polyester, 20% cotton. Dry clean only.',
-    sizes: ['XS', 'S', 'M', 'L'],
+    sizes: ['6', '8', '10', '12', '14', '16'],
     sizeGuide: [
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' },
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+      { size: '6', waist: 'Waist 26"'},
+      { size: '8', waist: 'Waist 28"'},
+      { size: '10', waist: 'Waist 30"'},
+      { size: '12', waist: 'Waist 32"'},
+      { size: '14', waist: 'Waist 34"'},
+      { size: '16', waist: 'Waist 36"'}
+
     ],
     images: [
       'assets/images/collections/SS26/green-tapestry-sleeve-short-3.webp',
@@ -171,10 +196,14 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     price: '£189',
     description: '80% polyester, 20% cotton.',
     details: '80% polyester, 20% cotton. Dry clean only.',
-    sizes: ['XS', 'S', 'M', 'L'],
+    sizes: ['6', '8', '10', '12', '14', '16'],
     sizeGuide: [
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' },
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+      { size: '6', waist: 'Waist 26"', length: 'Inseam 16"' },
+      { size: '8', waist: 'Waist 28"', length: 'Inseam 16"' },
+      { size: '10', waist: 'Waist 30"', length: 'Inseam 16"' },
+      { size: '12', waist: 'Waist 32"', length: 'Inseam 16"' },
+      { size: '14', waist: 'Waist 34"', length: 'Inseam 16"' },
+      { size: '16', waist: 'Waist 36"', length: 'Inseam 16"' }
     ],
     images: [
       'assets/images/collections/festival-season/culottes.JPEG',
@@ -190,9 +219,10 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     price: '£99',
     description: '100% cotton.',
     details: '100% cotton. Dry clean only.',
-    sizes: ['XS', 'S', 'M', 'L'],
+    sizes: ['8', '10'],
     sizeGuide: [
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+      { size: '8', chest: 'Chest 32"', length: '13” length from neck' },
+      { size: '10', chest: 'Chest 34"', length: '13” length from neck' }
     ],
     images: [
       'assets/images/collections/SS26/thistle-set-4.webp',
@@ -208,10 +238,12 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     price: '£139',
     description: '100% cotton.',
     details: '100% cotton. Dry clean only.',
-    sizes: ['XS', 'S', 'M', 'L'],
+    sizes: ['8', '10', '12', '14'],
     sizeGuide: [
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' },
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+      { size: '6', waist: 'Waist 26"', length: 'Inseam 16"' },
+      { size: '8', waist: 'Waist 28"', length: 'Inseam 16"' },
+      { size: '10', waist: 'Waist 30"', length: 'Inseam 16"' },
+      { size: '12', waist: 'Waist 32"', length: 'Inseam 16"' }
     ],
     images: [
       'assets/images/collections/SS26/thistle-set-2.webp',
@@ -226,9 +258,12 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     price: '£129',
     description: '100% linen.',
     details: '100% linen. Dry clean only.',
-    sizes: ['XS', 'S', 'M', 'L'],
+    sizes: ['6', '8', '10', '12'],
     sizeGuide: [
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+      { size: '6', waist: 'Waist 26"', length: 'Inseam 15.5”' },
+      { size: '8', waist: 'Waist 28"', length: 'Inseam 15.5”' },
+      { size: '10', waist: 'Waist 30"', length: 'Inseam 15.5”' },
+      { size: '12', waist: 'Waist 32"', length: 'Inseam 15.5”' }
     ],
     images: [
       'assets/images/collections/festival-season/blouse-whimsy-bloomer-3.webp',
@@ -245,10 +280,14 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     price: '£119',
     description: '100% polyester.',
     details: '100% polyester. Dry clean only.',
-    sizes: ['XS', 'S', 'M', 'L'],
+    sizes: ['6', '8', '10', '12', '14', '16'],
     sizeGuide: [
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' },
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+      { size: '6', waist: 'Waist 26"' },
+      { size: '8', waist: 'Waist 28"' },
+      { size: '10', waist: 'Waist 30"' },
+      { size: '12', waist: 'Waist 32"' },
+      { size: '14', waist: 'Waist 34"' },
+      { size: '16', waist: 'Waist 36"' }
     ],
     images: [
       'assets/images/collections/festival-season/whimsy-blouse-shorts.JPG',
@@ -263,10 +302,9 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     price: '£29',
     description: '100% polyester.',
     details: '100% polyester. Dry clean only.',
-    sizes: ['XS', 'S', 'M', 'L'],
+    sizes: ['8-10'],
     sizeGuide: [
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' },
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+      { size: '8-10', chest: 'Chest 32-34"'}
     ],
     images: [
       'assets/images/collections/SS26/brown-corset.JPEG',
@@ -284,10 +322,12 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     price: '£149',
     description: '100% linen.',
     details: '100% linen. Dry clean only.',
-    sizes: ['XS', 'S', 'M', 'L'],
+    sizes: ['6', '8', '10', '12'],
     sizeGuide: [
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' },
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+      { size: '6', waist: 'Waist 26"', length: 'Inseam 15.5”' },
+      { size: '8', waist: 'Waist 28"', length: 'Inseam 15.5”' },
+      { size: '10', waist: 'Waist 30"', length: 'Inseam 15.5”' },
+      { size: '12', waist: 'Waist 32"', length: 'Inseam 15.5”' }
     ],
     images: [
       'assets/images/collections/festival-season/teal-dungarees-3.JPG',
@@ -303,10 +343,13 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     price: '£129',
     description: '100% polyester.',
     details: '100% polyester. Dry clean only.',
-    sizes: ['XS', 'S', 'M', 'L'],
+    sizes: ['6', '8', '10', '12', '14'],
     sizeGuide: [
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' },
-      { size: 'XS', chest: 'Waist 64cm', length: '78cm' }
+      { size: '6', waist: 'Waist 26"', length: 'Inseam 16”' },
+      { size: '8', waist: 'Waist 28"', length: 'Inseam 16”' },
+      { size: '10', waist: 'Waist 30"', length: 'Inseam 16”' },
+      { size: '12', waist: 'Waist 32"', length: 'Inseam 16”' },
+      { size: '14', waist: 'Waist 34"', length: 'Inseam 16”' },
     ],
     images: [
       'assets/images/collections/SS26/blue-blossom-culotte.JPEG',

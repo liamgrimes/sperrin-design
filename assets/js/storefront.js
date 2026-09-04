@@ -79,6 +79,7 @@ function createProductCardMarkup(product, index) {
 }
 
 function createProductDetailMarkup(product, index) {
+  const hasLength = product.sizeGuide?.some((row) => row.length);
   const sizeChipsHtml = product.sizes
     ? `<p class="detail-section-label">Size</p>
        <div class="size-chips" role="group" aria-label="Select a size">
@@ -91,13 +92,13 @@ function createProductDetailMarkup(product, index) {
   const sizeGuideHtml = product.sizeGuide
     ? `<p class="detail-section-label">Size guide</p>
        <table class="size-guide">
-         <thead><tr><th>Size</th><th>Measurement</th><th>Length</th></tr></thead>
+         <thead><tr><th>Size</th><th>Measurement</th>${hasLength ? '<th>Length</th>' : ''}</tr></thead>
          <tbody>
           <p>
             Each piece is tailor made to fit the measurements listed in the size guide below. If your size is not listed, please contact us <u><b><a href="contact.html">here</a></b></u> to discuss a custom order.
           </p>
            ${product.sizeGuide
-             .map((row) => `<tr><td>${row.size}</td><td>${row.chest}</td><td>${row.length}</td></tr>`)
+             .map((row) => `<tr><td>${row.size}</td><td>${row.chest || row.waist}</td>${hasLength ? `<td>${row.length || ''}</td>` : ''}</tr>`)
              .join('')}
          </tbody>
        </table>`
