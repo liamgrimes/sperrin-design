@@ -20,7 +20,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 photographer: ["Megan Hill"],
                 model: ["Luke"],
                 available: false,
-                storeLink: ""
+                storeLinks: ""
             },
 
             {
@@ -34,7 +34,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 photographer: ["Megan Hill"],
                 model: ["Kathryn"],
                 available: false,
-                storeLink: ""
+                storeLinks: ""
             },
 
             {
@@ -47,7 +47,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 photographer: ["Megan Hill"],
                 model: ["Lucy"],
                 available: false,
-                storeLink: ""
+                storeLinks: ""
             }
         ],
 
@@ -90,6 +90,8 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
         ]
     },
 
+    //Festival Season
+
     {
         name: "Festival Season",
         slug: "festival-season",
@@ -110,8 +112,10 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 description: "Collection piece from Festival Season.",
                 photographer: ["Bryony Coles"],
                 model: ["Freya"],
-                available: false,
-                storeLink: ""
+                available: true,
+                storeLinks: [
+                    '16105002533244'
+                ]
             },
 
             {
@@ -124,8 +128,10 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 description: "Collection piece from Festival Season.",
                 photographer: ["Megan Hill"],
                 model: ["Kathryn"],
-                available: false,
-                storeLink: ""
+                available: true,
+                storeLinks: [
+                    '16105003712892'
+                ]
             },
 
             {
@@ -139,12 +145,14 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 description: "Collection piece from Festival Season.",
                 photographer: ["Ollie"],
                 model: ["Broinnínn"],
-                available: false,
-                storeLink: ""
+                available: true,
+                storeLinks: [
+                    '16104999813500'
+                ]
             },
 
             {
-                name: "Denim Eyelet Jorts",
+                name: "Denim Eyelet Jorts & Zip-Up",
                 images: [
                     "assets/images/collections/festival-season/double-denim-zip-up.webp",
                     "assets/images/collections/festival-season/double-denim-zip-up-2.webp",
@@ -153,8 +161,11 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 description: "Collection piece from Festival Season.",
                 photographer: ["Ollie"],
                 model: ["Fia"],
-                available: false,
-                storeLink: ""
+                available: true,
+                storeLinks: [
+                    '16104993653116',
+                    '16104995029372'
+                ]
             },
 
             {
@@ -169,7 +180,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 photographer: ["Megan Hill", " Bryony Coles"],
                 model: ["Astrid", " Malak"],
                 available: false,
-                storeLink: ""
+                storeLinks: ""
             },
 
             {
@@ -185,7 +196,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 photographer: ["Sophie Maginn"," Bryony Coles"],
                 model: ["Grace", " Anona"],
                 available: false,
-                storeLink: ""
+                storeLinks: ""
             },
 
             {
@@ -197,10 +208,12 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                     "assets/images/collections/festival-season/teal-dungarees-5.JPG"
                 ],
                 description: "Collection piece from Festival Season.",
-                photographer: ["TBC"],
+                photographer: ["Megan Hill"],
                 model: ["Broinnínn"],
-                available: false,
-                storeLink: ""
+                available: true,
+                storeLinks: [
+                    '16105005023612'
+                ]
             }
         ],
 
@@ -237,7 +250,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 photographer: ["Sophie Maginn"],
                 model: ["Adeola"],
                 available: false,
-                storeLink: ""
+                storeLinks: ""
             },
 
             {
@@ -252,7 +265,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 photographer: ["Sophie Maginn", " Finn O'Neill"],
                 model: ["Ieva"],
                 available: false,
-                storeLink: ""
+                storeLinks: ""
             },
 
             {
@@ -264,8 +277,11 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 description: "",
                 photographer: ["Sophie Maginn"],
                 model: ["Ruth"],
-                available: false,
-                storeLink: ""
+                available: true,
+                storeLinks: [
+                    '16105029206396', // Errigal Sleeves
+                    '16104968290684'  // Errigal Shorts
+                ]
             },
 
             {
@@ -278,7 +294,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 photographer: ["Sophie Maginn"],
                 model: ["Kathryn"],
                 available: false,
-                storeLink: ""
+                storeLinks: ""
             },
 
             {
@@ -292,12 +308,15 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 description: "",
                 photographer: ["Sophie Maginn"],
                 model: ["Paris", " Rachel"],
-                available: false,
-                storeLink: ""
+                available: true,
+                storeLinks: [
+                    '16104996143484',
+                    '16104997814652'
+                ]
             },
 
             {
-                name: "Brown Bodysuit & Porcelain Shorts",
+                name: "Brown Corset Top & Porcelain Shorts",
                 images: [
                     "assets/images/collections/SS26/brown-corset-porcelain-shorts.JPEG",
                     "assets/images/collections/SS26/brown-corset.JPEG",
@@ -313,8 +332,10 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 description: "",
                 photographer: ["Sophie Maginn", " Jordan Picces"],
                 model: ["Paris", " Rachel"],
-                available: false,
-                storeLink: ""
+                available: true,
+                storeLinks: [
+                    '16105003712892'
+                ]
             },
 
             {
@@ -325,8 +346,11 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 description: "",
                 photographer: ["Sophie Maginn"],
                 model: ["Broinnínn"],
-                available: false,
-                storeLink: ""
+                available: true,
+                storeLinks: [
+                    '16104970420604',
+                    '16104983593340'
+                ]
             },
 
             {
@@ -339,8 +363,10 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 description: "",
                 photographer: ["Chloe Jayne"],
                 model: ["Broinnínn"],
-                available: false,
-                storeLink: ""
+                available: true,
+                storeLinks: [
+                    '16105005777276'
+                ]
             },
 
             {
@@ -355,8 +381,10 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 description: "",
                 photographer: ["Finn O'Neill"],
                 model: ["Vic"],
-                available: false,
-                storeLink: ""
+                available: true,
+                storeLinks: [
+                    '16104969961852'
+                ]
             },
 
             {
@@ -370,8 +398,11 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 description: "",
                 photographer: ["Finn O'Neill", " Jordan Picces"],
                 model: ["Kathryn", " Brook"],
-                available: false,
-                storeLink: ""
+                available: true,
+                storeLinks: [
+                    '16105001091452',
+                    '16105001910652'
+                ]
             }
         ],
 
@@ -452,7 +483,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             photographer: "Bryony Coles",
             model: "TBC",
             available: false,
-            storeLink: ""
+            storeLinks: ""
             },
 
             {
@@ -465,7 +496,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             photographer: "Bryony Coles",
             model: "TBC",
             available: false,
-            storeLink: ""
+            storeLinks: ""
             },
 
             {
@@ -479,7 +510,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             photographer: ["Bryony Coles" ," Megan Hill"],
             model: "TBC",
             available: false,
-            storeLink: ""
+            storeLinks: ""
             },
 
             {
@@ -491,7 +522,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             photographer: "Megan Hill",
             model: "TBC",
             available: false,
-            storeLink: ""
+            storeLinks: ""
             },
 
             {
@@ -506,7 +537,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             photographer: "Megan Hill",
             model: "TBC",
             available: false,
-            storeLink: ""
+            storeLinks: ""
             },
 
             {
@@ -524,7 +555,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             photographer: "Megan Hill",
             model: "TBC",
             available: false,
-            storeLink: ""
+            storeLinks: ""
             },
 
             {
@@ -536,7 +567,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             photographer: "Megan Hill",
             model: "TBC",
             available: false,
-            storeLink: ""
+            storeLinks: ""
             },
 
             {
@@ -549,7 +580,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             photographer: "Megan Hill",
             model: "TBC",
             available: false,
-            storeLink: ""
+            storeLinks: ""
             },
 
             {
@@ -563,7 +594,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             photographer: "Megan Hill",
             model: "TBC",
             available: false,
-            storeLink: ""
+            storeLinks: ""
             },
 
             {
@@ -579,7 +610,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             photographer: "Megan Hill",
             model: "TBC",
             available: false,
-            storeLink: ""
+            storeLinks: ""
             },
 
             {
@@ -594,7 +625,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             photographer: "Megan Hill",
             model: "TBC",
             available: false,
-            storeLink: ""
+            storeLinks: ""
             },
 
             {
@@ -608,7 +639,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             photographer: "Megan Hill",
             model: "TBC",
             available: false,
-            storeLink: ""
+            storeLinks: ""
             }
         ],
 

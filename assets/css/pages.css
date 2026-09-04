@@ -299,6 +299,34 @@ footer .store-footnote {
 }
 
 /* ============================================
+   Collection page
+   ============================================ */
+
+/* Collection page spacing */
+
+.collection-main,
+.collections-main {
+    padding-top: var(--space-sm);
+}
+
+.collection-main section,
+.collections-main section {
+    padding-top: 0;
+}
+
+.collection-header {
+    padding-top: var(--space-sm);
+    padding-bottom: var(--space-sm);
+    margin-bottom: var(--space-sm);
+}
+
+.collections-intro {
+    padding-top: var(--space-sm);
+    padding-bottom: var(--space-sm);
+    margin-bottom: var(--space-sm);
+}
+
+/* ============================================
    Home page
    ============================================ */
 
@@ -311,7 +339,7 @@ footer .store-footnote {
 #connect {
     width: min(var(--max-width), 90%);
     margin: 0 auto;
-    padding: var(--space-lg) 0;
+    padding: var(--space-md) 0;
 }
 
 
@@ -336,6 +364,8 @@ footer .store-footnote {
 
 #hero {
     text-align: center;
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-md);
 }
 
 .hero-image {
@@ -502,6 +532,8 @@ footer .store-footnote {
 #connect {
     text-align: center;
     max-width: 800px;
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-md);
 }
 
 #connect p {
@@ -565,4 +597,181 @@ footer .store-footnote {
         margin-right: 0;
     }
 
+}
+
+
+/* ============================================
+   About page
+   ============================================ */
+
+.about-intro {
+    text-align: center;
+    padding-top: var(--space-sm);
+    padding-bottom: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+.about-intro h1 {
+    margin-bottom: var(--space-sm);
+}
+
+.about-tagline {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+
+/* About story sections */
+
+.about-story {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
+    padding: var(--space-sm) 0;
+}
+
+.about-story-image {
+    width: 100%;
+    max-width: 400px;
+}
+
+.about-story-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.about-story-content {
+    max-width: 55ch;
+}
+
+.about-story-content p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+
+/* Mobile About page */
+
+@media (max-width: 767px) {
+
+    .about-story {
+        text-align: center;
+    }
+
+    .about-story-image {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-story-content {
+        margin: 0 auto;
+        text-align: justify;
+    }
+
+}
+
+
+/* Desktop */
+
+@media (min-width: 768px) {
+
+    .about-story {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-lg);
+        align-items: center;
+    }
+
+    .about-story-image {
+        grid-column: 1;
+    }
+
+    .about-story-content {
+        grid-column: 2;
+    }
+
+    /* Alternate sections */
+
+    .about-story-reverse .about-story-image {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: end;
+    }
+
+    .about-story-reverse .about-story-content {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+}
+
+/* ============================================
+   Collection store links
+   ============================================ */
+
+.piece-store-links {
+    margin-top: var(--space-md);
+}
+
+.piece-store-links > span {
+    display: block;
+    margin-bottom: var(--space-md);
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    color: var(--color-muted);
+}
+
+.piece-store-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+}
+
+.piece-store-link {
+    display: inline-block;
+    padding: 0.9rem 1.5rem;
+    border: none;
+    border-radius: 999px;
+    background: var(--color-charcoal);
+    color: var(--color-warm-white);
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+
+.piece-store-link:hover {
+    transform: translateY(-1px);
+    opacity: 0.96;
+}
+
+.piece-store-link:focus-visible {
+    outline: 2px solid var(--color-charcoal);
+    outline-offset: 3px;
+}
+
+.piece-store-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+}
+
+.piece-store-link {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border: 1px solid currentColor;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.piece-store-link:hover {
+    background-color: #1a1a1a;
+    color: #fff;
 }
