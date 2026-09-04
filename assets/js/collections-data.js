@@ -248,7 +248,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 ],
                 description: "",
                 photographer: ["Sophie Maginn"],
-                model: [""],
+                model: ["Adeola"],
                 available: false,
                 storeLinks: ""
             },
@@ -306,7 +306,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                     "assets/images/collections/SS26/green-tapestry-sleeve-short-4.webp"
                 ],
                 description: "",
-                photographer: "Sophie Maginn",
+                photographer: ["Sophie Maginn"],
                 model: ["Paris", " Rachel"],
                 available: true,
                 storeLinks: [
