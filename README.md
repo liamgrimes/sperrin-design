@@ -58,8 +58,7 @@
 * Checked that the active dot changes when moving between images.
 * Tested the gallery with lazy-loaded images.
 * Used DevTools to check the gallery buttons and scroll position.
-* Found that the gallery was initially calculating the navigation state
-  before the lazy-loaded images had finished loading.
+* Found that the gallery was initially calculating the navigation state before the lazy-loaded images had finished loading.
 * Updated the gallery to run the navigation check again after the page loads.
 * Confirmed the gallery arrows now work correctly.
 
@@ -77,10 +76,8 @@
 * Checked that links only appear for available pieces.
 * Checked multiple product links on a single piece.
 * Checked the "Shop this look" section.
-* Updated the buttons to match the styling of the Store's Add to Cart
-  buttons.
-* Found and removed/identified duplicate CSS that was overriding the
-  intended button styling.
+* Updated the buttons to match the styling of the Store's Add to Cart buttons.
+* Found and removed/identified duplicate CSS that was overriding the intended button styling.
 
 ## COLLECTION DATA
 
@@ -107,14 +104,11 @@
 ## DEBUGGING
 
 * Used the browser console to investigate gallery issues.
-* Checked the Chrome lazy-loading warning and confirmed it was not an
-  actual JavaScript error.
-* Checked the favicon 404 and confirmed it is unrelated to the site
-  functionality.
+* Checked the Chrome lazy-loading warning and confirmed it was not an actual JavaScript error.
+* Checked the favicon 404 and confirmed it is unrelated to the site functionality.
 * Checked the gallery's scroll position in DevTools.
 * Confirmed the initial gallery position is 0.
-* Manually tested the hidden property on the previous arrow to confirm
-  the CSS was working correctly.
+* Manually tested the hidden property on the previous arrow to confirm the CSS was working correctly.
 
 ## ISSUES FIXED
 
@@ -127,8 +121,7 @@
 * Collection Store-link buttons being overridden by duplicate CSS.
 * Store-link buttons not matching the intended styling.
 * Collection page dependency issue with storefront-data.js.
-* JavaScript errors in storefront-data.js encountered during development
-  and subsequently fixed.
+* JavaScript errors in storefront-data.js encountered during development and subsequently fixed.
 
 ## KNOWN ISSUE
 
