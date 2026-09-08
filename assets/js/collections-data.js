@@ -473,60 +473,67 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
 
         pieces: [
             {
-            name: "Outfit 1",
+            name: "Sawel Set",
             images: [
                 "assets/images/collections/hunt-collection/IMG_3194.JPG",
                 "assets/images/collections/hunt-collection/IMG_3280.JPG",
-                "assets/images/collections/hunt-collection/IMG_3357.JPG"
+                "assets/images/collections/hunt-collection/IMG_3357.JPG",
+                "assets/images/collections/hunt-collection/IMG_4713.JPG",
+                "assets/images/collections/hunt-collection/IMG_4689.JPG",
+                "assets/images/collections/hunt-collection/IMG_4696.JPG",
+                "assets/images/collections/hunt-collection/IMG_4734.JPG"
             ],
             description: "",
             photographer: "Bryony Coles",
-            model: "TBC",
+            model: ["Veronica", " Helen"],
             available: false,
             storeLinks: ""
             },
 
             {
-            name: "Outfit 2",
+            name: "Dart Set",
             images: [
                 "assets/images/collections/hunt-collection/IMG_3234.JPG",
-                "assets/images/collections/hunt-collection/IMG_3207.JPG"
+                "assets/images/collections/hunt-collection/IMG_3207.JPG",
+                "assets/images/collections/hunt-collection/IMG_4543.JPG",
+                "assets/images/collections/hunt-collection/IMG_4837.JPG",
+                "assets/images/collections/hunt-collection/IMG_4833.JPG"
             ],
             description: "",
             photographer: "Bryony Coles",
-            model: "TBC",
+            model: ["Sukë", " Helen"],
             available: false,
             storeLinks: ""
             },
 
             {
-            name: "Outfit 3",
+            name: "The Darach Dress",
             images: [
                 "assets/images/collections/hunt-collection/IMG_3278.JPG",
                 "assets/images/collections/hunt-collection/IMG_4823.JPG",
                 "assets/images/collections/hunt-collection/IMG_4821.JPG"
             ],
             description: "",
-            photographer: ["Bryony Coles" ," Megan Hill"],
-            model: "TBC",
+            photographer: ["Bryony Coles", " Megan Hill"],
+            model: "Tara",
             available: false,
             storeLinks: ""
             },
 
             {
-            name: "Outfit 4",
+            name: "Patchwork Fields",
             images: [
                 "assets/images/collections/hunt-collection/IMG_4292.JPG"
             ],
             description: "",
             photographer: "Megan Hill",
-            model: "TBC",
+            model: "Lucy",
             available: false,
             storeLinks: ""
             },
 
             {
-            name: "Outfit 5",
+            name: "Ceoldán Set",
             images: [
                 "assets/images/collections/hunt-collection/IMG_4333.JPG",
                 "assets/images/collections/hunt-collection/IMG_4306.JPG",
@@ -535,13 +542,13 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             ],
             description: "",
             photographer: "Megan Hill",
-            model: "TBC",
+            model: "Helen",
             available: false,
             storeLinks: ""
             },
 
             {
-            name: "Outfit 6",
+            name: "Darach with Tweed Sleeves",
             images: [
                 "assets/images/collections/hunt-collection/IMG_4418.JPG",
                 "assets/images/collections/hunt-collection/IMG_4423.JPG",
@@ -553,52 +560,38 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             ],
             description: "",
             photographer: "Megan Hill",
-            model: "TBC",
+            model: "Lucy",
             available: false,
             storeLinks: ""
             },
 
             {
-            name: "Outfit 7",
+            name: "Ceoldán with Patchwork Top",
             images: [
                 "assets/images/collections/hunt-collection/IMG_4475.JPG"
             ],
             description: "",
             photographer: "Megan Hill",
-            model: "TBC",
+            model: "Helen",
             available: false,
             storeLinks: ""
             },
 
             {
-            name: "Outfit 8",
+            name: "Meabh Set",
             images: [
                 "assets/images/collections/hunt-collection/IMG_4519.JPG",
                 "assets/images/collections/hunt-collection/IMG_4514.JPG"
             ],
             description: "",
             photographer: "Megan Hill",
-            model: "TBC",
+            model: "Helen",
             available: false,
             storeLinks: ""
             },
 
             {
-            name: "Outfit 9",
-            images: [
-                "assets/images/collections/hunt-collection/IMG_4543.JPG",
-                "assets/images/collections/hunt-collection/IMG_4837.JPG",
-                "assets/images/collections/hunt-collection/IMG_4833.JPG"
-            ],
-            description: "",
-            photographer: "Megan Hill",
-            model: "TBC",
-            available: false,
-            storeLinks: ""
-            },
-
-            {
-            name: "Outfit 10",
+            name: "Patchwork Top with Dart Cargos",
             images: [
                 "assets/images/collections/hunt-collection/IMG_4598.JPG",
                 "assets/images/collections/hunt-collection/IMG_4580.JPG",
@@ -608,28 +601,13 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             ],
             description: "",
             photographer: "Megan Hill",
-            model: "TBC",
+            model: "Lucy",
             available: false,
             storeLinks: ""
             },
 
             {
-            name: "Outfit 11",
-            images: [
-                "assets/images/collections/hunt-collection/IMG_4713.JPG",
-                "assets/images/collections/hunt-collection/IMG_4689.JPG",
-                "assets/images/collections/hunt-collection/IMG_4696.JPG",
-                "assets/images/collections/hunt-collection/IMG_4734.JPG"
-            ],
-            description: "",
-            photographer: "Megan Hill",
-            model: "TBC",
-            available: false,
-            storeLinks: ""
-            },
-
-            {
-            name: "Outfit 12",
+            name: "Dart top with Ceoldán Skirt",
             images: [
                 "assets/images/collections/hunt-collection/IMG_4718.JPG",
                 "assets/images/collections/hunt-collection/IMG_4721.JPG",
@@ -637,7 +615,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             ],
             description: "",
             photographer: "Megan Hill",
-            model: "TBC",
+            model: "Lucy",
             available: false,
             storeLinks: ""
             }
