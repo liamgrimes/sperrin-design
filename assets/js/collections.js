@@ -293,6 +293,22 @@ function wireGallery(root, count) {
     const prevBtn = root.querySelector(".photo-nav.prev");
     const nextBtn = root.querySelector(".photo-nav.next");
 
+    const updateNavigation = () => {
+        const current = Math.round(
+            scroller.scrollLeft / scroller.clientWidth
+        );
+
+        prevBtn.hidden = current === 0;
+        nextBtn.hidden = current === count - 1;
+
+        dots.forEach((dot, index) => {
+            dot.classList.toggle(
+                "active",
+                index === current
+            );
+        });
+    };
+
     const scrollToIndex = index => {
         const clamped = Math.max(0, Math.min(count - 1, index));
 
@@ -323,17 +339,11 @@ function wireGallery(root, count) {
     scroller.addEventListener("scroll", () => {
         clearTimeout(scrollTimer);
 
-        scrollTimer = setTimeout(() => {
-            const current = Math.round(
-                scroller.scrollLeft / scroller.clientWidth
-            );
-
-            dots.forEach((dot, index) => {
-                dot.classList.toggle(
-                    "active",
-                    index === current
-                );
-            });
-        }, 60);
+        scrollTimer = setTimeout(updateNavigation, 60);
     });
+
+    updateNavigation();
+
+    // Run again after the images have finished loading
+    window.addEventListener("load", updateNavigation);
 }

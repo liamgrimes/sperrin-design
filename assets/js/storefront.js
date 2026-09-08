@@ -129,29 +129,56 @@ function wireGallery(root, count) {
   const prevBtn = root.querySelector('.photo-nav.prev');
   const nextBtn = root.querySelector('.photo-nav.next');
 
+  const updateNavigation = () => {
+    const current = Math.round(
+      scroller.scrollLeft / scroller.clientWidth
+    );
+
+    prevBtn.hidden = current === 0;
+    nextBtn.hidden = current === count - 1;
+
+    dots.forEach((dot, dotIndex) => {
+      dot.classList.toggle(
+        'active',
+        dotIndex === current
+      );
+    });
+  };
+
   const scrollToIndex = (index) => {
     const clamped = Math.max(0, Math.min(count - 1, index));
-    scroller.scrollTo({ left: clamped * scroller.clientWidth, behavior: 'smooth' });
+
+    scroller.scrollTo({
+      left: clamped * scroller.clientWidth,
+      behavior: 'smooth'
+    });
   };
 
   prevBtn.addEventListener('click', (event) => {
     event.stopPropagation();
-    scrollToIndex(Math.round(scroller.scrollLeft / scroller.clientWidth) - 1);
+
+    scrollToIndex(
+      Math.round(scroller.scrollLeft / scroller.clientWidth) - 1
+    );
   });
 
   nextBtn.addEventListener('click', (event) => {
     event.stopPropagation();
-    scrollToIndex(Math.round(scroller.scrollLeft / scroller.clientWidth) + 1);
+
+    scrollToIndex(
+      Math.round(scroller.scrollLeft / scroller.clientWidth) + 1
+    );
   });
 
   let scrollTimer;
+
   scroller.addEventListener('scroll', () => {
     clearTimeout(scrollTimer);
-    scrollTimer = setTimeout(() => {
-      const current = Math.round(scroller.scrollLeft / scroller.clientWidth);
-      dots.forEach((dot, dotIndex) => dot.classList.toggle('active', dotIndex === current));
-    }, 60);
+
+    scrollTimer = setTimeout(updateNavigation, 60);
   });
+
+  updateNavigation();
 }
 
 function wireDetailZoom(root, productName, images) {

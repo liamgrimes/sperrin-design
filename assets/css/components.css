@@ -148,6 +148,9 @@
 .photo-nav.prev { left: 8px; }
 .photo-nav.next { right: 8px; }
 .photo-nav:focus-visible { outline: 2px solid var(--color-charcoal); outline-offset: 2px; }
+.photo-nav[hidden] {
+    display: none;
+}
 
 .photo-dots {
     position: absolute;
@@ -525,6 +528,7 @@
     aspect-ratio: 4 / 5;
     overflow: hidden;
     background: transparent;
+    cursor: default;
 }
 
 .collection-piece .photo-scroller {
@@ -547,6 +551,7 @@
     object-fit: cover;
     display: block;
     scroll-snap-align: start;
+    cursor: default;
 }
 
 .piece-info {
