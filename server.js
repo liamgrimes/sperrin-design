@@ -1,12 +1,19 @@
 const express = require('express');
-const nodemailer = require('nodemailer');
 require('dotenv').config();
+const { sendEmail } = require('./src/server/email');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 app.use(express.static(__dirname));
+
+
+
+app.get('/', (req, res) => {
+  res.status(200).send('Sperrin Design API is running.');
+});
 
 app.get('/health', (req, res) => {
   res.status(200).json({ ok: true });
@@ -22,28 +29,17 @@ app.post('/api/contact', async (req, res) => {
     });
   }
 
-  const recipient = process.env.TO_EMAIL || 'placeholder@sperrindesign.com';
+  const recipient = process.env.CONTACT_FORM_RECIPIENT_EMAIL;
 
-  if (!process.env.SMTP_HOST || !process.env.SMTP_USER || !process.env.SMTP_PASS) {
+  if (!recipient) {
     return res.status(500).json({
       success: false,
-      message: 'SMTP configuration is missing.'
+      message: 'Email service is not configured.'
     });
   }
 
   try {
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: Number(process.env.SMTP_PORT || 587),
-      secure: false,
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS
-      }
-    });
-
-    await transporter.sendMail({
-      from: process.env.SMTP_USER,
+    await sendEmail({
       to: recipient,
       replyTo: email,
       subject: 'Sperrin Design contact form',
@@ -56,10 +52,8 @@ ${message}
       `
     });
 
-    return res.status(200).json({
-      success: true,
-      message: 'Your message has been sent.'
-    });
+  return res.redirect('https://sperrindesign.com/contact.html?sent=1');
+
   } catch (error) {
     console.error('Email send failed:', error);
     return res.status(500).json({
