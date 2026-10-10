@@ -638,7 +638,138 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
         name: "A-W26 Collection",
         slug: "a-w26-collection",
         description: "Sperrin Design's ",
-        coverImage: "assets/images/collections/hunt-collection/IMG_3357.JPG",
+        coverImage: "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_6083.jpeg",
+
+        pieces: [
+            {
+            name: "The BallyKeery Set",
+            images: [
+                "assets/images/collections/a-w26-collection/The BallyKeery Set (Liz)/IMG_6191.jpeg",
+                "assets/images/collections/a-w26-collection/The BallyKeery Set (Liz)/IMG_6193.jpeg",
+                "assets/images/collections/a-w26-collection/The BallyKeery Set (Liz)/IMG_2937-2.jpeg",
+                "assets/images/collections/a-w26-collection/The BallyKeery Set (Liz)/IMG_2977-2.jpeg"
+            ],
+            description: "",
+            photographer: " ",
+            model: "Liz",
+            available: false,
+            storeLinks: ""
+            },
+
+            {
+            name: "The Cathrán Dress",
+            images: [
+                "assets/images/collections/a-w26-collection/The Cathrán Dress (Ellie)/IMG_3383.jpeg",
+                "assets/images/collections/a-w26-collection/The Cathrán Dress (Ellie)/IMG_3578.jpeg",
+                "assets/images/collections/a-w26-collection/The Cathrán Dress (Ellie)/IMG_3584.jpeg",
+                "assets/images/collections/a-w26-collection/The Cathrán Dress (Ellie)/IMG_4539.jpeg"
+            ],
+            description: "",
+            photographer: " ",
+            model: "Ellie",
+            available: false,
+            storeLinks: ""
+            },
+
+            {
+                name: "The Crockathede Set",
+                images: [
+                    "assets/images/collections/a-w26-collection/The Crockathede Set (Ellie F)/IMG_1977.jpeg",
+                    "assets/images/collections/a-w26-collection/The Crockathede Set (Ellie F)/IMG_2065.jpeg",
+                    "assets/images/collections/a-w26-collection/The Crockathede Set (Ellie F)/IMG_2068.jpeg",
+                    "assets/images/collections/a-w26-collection/The Crockathede Set (Ellie F)/IMG_2257.jpeg"
+                ],
+                description: "",
+                photographer: "",
+                model: "Ellie F",
+                available: false,
+                storeLinks: ""
+            },
+            {
+                name: "The Crockhary Set",
+                images: [
+                    "assets/images/collections/a-w26-collection/The Crockhary Set (Diya)/IMG_2333.jpeg",
+                    "assets/images/collections/a-w26-collection/The Crockhary Set (Diya)/IMG_2449.jpeg",
+                    "assets/images/collections/a-w26-collection/The Crockhary Set (Diya)/IMG_2471.jpeg"
+                ],
+                description: "",
+                photographer: "",
+                model: "Diya",
+                available: false,
+                storeLinks: ""
+            },
+            {
+                name: "The Crocknacarragh Set",
+                images: [
+                    "assets/images/collections/a-w26-collection/The Crocknacarragh Set (Brook)/IMG_3052.jpeg",
+                    "assets/images/collections/a-w26-collection/The Crocknacarragh Set (Brook)/IMG_3205.jpeg",
+                    "assets/images/collections/a-w26-collection/The Crocknacarragh Set (Brook)/IMG_3279.jpeg",
+                    "assets/images/collections/a-w26-collection/The Crocknacarragh Set (Brook)/IMG_4262.jpeg"
+                ],
+                description: "",
+                photographer: "",
+                model: "Brook",
+                available: false,
+                storeLinks: ""
+            },
+            {
+                name: "The Knockinarvoer Dress",
+                images: [
+                    "assets/images/collections/a-w26-collection/The Knockinarvoer Dress/IMG_3782-2.jpeg",
+                    "assets/images/collections/a-w26-collection/The Knockinarvoer Dress/IMG_3792-2.jpeg",
+                    "assets/images/collections/a-w26-collection/The Knockinarvoer Dress/IMG_3896.jpeg",
+                    "assets/images/collections/a-w26-collection/The Knockinarvoer Dress/IMG_3990.jpeg"
+                ],
+                description: "",
+                photographer: "",
+                model: "Kathryn",
+                available: false,
+                storeLinks: ""
+            },
+            {
+                name: "The Tirkernaghan Set",
+                images: [
+                    "assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_4771-2.jpeg",
+                    "assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_5003.jpeg",
+                    "assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_5042.jpeg",
+                    "assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_4923.jpeg",
+                    "assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_4940.jpeg"
+                ],
+                description: "",
+                photographer: "",
+                model: "Broinnínn",
+                available: false,
+                storeLinks: ""
+            },
+            {
+                name: "The Craignagapple Set",
+                images: [
+                    "assets/images/collections/a-w26-collection/The Craignagapple Set (Mia)/IMG_5642-2.jpeg",
+                    "assets/images/collections/a-w26-collection/The Craignagapple Set (Mia)/IMG_5669.jpeg",
+                    "assets/images/collections/a-w26-collection/The Craignagapple Set (Mia)/IMG_5740.jpeg",
+                    "assets/images/collections/a-w26-collection/The Craignagapple Set (Mia)/IMG_5754.jpeg"
+                ],
+                description: "",
+                photographer: "",
+                model: "Mia",
+                available: false,
+                storeLinks: ""
+            },
+        ],
+
+            editorial: [
+            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_2775.jpeg",
+            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_4022.jpeg",
+            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_4201.jpeg",
+            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_4861.jpeg",
+            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_5220.jpeg",
+            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_5302-2.jpeg",
+            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_2704.jpeg",
+            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_5595.jpeg",
+            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_5439.jpeg",
+            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_6083.jpeg",
+           
+        ]
     }
 
 ];
