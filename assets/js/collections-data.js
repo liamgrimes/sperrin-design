@@ -630,5 +630,15 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             "assets/images/collections/hunt-collection/IMG_4528.JPG",
             "assets/images/collections/hunt-collection/IMG_4538.JPG"
         ]
+    },
+
+    //A-W26 Collection 
+
+    {
+        name: "A-W26 Collection",
+        slug: "a-w26-collection",
+        description: "Sperrin Design's ",
+        coverImage: "assets/images/collections/hunt-collection/IMG_3357.JPG",
     }
+
 ];
