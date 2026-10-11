@@ -56,8 +56,8 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: '8', chest: 'Chest 36"' }
     ],
     images: [
-      'assets/images/collections/a-w26-collection/The BallyKeery Set (Liz)/IMG_6193.jpeg',
-      'assets/images/collections/a-w26-collection/The BallyKeery Set (Liz)/IMG_2947-2.jpeg'
+      'assets/images/collections/a-w26-collection/The BallyKeery Set (Liz)/IMG_6193.webp',
+      'assets/images/collections/a-w26-collection/The BallyKeery Set (Liz)/IMG_2947-2.webp'
     ],
   },
   {
@@ -72,7 +72,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: '8', waist: 'Waist 28"', length: 'Inseam 16”' }
     ],
     images: [
-      'assets/images/collections/a-w26-collection/The BallyKeery Set (Liz)/IMG_2947-2.jpeg',
+      'assets/images/collections/a-w26-collection/The BallyKeery Set (Liz)/IMG_2947-2.webp',
     ],
   },
   {
@@ -87,8 +87,8 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: '10', waist: 'Waist 30"', length: 'Inseam 16”' },
     ],
     images: [
-      'assets/images/collections/a-w26-collection/The Cathrán Dress (Ellie)/IMG_5884-2.jpeg',
-      'assets/images/collections/a-w26-collection/The Cathrán Dress (Ellie)/IMG_3383.jpeg'
+      'assets/images/collections/a-w26-collection/The Cathrán Dress (Ellie)/IMG_5884-2.webp',
+      'assets/images/collections/a-w26-collection/The Cathrán Dress (Ellie)/IMG_3383.webp'
     ],
   },
   {
@@ -103,9 +103,9 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: '8', chest: 'Chest 36"', length: 'Inseam 16”' },
     ],
     images: [
-      'assets/images/collections/a-w26-collection/The Cathrán Dress (Ellie)/IMG_3578.jpeg',
-      'assets/images/collections/a-w26-collection/The Cathrán Dress (Ellie)/IMG_3383.jpeg',
-      'assets/images/collections/a-w26-collection/The Cathrán Dress (Ellie)/IMG_4539.jpeg'
+      'assets/images/collections/a-w26-collection/The Cathrán Dress (Ellie)/IMG_3578.webp',
+      'assets/images/collections/a-w26-collection/The Cathrán Dress (Ellie)/IMG_3383.webp',
+      'assets/images/collections/a-w26-collection/The Cathrán Dress (Ellie)/IMG_4539.webp'
     ],
   },
   {
@@ -120,8 +120,8 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: '6', chest: 'Chest 32"', length: 'Inseam 16”' }
     ],
     images: [
-      'assets/images/collections/a-w26-collection/The Craignagapple Set (Mia)/IMG_5754.jpeg',
-      'assets/images/collections/a-w26-collection/The Craignagapple Set (Mia)/IMG_5669.jpeg'
+      'assets/images/collections/a-w26-collection/The Craignagapple Set (Mia)/IMG_5754.webp',
+      'assets/images/collections/a-w26-collection/The Craignagapple Set (Mia)/IMG_5669.webp'
     ],
   },
   {
@@ -136,8 +136,8 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: '6', waist: 'Waist 26"', length: 'Inseam 16”' }
     ],
     images: [
-      'assets/images/collections/a-w26-collection/The Craignagapple Set (Mia)/IMG_5669.jpeg',
-      'assets/images/collections/a-w26-collection/The Craignagapple Set (Mia)/IMG_5642-2.jpeg'
+      'assets/images/collections/a-w26-collection/The Craignagapple Set (Mia)/IMG_5669.webp',
+      'assets/images/collections/a-w26-collection/The Craignagapple Set (Mia)/IMG_5642-2.webp'
     ],
   },
   {
@@ -152,9 +152,9 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: '8', chest: 'Chest 36"', length: 'Inseam 16”' }
     ],
     images: [
-      'assets/images/collections/a-w26-collection/The Crockathede Set (Ellie F)/IMG_2065.jpeg',
-      'assets/images/collections/a-w26-collection/The Crockathede Set (Ellie F)/IMG_5947-2.jpeg',
-      'assets/images/collections/a-w26-collection/The Crockathede Set (Ellie F)/IMG_6002-2.jpeg'
+      'assets/images/collections/a-w26-collection/The Crockathede Set (Ellie F)/IMG_2065.webp',
+      'assets/images/collections/a-w26-collection/The Crockathede Set (Ellie F)/IMG_5947-2.webp',
+      'assets/images/collections/a-w26-collection/The Crockathede Set (Ellie F)/IMG_6002-2.webp'
     ],
   },
   {
@@ -169,8 +169,8 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: '8', waist: 'Waist 28"', length: 'Inseam 16”' }
     ],
     images: [
-      'assets/images/collections/a-w26-collection/The Crockathede Set (Ellie F)/IMG_1977.jpeg',
-      'assets/images/collections/a-w26-collection/The Crockathede Set (Ellie F)/IMG_5947-2.jpeg'
+      'assets/images/collections/a-w26-collection/The Crockathede Set (Ellie F)/IMG_1977.webp',
+      'assets/images/collections/a-w26-collection/The Crockathede Set (Ellie F)/IMG_5947-2.webp'
     ],
   },
   {
@@ -185,8 +185,8 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: '8', chest: 'Chest 36"', length: 'Inseam 16”' }
     ],
     images: [
-      'assets/images/collections/a-w26-collection/The Crockhary Set (Diya)/IMG_2471.jpeg',
-      'assets/images/collections/a-w26-collection/The Crockhary Set (Diya)/IMG_6013-2.jpeg'
+      'assets/images/collections/a-w26-collection/The Crockhary Set (Diya)/IMG_2471.webp',
+      'assets/images/collections/a-w26-collection/The Crockhary Set (Diya)/IMG_6013-2.webp'
     ],
   },
   {
@@ -201,9 +201,9 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: '8', waist: 'Waist 28"', length: 'Inseam 16”' }
     ],
     images: [
-      'assets/images/collections/a-w26-collection/The Crockhary Set (Diya)/IMG_2449.jpeg',
-      'assets/images/collections/a-w26-collection/The Crockhary Set (Diya)/IMG_6013-2.jpeg',
-      'assets/images/collections/a-w26-collection/The Crockhary Set (Diya)/IMG_6042-2.jpeg'
+      'assets/images/collections/a-w26-collection/The Crockhary Set (Diya)/IMG_2449.webp',
+      'assets/images/collections/a-w26-collection/The Crockhary Set (Diya)/IMG_6013-2.webp',
+      'assets/images/collections/a-w26-collection/The Crockhary Set (Diya)/IMG_6042-2.webp'
     ],
   },
   {
@@ -218,8 +218,8 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: '8', waist: 'Waist 28"', length: 'Inseam 16”' }
     ],
     images: [
-      'assets/images/collections/a-w26-collection/The Crocknacarragh Set (Brook)/IMG_4262.jpeg',
-      'assets/images/collections/a-w26-collection/The Crocknacarragh Set (Brook)/IMG_5917-2.jpeg'
+      'assets/images/collections/a-w26-collection/The Crocknacarragh Set (Brook)/IMG_4262.webp',
+      'assets/images/collections/a-w26-collection/The Crocknacarragh Set (Brook)/IMG_5917-2.webp'
     ],
   },
   {
@@ -234,8 +234,8 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: '8', waist: 'Waist 28"', length: 'Inseam 16”' }
     ],
     images: [
-      'assets/images/collections/a-w26-collection/The Crocknacarragh Set (Brook)/IMG_3052.jpeg',
-      'assets/images/collections/a-w26-collection/The Crocknacarragh Set (Brook)/IMG_3205.jpeg'
+      'assets/images/collections/a-w26-collection/The Crocknacarragh Set (Brook)/IMG_3052.webp',
+      'assets/images/collections/a-w26-collection/The Crocknacarragh Set (Brook)/IMG_3205.webp'
     ],
   },
   {
@@ -250,10 +250,10 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: '6', waist: 'Waist 26"', length: 'Inseam 16”' }
     ],
     images: [
-      'assets/images/collections/a-w26-collection/The Knockinarvoer Dress/IMG_3792-2.jpeg',
-      'assets/images/collections/a-w26-collection/The Knockinarvoer Dress/IMG_3782-2.jpeg',
-      'assets/images/collections/a-w26-collection/The Knockinarvoer Dress/IMG_3810-2.jpeg',
-      'assets/images/collections/a-w26-collection/The Knockinarvoer Dress/IMG_3990.jpeg'
+      'assets/images/collections/a-w26-collection/The Knockinarvoer Dress/IMG_3792-2.webp',
+      'assets/images/collections/a-w26-collection/The Knockinarvoer Dress/IMG_3782-2.webp',
+      'assets/images/collections/a-w26-collection/The Knockinarvoer Dress/IMG_3810-2.webp',
+      'assets/images/collections/a-w26-collection/The Knockinarvoer Dress/IMG_3990.webp'
 
     ],
   },
@@ -269,9 +269,9 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: '8', waist: 'Waist 28"', length: 'Inseam 16”' }
     ],
     images: [
-      'assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_4730-2.JPEG',
-      'assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_4771-2.jpeg',
-      'assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_5042.jpeg',
+      'assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_4730-2.webp',
+      'assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_4771-2.webp',
+      'assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_5042.webp',
     ],
   },
   {
@@ -286,9 +286,9 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       { size: '8', waist: 'Waist 28"', length: 'Inseam 16”' }
     ],
     images: [
-      'assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_5003.jpeg',
-      'assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_4940.jpeg',
-      'assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_4744-2.jpeg'
+      'assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_5003.webp',
+      'assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_4940.webp',
+      'assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_4744-2.webp'
     ],
   },
   {

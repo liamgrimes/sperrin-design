@@ -8,16 +8,16 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
         name: "A-W26 Collection",
         slug: "a-w26-collection",
         description: " ",
-        coverImage: "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_6083.jpeg",
+        coverImage: "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_6083.webp",
 
         pieces: [
             {
             name: "The BallyKeery Set",
             images: [
-                "assets/images/collections/a-w26-collection/The BallyKeery Set (Liz)/IMG_6191.jpeg",
-                "assets/images/collections/a-w26-collection/The BallyKeery Set (Liz)/IMG_6193.jpeg",
-                "assets/images/collections/a-w26-collection/The BallyKeery Set (Liz)/IMG_2937-2.jpeg",
-                "assets/images/collections/a-w26-collection/The BallyKeery Set (Liz)/IMG_2977-2.jpeg"
+                "assets/images/collections/a-w26-collection/The BallyKeery Set (Liz)/IMG_6191.webp",
+                "assets/images/collections/a-w26-collection/The BallyKeery Set (Liz)/IMG_6193.webp",
+                "assets/images/collections/a-w26-collection/The BallyKeery Set (Liz)/IMG_2937-2.webp",
+                "assets/images/collections/a-w26-collection/The BallyKeery Set (Liz)/IMG_2977-2.webp"
             ],
             description: "",
             photographer: "Sophie Maginn",
@@ -32,10 +32,10 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             {
             name: "The Cathrán Dress",
             images: [
-                "assets/images/collections/a-w26-collection/The Cathrán Dress (Ellie)/IMG_3383.jpeg",
-                "assets/images/collections/a-w26-collection/The Cathrán Dress (Ellie)/IMG_3578.jpeg",
-                "assets/images/collections/a-w26-collection/The Cathrán Dress (Ellie)/IMG_3584.jpeg",
-                "assets/images/collections/a-w26-collection/The Cathrán Dress (Ellie)/IMG_4539.jpeg"
+                "assets/images/collections/a-w26-collection/The Cathrán Dress (Ellie)/IMG_3383.webp",
+                "assets/images/collections/a-w26-collection/The Cathrán Dress (Ellie)/IMG_3578.webp",
+                "assets/images/collections/a-w26-collection/The Cathrán Dress (Ellie)/IMG_3584.webp",
+                "assets/images/collections/a-w26-collection/The Cathrán Dress (Ellie)/IMG_4539.webp"
             ],
             description: "",
             photographer: "Sophie Maginn",
@@ -50,10 +50,10 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             {
                 name: "The Crockathede Set",
                 images: [
-                    "assets/images/collections/a-w26-collection/The Crockathede Set (Ellie F)/IMG_1977.jpeg",
-                    "assets/images/collections/a-w26-collection/The Crockathede Set (Ellie F)/IMG_2065.jpeg",
-                    "assets/images/collections/a-w26-collection/The Crockathede Set (Ellie F)/IMG_2068.jpeg",
-                    "assets/images/collections/a-w26-collection/The Crockathede Set (Ellie F)/IMG_2257.jpeg"
+                    "assets/images/collections/a-w26-collection/The Crockathede Set (Ellie F)/IMG_1977.webp",
+                    "assets/images/collections/a-w26-collection/The Crockathede Set (Ellie F)/IMG_2065.webp",
+                    "assets/images/collections/a-w26-collection/The Crockathede Set (Ellie F)/IMG_2068.webp",
+                    "assets/images/collections/a-w26-collection/The Crockathede Set (Ellie F)/IMG_2257.webp"
                 ],
                 description: "",
                 photographer: "Sophie Maginn",
@@ -67,9 +67,9 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             {
                 name: "The Crockhary Set",
                 images: [
-                    "assets/images/collections/a-w26-collection/The Crockhary Set (Diya)/IMG_2333.jpeg",
-                    "assets/images/collections/a-w26-collection/The Crockhary Set (Diya)/IMG_2449.jpeg",
-                    "assets/images/collections/a-w26-collection/The Crockhary Set (Diya)/IMG_2471.jpeg"
+                    "assets/images/collections/a-w26-collection/The Crockhary Set (Diya)/IMG_2333.webp",
+                    "assets/images/collections/a-w26-collection/The Crockhary Set (Diya)/IMG_2449.webp",
+                    "assets/images/collections/a-w26-collection/The Crockhary Set (Diya)/IMG_2471.webp"
                 ],
                 description: "",
                 photographer: "Sophie Maginn",
@@ -83,10 +83,10 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             {
                 name: "The Crocknacarragh Set",
                 images: [
-                    "assets/images/collections/a-w26-collection/The Crocknacarragh Set (Brook)/IMG_3052.jpeg",
-                    "assets/images/collections/a-w26-collection/The Crocknacarragh Set (Brook)/IMG_3205.jpeg",
-                    "assets/images/collections/a-w26-collection/The Crocknacarragh Set (Brook)/IMG_3279.jpeg",
-                    "assets/images/collections/a-w26-collection/The Crocknacarragh Set (Brook)/IMG_4262.jpeg"
+                    "assets/images/collections/a-w26-collection/The Crocknacarragh Set (Brook)/IMG_3052.webp",
+                    "assets/images/collections/a-w26-collection/The Crocknacarragh Set (Brook)/IMG_3205.webp",
+                    "assets/images/collections/a-w26-collection/The Crocknacarragh Set (Brook)/IMG_3279.webp",
+                    "assets/images/collections/a-w26-collection/The Crocknacarragh Set (Brook)/IMG_4262.webp"
                 ],
                 description: "",
                 photographer: "Sophie Maginn",
@@ -100,10 +100,10 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             {
                 name: "The Knockinarvoer Dress",
                 images: [
-                    "assets/images/collections/a-w26-collection/The Knockinarvoer Dress/IMG_3782-2.jpeg",
-                    "assets/images/collections/a-w26-collection/The Knockinarvoer Dress/IMG_3792-2.jpeg",
-                    "assets/images/collections/a-w26-collection/The Knockinarvoer Dress/IMG_3896.jpeg",
-                    "assets/images/collections/a-w26-collection/The Knockinarvoer Dress/IMG_3990.jpeg"
+                    "assets/images/collections/a-w26-collection/The Knockinarvoer Dress/IMG_3782-2.webp",
+                    "assets/images/collections/a-w26-collection/The Knockinarvoer Dress/IMG_3792-2.webp",
+                    "assets/images/collections/a-w26-collection/The Knockinarvoer Dress/IMG_3896.webp",
+                    "assets/images/collections/a-w26-collection/The Knockinarvoer Dress/IMG_3990.webp"
                 ],
                 description: "",
                 photographer: "Sophie Maginn",
@@ -116,11 +116,11 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             {
                 name: "The Tirkernaghan Set",
                 images: [
-                    "assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_4771-2.jpeg",
-                    "assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_5003.jpeg",
-                    "assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_5042.jpeg",
-                    "assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_4923.jpeg",
-                    "assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_4940.jpeg"
+                    "assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_4771-2.webp",
+                    "assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_5003.webp",
+                    "assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_5042.webp",
+                    "assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_4923.webp",
+                    "assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_4940.webp"
                 ],
                 description: "",
                 photographer: "Sophie Maginn",
@@ -134,10 +134,10 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             {
                 name: "The Craignagapple Set",
                 images: [
-                    "assets/images/collections/a-w26-collection/The Craignagapple Set (Mia)/IMG_5642-2.jpeg",
-                    "assets/images/collections/a-w26-collection/The Craignagapple Set (Mia)/IMG_5669.jpeg",
-                    "assets/images/collections/a-w26-collection/The Craignagapple Set (Mia)/IMG_5740.jpeg",
-                    "assets/images/collections/a-w26-collection/The Craignagapple Set (Mia)/IMG_5754.jpeg"
+                    "assets/images/collections/a-w26-collection/The Craignagapple Set (Mia)/IMG_5642-2.webp",
+                    "assets/images/collections/a-w26-collection/The Craignagapple Set (Mia)/IMG_5669.webp",
+                    "assets/images/collections/a-w26-collection/The Craignagapple Set (Mia)/IMG_5740.webp",
+                    "assets/images/collections/a-w26-collection/The Craignagapple Set (Mia)/IMG_5754.webp"
                 ],
                 description: "",
                 photographer: "Sophie Maginn",
@@ -151,16 +151,16 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
         ],
 
             editorial: [
-            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_2775.jpeg",
-            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_4022.jpeg",
-            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_4201.jpeg",
-            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_4861.jpeg",
-            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_5220.jpeg",
-            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_5302-2.jpeg",
-            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_2704.jpeg",
-            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_5595.jpeg",
-            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_5439.jpeg",
-            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_6083.jpeg",
+            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_2775.webp",
+            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_4022.webp",
+            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_4201.webp",
+            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_4861.webp",
+            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_5220.webp",
+            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_5302-2.webp",
+            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_2704.webp",
+            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_5595.webp",
+            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_5439.webp",
+            "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_6083.webp",
            
         ]
     },
