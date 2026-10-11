@@ -22,7 +22,7 @@
     <section class="contact-card" id="contact-form">
       <h2>Get in touch</h2>
 
-      <form id="contact-form-element" class="contact-form">
+      <form id="contact-form-element" class="contact-form" action="https://a8mizg5690.c35.airoapp.ai/api/contact" method="POST">
         <div class="field-group">
           <label for="name">Name</label>
           <input id="name" type="text" name="name" placeholder="Your name" required />
@@ -79,66 +79,41 @@
     </div>
   </div>
   
+<script>
+  const form = document.getElementById('contact-form-element');
+  const submitButton = form.querySelector('button[type="submit"]');
+  const successModal = document.getElementById('contact-success-modal');
+  const successClose = document.getElementById('contact-success-close');
+  const successAction = document.getElementById('contact-success-action');
 
-  <script>
-    const form = document.getElementById('contact-form-element');
-    const submitButton = form.querySelector('button[type="submit"]');
-    const successModal = document.getElementById('contact-success-modal');
-    const successClose = document.getElementById('contact-success-close');
-    const successAction = document.getElementById('contact-success-action');
+  function closeSuccessModal() {
+    successModal.hidden = true;
+    document.body.style.overflow = '';
+    submitButton.focus();
+  }
 
-    function closeSuccessModal() {
-      successModal.hidden = true;
-      document.body.style.overflow = '';
-      submitButton.focus();
-    }
+  function openSuccessModal() {
+    successModal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    successClose.focus();
+  }
 
-    function openSuccessModal() {
-      successModal.hidden = false;
-      document.body.style.overflow = 'hidden';
-      successClose.focus();
-    }
+  successClose.addEventListener('click', closeSuccessModal);
+  successAction.addEventListener('click', closeSuccessModal);
 
-    successClose.addEventListener('click', closeSuccessModal);
-    successAction.addEventListener('click', closeSuccessModal);
-    successModal.addEventListener('click', (event) => {
-      if (event.target === successModal) closeSuccessModal();
-    });
-    document.addEventListener('keydown', (event) => {
-      if (!successModal.hidden && event.key === 'Escape') closeSuccessModal();
-    });
+  successModal.addEventListener('click', (event) => {
+    if (event.target === successModal) closeSuccessModal();
+  });
 
-    form.addEventListener('submit', async (event) => {
-      event.preventDefault();
+  document.addEventListener('keydown', (event) => {
+    if (!successModal.hidden && event.key === 'Escape') closeSuccessModal();
+  });
 
-      const payload = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        message: document.getElementById('message').value
-      };
+  if (new URLSearchParams(window.location.search).get('sent') === '1') {
+    openSuccessModal();
+  }
+</script>
 
-      try {
-        const response = await fetch('/api/contact', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(payload)
-        });
-
-        const result = await response.json();
-
-        if (!response.ok) {
-          throw new Error(result.message || 'Failed to send message');
-        }
-
-        openSuccessModal();
-        form.reset();
-      } catch (error) {
-        alert(error.message || 'Something went wrong.');
-      }
-    });
-  </script>
 </main>
 
 <div data-site-footer></div>
