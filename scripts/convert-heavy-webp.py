@@ -1,7 +1,7 @@
 from PIL import Image, ImageOps
 from pathlib import Path
 
-ROOT = Path(r"C:\git\sperrin-design\assets\images\Available_Pieces")
+ROOT = Path(r"C:\git\sperrin-design\assets\images\collections\a-w26-collection")
 MAX_SIDE = 1600
 QUALITY = 82
 THRESHOLD_BYTES = 250 * 1024
