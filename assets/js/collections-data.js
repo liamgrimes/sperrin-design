@@ -7,7 +7,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
     {
         name: "A-W26 Collection",
         slug: "a-w26-collection",
-        description: "Sperrin Design's ",
+        description: " ",
         coverImage: "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_6083.jpeg",
 
         pieces: [
@@ -22,8 +22,11 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             description: "",
             photographer: "Sophie Maginn",
             model: "Liz",
-            available: false,
-            storeLinks: ""
+            available: true,
+            storeLinks: [
+                '16155315274108', //Hoodie
+                '16155316945276'  //Bloomers
+            ]
             },
 
             {
@@ -37,8 +40,11 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             description: "",
             photographer: "Sophie Maginn",
             model: "Ellie",
-            available: false,
-            storeLinks: ""
+            available: true,
+            storeLinks: [
+                '16155317305724', //Dress
+                '16155318518140' //Sleeves
+            ]
             },
 
             {
@@ -52,8 +58,11 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 description: "",
                 photographer: "Sophie Maginn",
                 model: "Ellie F",
-                available: false,
-                storeLinks: ""
+                available: true,
+                storeLinks: [
+                    '16155321172348', //Top
+                    '16155321336188'  //Jorts
+                ]
             },
             {
                 name: "The Crockhary Set",
@@ -65,8 +74,11 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 description: "",
                 photographer: "Sophie Maginn",
                 model: "Diya",
-                available: false,
-                storeLinks: ""
+                available: true,
+                storeLinks: [
+                    '16155322417532', //Top
+                    '16155323007356'  //Jeans
+                ]
             },
             {
                 name: "The Crocknacarragh Set",
@@ -79,8 +91,11 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 description: "",
                 photographer: "Sophie Maginn",
                 model: "Brook",
-                available: false,
-                storeLinks: ""
+                available: true,
+                storeLinks: [
+                    '16155323138428', //Top
+                    '16155323695484'  //Skirt
+                ]
             },
             {
                 name: "The Knockinarvoer Dress",
@@ -93,8 +108,10 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 description: "",
                 photographer: "Sophie Maginn",
                 model: "Kathryn",
-                available: false,
-                storeLinks: ""
+                available: true,
+                storeLinks: [
+                    "16155324416380" //Dress
+                ]
             },
             {
                 name: "The Tirkernaghan Set",
@@ -108,8 +125,11 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 description: "",
                 photographer: "Sophie Maginn",
                 model: "Broinnínn",
-                available: false,
-                storeLinks: ""
+                available: true,
+                storeLinks: [
+                    '16155325661564', //Top
+                    '16155326775676'  //Skirt
+                ]
             },
             {
                 name: "The Craignagapple Set",
@@ -122,8 +142,11 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
                 description: "",
                 photographer: "Sophie Maginn",
                 model: "Mia",
-                available: false,
-                storeLinks: ""
+                available: true,
+                storeLinks: [
+                    '16155319927164', //Top
+                    '16155320320380'  //Shorts
+                ]
             },
         ],
 
@@ -140,7 +163,7 @@ window.SPERRIN_COLLECTIONS.COLLECTIONS = [
             "assets/images/collections/a-w26-collection/Vibey Gallery Shots/IMG_6083.jpeg",
            
         ]
-    }
+    },
 
     // FW 25
     {

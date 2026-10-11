@@ -49,8 +49,8 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     name: 'BallyKeery Hoodie',
     category: 'Tops',
     price: '£199',
-    description: '100% polyester.',
-    details: '100% polyester. Dry clean only.',
+    description: '80% cotton and 20% polyester.',
+    details: '80% cotton and 20% polyester. Dry clean only.',
     sizes: ['8'],
     sizeGuide: [
       { size: '8', chest: 'Chest 36"' }
@@ -65,7 +65,7 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     name: 'BallyKeery Bloomers',
     category: 'Bottoms',
     price: '£199',
-    description: '100% polyester.',
+    description: '80% cotton and 20% polyester.',
     details: '100% polyester. Dry clean only.',
     sizes: ['8'],
     sizeGuide: [
@@ -80,8 +80,8 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     name: 'The Cathrán Dress',
     category: 'Dresses',
     price: '£199',
-    description: '100% polyester.',
-    details: '100% polyester. Dry clean only.',
+    description: '84% polyester and 16% spandex.',
+    details: '84% polyester and 16% spandex. Dry clean only.',
     sizes: ['10'],
     sizeGuide: [
       { size: '10', waist: 'Waist 30"', length: 'Inseam 16”' },
@@ -96,8 +96,8 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     name: 'The Cathrán Sleeves',
     category: 'Jackets & Sleeves',
     price: '£149',
-    description: '100% polyester.',
-    details: '100% polyester. Dry clean only.',
+    description: '80% cotton and 20% polyester.',
+    details: '80% cotton and 20% polyester. Dry clean only.',
     sizes: ['8'],
     sizeGuide: [
       { size: '8', chest: 'Chest 36"', length: 'Inseam 16”' },
@@ -113,8 +113,8 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     name: 'Craignagapple Top',
     category: 'Tops',
     price: '£89',
-    description: '100% polyester.',
-    details: '100% polyester. Dry clean only.',
+    description: 'Top: 80% cotton and 20% polyester. Bow: 84% polyester and 16% spandex.',
+    details: 'Top: 80% cotton and 20% polyester. Bow: 84% polyester and 16% spandex. Dry clean only.',
     sizes: ['6'],
     sizeGuide: [
       { size: '6', chest: 'Chest 32"', length: 'Inseam 16”' }
@@ -129,8 +129,8 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     name: 'Craignagapple Shorts',
     category: 'Bottoms',
     price: '£99',
-    description: '100% polyester.',
-    details: '100% polyester. Dry clean only.',
+    description: 'Top: 80% cotton and 20% polyester. Waistband: 84% polyester and 16% spandex.',
+    details: 'Top: 80% cotton and 20% polyester. Waistband: 84% polyester and 16% spandex. Dry clean only.',
     sizes: ['6'],
     sizeGuide: [
       { size: '6', waist: 'Waist 26"', length: 'Inseam 16”' }
@@ -145,8 +145,8 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     name: 'Crockathede Chain Top',
     category: 'Tops',
     price: '£149',
-    description: '100% polyester.',
-    details: '100% polyester. Dry clean only.',
+    description: '100% cotton.',
+    details: '100% cotton. Dry clean only.',
     sizes: ['8'],
     sizeGuide: [
       { size: '8', chest: 'Chest 36"', length: 'Inseam 16”' }
@@ -162,8 +162,8 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     name: 'Crockathede Jorts',
     category: 'Bottoms',
     price: '£189',
-    description: '100% polyester.',
-    details: '100% polyester. Dry clean only.',
+    description: '100% cotton.',
+    details: '100% cotton. Dry clean only.',
     sizes: ['8'],
     sizeGuide: [
       { size: '8', waist: 'Waist 28"', length: 'Inseam 16”' }
@@ -178,8 +178,8 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     name: 'Crockhary Top',
     category: 'Tops',
     price: '£189',
-    description: '100% polyester.',
-    details: '100% polyester. Dry clean only.',
+    description: '100% cotton.',
+    details: '100% cotton. Dry clean only.',
     sizes: ['8'],
     sizeGuide: [
       { size: '8', chest: 'Chest 36"', length: 'Inseam 16”' }
@@ -211,8 +211,8 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     name: 'Crocknacarragh Top',
     category: 'Tops',
     price: '£99',
-    description: '100% polyester.',
-    details: '100% polyester. Dry clean only.',
+    description: '84% polyester and 16% spandex.',
+    details: '84% polyester and 16% spandex. Dry clean only.',
     sizes: ['8'],
     sizeGuide: [
       { size: '8', waist: 'Waist 28"', length: 'Inseam 16”' }
@@ -227,8 +227,8 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     name: 'Crocknacarragh Skirt',
     category: 'Bottoms',
     price: '£189',
-    description: '100% polyester.',
-    details: '100% polyester. Dry clean only.',
+    description: '80% cotton and 20% polyester.',
+    details: '80% cotton and 20% polyester. Dry clean only.',
     sizes: ['8'],
     sizeGuide: [
       { size: '8', waist: 'Waist 28"', length: 'Inseam 16”' }
@@ -243,8 +243,8 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     name: 'Knocknavoer Dress',
     category: 'Dresses',
     price: '£189',
-    description: '100% polyester.',
-    details: '100% polyester. Dry clean only.',
+    description: 'Top: 80% cotton and 20% polyester. Bottom: 84% polyester and 16% spandex.',
+    details: 'Top: 80% cotton and 20% polyester. Bottom: 84% polyester and 16% spandex. Dry clean only.',
     sizes: ['8'],
     sizeGuide: [
       { size: '6', waist: 'Waist 26"', length: 'Inseam 16”' }
@@ -262,13 +262,14 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     name: 'Tirkernaghan Top',
     category: 'Tops',
     price: '£99',
-    description: '100% polyester.',
-    details: '100% polyester. Dry clean only.',
+    description: '84% polyester and 16% spandex.',
+    details: '84% polyester and 16% spandex. Dry clean only.',
     sizes: ['8'],
     sizeGuide: [
       { size: '8', waist: 'Waist 28"', length: 'Inseam 16”' }
     ],
     images: [
+      'assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_4730-2.JPEG',
       'assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_4771-2.jpeg',
       'assets/images/collections/a-w26-collection/The Tirkernaghan Set/IMG_5042.jpeg',
     ],
@@ -278,8 +279,8 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     name: 'Tirkernaghan Skirt',
     category: 'Bottoms',
     price: '£169',
-    description: '100% polyester.',
-    details: '100% polyester. Dry clean only.',
+    description: '100% cotton.',
+    details: '100% cotton. Dry clean only.',
     sizes: ['8'],
     sizeGuide: [
       { size: '8', waist: 'Waist 28"', length: 'Inseam 16”' }
