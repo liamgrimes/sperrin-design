@@ -5,45 +5,6 @@ window.SPERRIN_STOREFRONT.SHOPIFY_CONFIG = {
 };
 
 window.SPERRIN_STOREFRONT.PRODUCTS = [
-  // {
-  //   id: '16104824209788',
-  //   name: 'Errigal Sleeves',
-  //   category: 'Tops',
-  //   price: '£119',
-  //   description: 'Polyester/Cotton blend.',
-  //   details: 'Deadstock fabric: Polyester/Cotton blend. Dry clean only.',
-  //   sizes: ['XS', 'S', 'M', 'L'],
-  //   sizeGuide: [
-  //     { size: 'XS', chest: '92cm', length: '68cm' },
-  //     { size: 'S', chest: '94cm', length: '64cm' },
-  //     { size: 'M', chest: '98cm', length: '66cm' },
-  //     { size: 'L', chest: '102cm', length: '68cm' }
-  //   ],
-  //   images: [
-  //     'assets/images/collections/SS26/errigal-2.JPEG',
-  //     'assets/images/collections/SS26/errigal.JPEG'
-  //   ],
-  // },
-  // {
-  //   id: '16104968290684',
-  //   name: 'Errigal Shorts',
-  //   category: 'Shorts',
-  //   price: '£99',
-  //   description: 'Polyester/Cotton blend.',
-  //   details: 'Deadstock fabric: Polyester/Cotton blend. Dry clean only.',
-  //   sizes: ['XS', 'S', 'M', 'L'],
-  //   sizeGuide: [
-  //     { size: 'XS', chest: '92cm', length: '68cm' },
-  //     { size: 'XS', chest: '92cm', length: '68cm' },
-  //     { size: 'S', chest: '94cm', length: '64cm' },
-  //     { size: 'M', chest: '98cm', length: '66cm' },
-  //     { size: 'L', chest: '102cm', length: '68cm' }
-  //   ],
-  //   images: [
-  //     'assets/images/collections/SS26/errigal.JPEG',
-  //     'assets/images/collections/SS26/errigal-2.JPEG'
-  //   ],
-  // },
   {
     id: '16155315274108',
     name: 'BallyKeery Hoodie',
@@ -309,24 +270,6 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
       'assets/images/collections/SS26/grey-celtic-bloomers-3.webp',
       'assets/images/collections/SS26/grey-celtic-bloomers-4.webp',
       'assets/images/collections/SS26/grey-celtic-bloomers-2.JPEG',
-    ],
-  },
-  {
-    id: '16104970420604',
-    name: 'Blue Herringbone Jacket',
-    category: 'Jackets & Sleeves',
-    price: '£199',
-    description: 'Outer fabric: 60% Polyester, 40% Wool. Lining: 100% Cotton.',
-    details: 'Outer fabric: 60% Polyester, 40% Wool. Lining: 100% Cotton. Dry clean only.',
-    sizes: ['8', '10', '12', '14'],
-    sizeGuide: [
-      { size: '8', chest: 'Chest 32"' },
-      { size: '10', chest: 'Chest 34"' },
-      { size: '12', chest: 'Chest 36"' },
-      { size: '14', chest: 'Chest 38"' }
-    ],
-    images: [
-      'assets/images/collections/SS26/herringbone-set.JPEG'
     ],
   },
   {
@@ -605,3 +548,62 @@ window.SPERRIN_STOREFRONT.PRODUCTS = [
     ],
   },
 ];
+
+// Sold Stock Graveyard 
+ // {
+  //   id: '16104824209788',
+  //   name: 'Errigal Sleeves',
+  //   category: 'Tops',
+  //   price: '£119',
+  //   description: 'Polyester/Cotton blend.',
+  //   details: 'Deadstock fabric: Polyester/Cotton blend. Dry clean only.',
+  //   sizes: ['XS', 'S', 'M', 'L'],
+  //   sizeGuide: [
+  //     { size: 'XS', chest: '92cm', length: '68cm' },
+  //     { size: 'S', chest: '94cm', length: '64cm' },
+  //     { size: 'M', chest: '98cm', length: '66cm' },
+  //     { size: 'L', chest: '102cm', length: '68cm' }
+  //   ],
+  //   images: [
+  //     'assets/images/collections/SS26/errigal-2.JPEG',
+  //     'assets/images/collections/SS26/errigal.JPEG'
+  //   ],
+  // },
+  // {
+  //   id: '16104968290684',
+  //   name: 'Errigal Shorts',
+  //   category: 'Shorts',
+  //   price: '£99',
+  //   description: 'Polyester/Cotton blend.',
+  //   details: 'Deadstock fabric: Polyester/Cotton blend. Dry clean only.',
+  //   sizes: ['XS', 'S', 'M', 'L'],
+  //   sizeGuide: [
+  //     { size: 'XS', chest: '92cm', length: '68cm' },
+  //     { size: 'XS', chest: '92cm', length: '68cm' },
+  //     { size: 'S', chest: '94cm', length: '64cm' },
+  //     { size: 'M', chest: '98cm', length: '66cm' },
+  //     { size: 'L', chest: '102cm', length: '68cm' }
+  //   ],
+  //   images: [
+  //     'assets/images/collections/SS26/errigal.JPEG',
+  //     'assets/images/collections/SS26/errigal-2.JPEG'
+  //   ],
+  // },
+  // {
+  //   id: '16104970420604',
+  //   name: 'Blue Herringbone Jacket',
+  //   category: 'Jackets & Sleeves',
+  //   price: '£199',
+  //   description: 'Outer fabric: 60% Polyester, 40% Wool. Lining: 100% Cotton.',
+  //   details: 'Outer fabric: 60% Polyester, 40% Wool. Lining: 100% Cotton. Dry clean only.',
+  //   sizes: ['8', '10', '12', '14'],
+  //   sizeGuide: [
+  //     { size: '8', chest: 'Chest 32"' },
+  //     { size: '10', chest: 'Chest 34"' },
+  //     { size: '12', chest: 'Chest 36"' },
+  //     { size: '14', chest: 'Chest 38"' }
+  //   ],
+  //   images: [
+  //     'assets/images/collections/SS26/herringbone-set.JPEG'
+  //   ],
+  // },
