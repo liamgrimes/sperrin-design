@@ -38,6 +38,14 @@
           <textarea id="message" name="message" rows="6" placeholder="Tell us about your enquiry" required></textarea>
         </div>
 
+        <div class="field-group">
+          <div id="contact-recaptcha"></div>
+          <p class="recaptcha-disclaimer">Protected by Google reCAPTCHA. Google's <span class="recaptcha-policy-links"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a></span> apply.</p>
+          <p class="recaptcha-status" id="recaptcha-status" role="status" aria-live="polite">
+            Loading spam protection…
+          </p>
+        </div>
+
         <button type="submit">Send message</button>
       </form>
     </section>
@@ -85,6 +93,8 @@
   const successModal = document.getElementById('contact-success-modal');
   const successClose = document.getElementById('contact-success-close');
   const successAction = document.getElementById('contact-success-action');
+  const recaptchaStatus = document.getElementById('recaptcha-status');
+  let recaptchaWidgetId = null;
 
   function closeSuccessModal() {
     successModal.hidden = true;
@@ -108,6 +118,48 @@
   document.addEventListener('keydown', (event) => {
     if (!successModal.hidden && event.key === 'Escape') closeSuccessModal();
   });
+
+  form.addEventListener('submit', (event) => {
+    if (recaptchaWidgetId === null || !window.grecaptcha?.getResponse(recaptchaWidgetId)) {
+      event.preventDefault();
+      recaptchaStatus.textContent = 'Please complete the reCAPTCHA challenge before sending.';
+    }
+  });
+
+  function loadRecaptcha(siteKey) {
+    window.renderContactRecaptcha = () => {
+      recaptchaWidgetId = window.grecaptcha.render('contact-recaptcha', {
+        sitekey: siteKey,
+        callback: () => { recaptchaStatus.textContent = ''; },
+        'expired-callback': () => { recaptchaStatus.textContent = 'Please complete the reCAPTCHA challenge again.'; },
+        'error-callback': () => { recaptchaStatus.textContent = 'Spam protection could not be loaded. Please refresh and try again.'; }
+      });
+      recaptchaStatus.textContent = '';
+    };
+
+    const script = document.createElement('script');
+    script.src = 'https://www.google.com/recaptcha/api.js?onload=renderContactRecaptcha&render=explicit';
+    script.async = true;
+    script.defer = true;
+    script.onerror = () => {
+      recaptchaStatus.textContent = 'Spam protection could not be loaded. Please refresh and try again.';
+    };
+    document.head.appendChild(script);
+  }
+
+  fetch(new URL('/api/recaptcha-config', form.action))
+    .then((response) => {
+      if (!response.ok) throw new Error(`Configuration request failed with HTTP ${response.status}`);
+      return response.json();
+    })
+    .then(({ siteKey }) => {
+      if (!siteKey) throw new Error('reCAPTCHA site key is missing');
+      loadRecaptcha(siteKey);
+    })
+    .catch((error) => {
+      console.error('Could not initialize contact form spam protection:', error);
+      recaptchaStatus.textContent = 'Spam protection is unavailable. Please try again later.';
+    });
 
   if (new URLSearchParams(window.location.search).get('sent') === '1') {
     openSuccessModal();

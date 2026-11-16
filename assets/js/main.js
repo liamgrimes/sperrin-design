@@ -1,10 +1,10 @@
 (function () {
   const SITE_NAV = [
-    { label: 'Home', href: 'index.html' },
-    { label: 'About', href: 'about.html' },
-    { label: 'Collections', href: 'collections.html' },
-    { label: 'Store', href: 'storefront.html' },
-    { label: 'Contact', href: 'contact.html' },
+    { label: 'Home', href: '/index.html' },
+    { label: 'About', href: '/about.html' },
+    { label: 'Collections', href: '/collections.html' },
+    { label: 'Store', href: '/storefront.html' },
+    { label: 'Contact', href: '/contact.html' },
   ];
 
   function createSiteHeader() {
@@ -15,11 +15,11 @@
     logo.className = 'logo';
 
     const logoLink = document.createElement('a');
-    logoLink.href = 'index.html';
+    logoLink.href = '/index.html';
     logoLink.setAttribute('aria-label', 'Sperrin Design home');
 
     const logoImage = document.createElement('img');
-    logoImage.src = 'assets/images/sperrin-logo-removebg-preview.png';
+    logoImage.src = '/assets/images/sperrin-logo-removebg-preview.png';
     logoImage.alt = 'Sperrin Design logo';
     logoImage.loading = 'eager';
 
@@ -59,6 +59,22 @@
     copy.textContent = '© 2026 Sperrin Design';
     footer.appendChild(copy);
 
+    const legalNav = document.createElement('nav');
+    legalNav.className = 'footer-links';
+    legalNav.setAttribute('aria-label', 'Legal information');
+    [
+      { label: 'Privacy policy', href: '/compliance-pages/privacy-policy.html' },
+      { label: 'Terms of use', href: '/compliance-pages/terms-of-use.html' },
+      { label: 'Terms & conditions', href: '/compliance-pages/terms-and-conditions.html' },
+      { label: 'About cookies', href: '/compliance-pages/about-cookies.html' },
+    ].forEach((item) => {
+      const link = document.createElement('a');
+      link.href = item.href;
+      link.textContent = item.label;
+      legalNav.appendChild(link);
+    });
+    footer.appendChild(legalNav);
+
     return footer;
   }
 
@@ -67,8 +83,7 @@
     const navLinks = document.querySelectorAll('[data-site-header] a, header nav a');
 
     navLinks.forEach((link) => {
-      const href = link.getAttribute('href');
-      const isActive = href === currentPage;
+      const isActive = new URL(link.href).pathname.split('/').pop() === currentPage;
       link.setAttribute('aria-current', isActive ? 'page' : 'false');
     });
   }
