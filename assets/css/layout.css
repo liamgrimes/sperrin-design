@@ -85,6 +85,20 @@ footer {
     font-size: 0.9rem;
 }
 
+.site-footer .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-sm) var(--space-md);
+    margin-top: var(--space-sm);
+}
+
+.site-footer .footer-links a {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
 /* -------------------------- */
 /* Tablet and desktop */
 /* -------------------------- */

@@ -135,3 +135,17 @@ the areas worked on above.
 
 Storefront testing and Contact page/backend testing are not included here,
 as these were tested by Kathryn and Karen.
+
+## Contact form spam protection
+
+The contact form uses the Google reCAPTCHA v2 checkbox. Set `RECAPTCHA_SITE_KEY`
+and `RECAPTCHA_SECRET_KEY` in the server environment using keys registered for
+the public website hostname. Set `RECAPTCHA_ALLOWED_HOSTNAME` to that hostname
+and `CONTACT_FORM_ALLOWED_ORIGINS` to the exact website origin(s), comma
+separated if needed. The site key is returned by `/api/recaptcha-config`; the
+secret key stays on the server. If either key is missing or Google's
+verification service is unavailable, contact form submissions are blocked.
+
+The site currently has no first-party analytics or advertising cookies. Shopify
+cart/checkout and Google reCAPTCHA may use third-party cookies or similar
+storage; see `about-cookies.html`.

@@ -28,6 +28,64 @@
     padding-top: var(--space-sm);
 }
 
+.legal-main {
+    max-width: 760px;
+}
+
+.legal-main h1 {
+    margin-bottom: var(--space-sm);
+}
+
+.legal-main h2 {
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-xs);
+}
+
+.legal-main p,
+.legal-main li {
+    line-height: 1.75;
+}
+
+.legal-main ul {
+    padding-left: 1.25rem;
+}
+
+.privacy-provider-links {
+    color: var(--color-muted);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.privacy-provider-links a {
+    color: var(--color-muted);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+.recaptcha-status {
+    min-height: 1.5em;
+    color: var(--color-muted);
+    font-size: 0.85rem;
+}
+
+.recaptcha-disclaimer {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 0.75rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.recaptcha-policy-links {
+    white-space: nowrap;
+}
+
+.recaptcha-disclaimer a {
+    color: var(--color-muted);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
 .store-wrap { width: 100%; }
 
 /* Shared hero treatment */
